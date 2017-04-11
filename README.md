@@ -7,4 +7,5 @@ https://openui5.slack.com/messages/UI5lab
 (invitation link for Slack: http://slackui5invite.herokuapp.com/)
 
 Help us making this work!
+
 **The UI5 Community**
