@@ -1,15 +1,15 @@
 # UI5Lab - What is it?
-A place to gather forces and work on a UI5 community-driven custom UI5 repository.
+A place to gather forces and work on a UI5 community-driven custom repository.
 Whatever will be placed here is discussed in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
 You can join with this [invitation link for Slack](http://slackui5invite.herokuapp.com/).
 
 # What to contribute?
-First and foremost, code content is what drives the vision behind this UI5Lab project: a wealth of code content from many contributers in one central place and have a vibrant exchange. So any self-developed unit of work, be it custom control, template, or an app, is welcome for sharing with others. 
-In addition, the final vision would have some levers that allow effective access to the code content: 
+Code content is what drives the vision behind this UI5Lab project: a wealth of developments from many contributers in one central place, accompanied by vibrant exchange. So any self-developed unit of work, be it custom control, template, or an app, is welcome here for sharing with others. 
+In addition, the vision includes two important levers that allow effective provision and consumtion of the code content: 
 * A build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples is part of the vision. 
 * A tool for consumption would be desirable, something that would facilitate downloading of individual pieces of work. 
 
-![Infrastructure](/InfrastructurePicture.png "Infrsstructure UI5Lab")
+![Infrastructure](./InfrastructureUI5Lab.png "Infrsstructure UI5Lab")
 
 # How to contribute?
 There are two boards on Trello to coordinate our common work: the [prototype board](https://trello.com/b/gFQs9ARW/prototype) and the [orga board](https://trello.com/b/v8thvLem/orga). Everyone can create tasks in one of the boards and update them as progress takes place. To get write access, post a request on slack to one of the admins, then join the board (button on the left panel in one of the boards).  
