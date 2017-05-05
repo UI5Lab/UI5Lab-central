@@ -31,5 +31,7 @@ What if problems occur? Issues can be created in this repository. To do this, ju
 
 What if you'd like to share knowledge? The Wiki page is the right area for that. Just go to the "Wiki" tab in the top center of this panel to create a Wiki entry. 
 
+Guides should also be available for the build job, metadata and the app providing the consumtion functionality.
+
 # Documentation
 Documentation should always be published together with your work. It is important that other people understand what your motivation was for your work, what it does, and how you implemented it. Understanding what your work does is also the prerequisite for the information exchange amongst the members of the community. Even if you just want to fool around (which is perhaps the best motivation to begin with) - let the rest of us know what drove you.   
