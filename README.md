@@ -4,14 +4,17 @@ Whatever will be placed here is discussed in [Slack Channel #UI5Lab](https://ope
 You can join with this [invitation link for Slack](http://slackui5invite.herokuapp.com/).
 
 # What to contribute?
-First and foremost, code content is what drives the vision to have a vibrant exchange. So any self-developed unit of work, be it custom control, template, or an app, is welcome for sharing with others. 
-In addition, the final vision would have some levers that allow effective access to the code content. Consequently, a build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples is part of the vision. In addition, a tool for consumption would be desirable, something that would facilitate downloading of individual pieces of work. 
+First and foremost, code content is what drives the vision behind this UI5Lab: provide code content from many developers in a central place and have a vibrant exchange. So any self-developed unit of work, be it custom control, template, or an app, is welcome for sharing with others. 
+In addition, the final vision would have some levers that allow effective access to the code content: 
+* A build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples is part of the vision. 
+* A tool for consumption would be desirable, something that would facilitate downloading of individual pieces of work. 
 
 Bild
 
 # How to contribute?
-There are two boards on Trello we use for coordinating our common work: the prototype board and the orga board. As this vision may be shared by all members of the community, you can create tasks in one of the boards and update them as you progress. And wouldn't it be great if someone else in the community would pick up a task you have posted? We all hope that it'll be fun to work together and build on each others work and ideas.  
-For contributing technically on GitHub, this is what you should do: get registered on GitHub.com so that you have your own Profile. 
+There are two boards on Trello to coordinate our common work: the [prototype board](https://trello.com/b/gFQs9ARW/prototype) and the [orga board](https://trello.com/b/v8thvLem/orga). Everyone can create tasks in one of the boards and update them as progress takes place. To get write access, post a request on slack to one of the admins, then join the board (button on the left panel in one of the boards).  
+
+For contributing technically on GitHub, this is how to proceed: get registered on GitHub.com so that you have your own Profile. 
 Then, you go to the openui5/UI5Lab repository and click on the "fork" button in the upper right corner. A pop-up will appear asking you where to fork it to -> choose your profile. Now you can edit all pages on the repository. After you've finished, you can create a "pull" request to get it merged with th eopenui5/UI5Lab repository. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
 
 # Some more Words on the Infrastructure
