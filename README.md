@@ -29,7 +29,6 @@ For contributing technically on GitHub, this is how to proceed:
 1. Share your idea on slackchat. 
 2. Fork one of the openui5/UI5Lab repositories.  
 3. Create a new "pull" request to get it merged. 
-At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
 
 # Some more Words on the Infrastructure
 What if problems occur? Issues can be created in this repository. To do this, just go to the "Issues" tab on the top left side of this panel and post your problem.
