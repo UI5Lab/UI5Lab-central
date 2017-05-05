@@ -1,38 +1,39 @@
 # UI5Lab - What is it?
-A place to gather forces and work on a UI5 community-driven custom repository.
+A place to gather forces and work on a UI5 community-driven custom repository accompanied by vibrant exchange. 
 Whatever will be placed here is discussed in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
 You can join with this [invitation link for Slack](http://slackui5invite.herokuapp.com/).
 
 # What to contribute?
-Code content is what drives the vision behind this UI5Lab project: a wealth of developments from many contributers in one central place, accompanied by vibrant exchange. So any self-developed unit of work, be it custom control, template, or an app, is welcome here for sharing with others. 
-In addition, the vision includes two important levers that allow effective provision and consumtion of the code content: 
-* A build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples 
-* A tool/an app for consumption that would facilitate downloading of individual pieces of work 
+Your contributions will drive the vision behind the UI5Lab project: A place where custom controls, templates, helper classes, and code artifacts related to UI5 technology can be discovered and shared by the community. How can this be achieved?
 
-![Infrastructure](./InfrastructureUI5Lab2.png "Infrsstructure UI5Lab")
-*Figure 1: Future infrastructure of UI5Lab indicating possibilities for contributions*
+* The custom code should be developed and maintained in individual repositories for maximum flexibility, you are welcome to suggest your code project as a pilot for UI5lab
+** An example control (work in progress) with a very simple codebase can be found here:
+[UI5Lab-control-simple](https://github.com/openui5/UI5Lab-control-simple)
+** Feel free to also contribute to the example project to make it more robust
+
+* In this repository we would like to provide infrastructure for discovering and assembling a compendium of all individual code repositories. The idea is to easily find documentation and samples for all the above projects and to have them listed in a central place
+** A build infrastructure could retrieve the content based on metadata on a regular basis and list it here to  assemble a custom samples browser
+** Guides are needed to describe the overall setup and the infrastructure, the [wiki](https://github.com/openui5/UI5Lab/wiki) of this repository could be used to store these
+
+* An app that wants to consume one of the above projects needs an infrastructure and tools to integrate the individual pieces of work into their existing codebase and update them.
+** An example app (work in progress) with basic consumption can be found here:
+[UI5Lab-app-simple](https://github.com/openui5/UI5Lab-app-simple)
+** An example library (work in progress) of custom controls can be found here:
+[UI5Lab-library-simple](https://github.com/openui5/UI5Lab-library-simple)
+** The tools to create and consume a custom library and controls are not existing yet for this project. This is where our next steps will happen together.
 
 # How to contribute?
 There are two boards on Trello to coordinate our common work: the [prototype board](https://trello.com/b/gFQs9ARW/prototype) and the [orga board](https://trello.com/b/v8thvLem/orga). Everyone can create tasks in one of the boards and update them as progress takes place. To get write access, post a request on slack to one of the admins, then join the board (button on the left panel in one of the boards).  
 
 For contributing technically on GitHub, this is how to proceed: 
-1. Get registered on GitHub.com so that you have your own Profile. 
-2. Go to the openui5/UI5Lab repository and click on the "fork" button in the upper right corner. A pop-up will appear asking you where to fork it to -> choose your profile. 
-3. Edit one or many pages on the forked repository. 
-4. After you've finished, you can create a "pull" request to get it merged with the openui5/UI5Lab repository. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
-
-For contributing code content on GitHub, this is how to proceed:
-1. Get registered on GitHub.com so that you have your own Profile.
-2. Develop or uploard your unit of work including the documentation to a repository under your profile
-3. Link it to this repository to make it available to other people
-4. Post a note on slack to let others know of your achievement.
+1. Share your idea on slackchat. 
+2. Fork one of the openui5/UI5Lab repositories.  
+4. Create a new "pull" request to get it merged. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
 
 # Some more Words on the Infrastructure
 What if problems occur? Issues can be created in this repository. To do this, just go to the "Issues" tab on the top left side of this panel and post your problem.
 
 What if you'd like to share knowledge? The Wiki page is the right area for that. Just go to the "Wiki" tab in the top center of this panel to create a Wiki entry. 
 
-Guides should also be available for the build job, metadata and the app providing the consumtion functionality.
+Later on, guides will be available on the [Wiki page](https://github.com/openui5/UI5Lab/wiki).
 
-# Documentation
-Documentation should always be published together with your work. It is important that other people understand what your motivation was for your work, what it does, and how you implemented it. Understanding what your work does is also the prerequisite for the information exchange amongst the members of the community. Even if you just want to fool around (which is perhaps the best motivation to begin with) - let the rest of us know what drove you.   
