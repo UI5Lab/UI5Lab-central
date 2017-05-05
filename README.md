@@ -14,8 +14,11 @@ Bild
 # How to contribute?
 There are two boards on Trello to coordinate our common work: the [prototype board](https://trello.com/b/gFQs9ARW/prototype) and the [orga board](https://trello.com/b/v8thvLem/orga). Everyone can create tasks in one of the boards and update them as progress takes place. To get write access, post a request on slack to one of the admins, then join the board (button on the left panel in one of the boards).  
 
-For contributing technically on GitHub, this is how to proceed: get registered on GitHub.com so that you have your own Profile. 
-Then, you go to the openui5/UI5Lab repository and click on the "fork" button in the upper right corner. A pop-up will appear asking you where to fork it to -> choose your profile. Now you can edit all pages on the repository. After you've finished, you can create a "pull" request to get it merged with th eopenui5/UI5Lab repository. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
+For contributing technically on GitHub, this is how to proceed: 
+1. Get registered on GitHub.com so that you have your own Profile. 
+2. Go to the openui5/UI5Lab repository and click on the "fork" button in the upper right corner. A pop-up will appear asking you where to fork it to -> choose your profile. 
+3. Edit one or many pages on the forked repository. 
+4. After you've finished, you can create a "pull" request to get it merged with the openui5/UI5Lab repository. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
 
 # Some more Words on the Infrastructure
 What if problems occur? Issues can be created in this repository. To do this, just go to the "Issues" tab on the top left side of this panel and post your problem.
