@@ -9,7 +9,7 @@ In addition, the vision includes two important levers that allow effective provi
 * A build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples 
 * A tool/an app for consumption that would facilitate downloading of individual pieces of work 
 
-![Infrastructure](./InfrastructureUI5Lab.png "Infrsstructure UI5Lab")
+![Infrastructure](./InfrastructureUI5Lab2.png "Infrsstructure UI5Lab")
 
 # How to contribute?
 There are two boards on Trello to coordinate our common work: the [prototype board](https://trello.com/b/gFQs9ARW/prototype) and the [orga board](https://trello.com/b/v8thvLem/orga). Everyone can create tasks in one of the boards and update them as progress takes place. To get write access, post a request on slack to one of the admins, then join the board (button on the left panel in one of the boards).  
