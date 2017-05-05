@@ -6,8 +6,8 @@ You can join with this [invitation link for Slack](http://slackui5invite.herokua
 # What to contribute?
 Code content is what drives the vision behind this UI5Lab project: a wealth of developments from many contributers in one central place, accompanied by vibrant exchange. So any self-developed unit of work, be it custom control, template, or an app, is welcome here for sharing with others. 
 In addition, the vision includes two important levers that allow effective provision and consumtion of the code content: 
-* A build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples is part of the vision. 
-* A tool for consumption would be desirable, something that would facilitate downloading of individual pieces of work. 
+* A build job that'll assemble the content to a compendium similar to the OpenUI5 Explored Samples 
+* A tool/an app for consumption that would facilitate downloading of individual pieces of work 
 
 ![Infrastructure](./InfrastructureUI5Lab.png "Infrsstructure UI5Lab")
 
