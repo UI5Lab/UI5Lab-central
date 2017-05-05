@@ -20,9 +20,16 @@ For contributing technically on GitHub, this is how to proceed:
 3. Edit one or many pages on the forked repository. 
 4. After you've finished, you can create a "pull" request to get it merged with the openui5/UI5Lab repository. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
 
+For contributing code content on GitHub, this is how to proceed:
+1. Get registered on GitHub.com so that you have your own Profile.
+2. Develop or uploard your unit of work including the documentation to a repository under your profile
+3. Link it to this repository to make it available to other people
+4. Post a note on slack to let others know of your achievement.
+
 # Some more Words on the Infrastructure
 What if problems occur? Issues can be created in this repository. To do this, just go to the "Issues" tab on the top left side of this panel and post your problem.
+
 What if you'd like to share knowledge? The Wiki page is the right area for that. Just go to the "Wiki" tab in the top center of this panel to create a Wiki entry. 
 
 # Documentation
-Please always make sure that you publish the accompanying documentation together with your unit of work. It is important that other people understand what your motivation was for your work, what it does, where you see it's benefit, and what it means to you. Only then is it possible to come close to each other and have something to say to each other. Even if you just want to fool around (which is perhaps the best motivation to begin with) - let the rest of us know what drove you. It'll be incredibly interesting to see what mongrel or beauty may evolve from a crazy idea - you may know, many a paradigm-changing invention was a laboratory accident or a by-product. But let's end on a happy note: this is suppoed to be fun, so let's not limit our imagination.  
+Documentation should always be published together with your work. It is important that other people understand what your motivation was for your work, what it does, and how you implemented it. Understanding what your work does is also the prerequisite for the information exchange amongst the members of the community. Even if you just want to fool around (which is perhaps the best motivation to begin with) - let the rest of us know what drove you.   
