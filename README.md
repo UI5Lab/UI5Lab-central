@@ -28,14 +28,14 @@ There are two boards on Trello to coordinate our common work: the [prototype boa
 For contributing technically on GitHub, this is how to proceed: 
 1. Share your idea on slackchat. 
 2. Fork one of the openui5/UI5Lab repositories.  
-4. Create a new "pull" request to get it merged. At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
+3. Create a new "pull" request to get it merged. 
+At the point of your pull-request creation, someone from the UI5Lab administrators will check your changes and merge them - or possibly get back to you with questions.
 
 # Some more Words on the Infrastructure
 What if problems occur? Issues can be created in this repository. To do this, just go to the "Issues" tab on the top left side of this panel and post your problem.
 
-What if you'd like to share knowledge? The Wiki page is the right area for that. Just go to the "Wiki" tab in the top center of this panel to create a Wiki entry. 
+What if you'd like to share knowledge? The Wiki page is the right area for that. Just go to the "Wiki" tab in the top center of this panel to create a Wiki entry. Later on, guides can be made available on the [Wiki page](https://github.com/openui5/UI5Lab/wiki).
 
-Later on, guides will be available on the [Wiki page](https://github.com/openui5/UI5Lab/wiki).
 
 
 
