@@ -13,7 +13,7 @@ Your contributions will drive the vision behind the UI5Lab project: A place wher
 
 * In this repository we would like to provide infrastructure for discovering and assembling a compendium of all individual code repositories. The idea is to easily find documentation and samples for all the above projects and to have them listed in a central place
   * A build infrastructure could retrieve the content based on metadata on a regular basis and list it here to  assemble a custom samples browser
-  * Guides are needed to describe the overall setup and the infrastructure, the [wiki](https://github.com/openui5/UI5Lab/wiki) of this repository could be used to store these
+  * Guides are needed to describe the overall setup and the infrastructure, the [Wiki page](https://github.com/openui5/UI5Lab/wiki) of this repository could be used to store these
 
 * An app that wants to consume one of the above mentioned projects needs an infrastructure and tools to integrate the individual pieces of work into their existing codebase and update them.
   * An example app (work in progress) with basic consumption can be found here:
