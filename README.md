@@ -35,15 +35,14 @@ What if problems occur? Issues can be created in this repository. To do this, ju
 
 What if you'd like to share knowledge? The Wiki page is the right area for that. Just go to the "Wiki" tab in the top center of this panel to create a Wiki entry. Later on, guides can be made available on the [Wiki page](https://github.com/openui5/UI5Lab/wiki).
 
-# First Contributions
-There are already four contributions from the community:
+# Pilot Projects ready for Contributions
+We collected pilot projects wating to be transformed to UI5Lab prototypes from the community:
 * [A SAPUI5 custom control that wraps flatpickr Date Picker](https://github.com/StErMi/openui5-flatpickr)
 * [A SAPUI5 custom control that allow you to generate and easily embed QR code inside your SAPUI5 application](https://github.com/StErMi/openui5-qrcode)
-* [Simple HTML5 charts using the canvas element chartjs.org](https://github.com/chartjs/Chart.js)
-* [An introductory project on plotly, a high-level, declarative charting library](https://github.com/plotly/plotly.js)
+*[This project shows how to use C3.js and Chart.js within OpenUI5 projects](https://github.com/SAP/openui5-charting-custom-controls)
 
-A heart-felt "thank you" to our contributors! 
-
+Feel free to get in touch with the owners of the repositories or make a fork. 
+A heart-felt "thank you" for your contributions!
 
 Help us making this work!
 
