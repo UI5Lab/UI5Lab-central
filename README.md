@@ -22,6 +22,9 @@ Your contributions will drive the vision behind the UI5Lab project: A place wher
 [UI5Lab-library-simple](https://github.com/openui5/UI5Lab-library-simple)
   * The tools to create and consume a custom library and controls are not existing yet for this project. This is where our next steps will happen together.
 
+![UI5Lab Ecosystem](Ui5LabEcosystem.png)
+
+
 # How to contribute?
 There are two boards on Trello to coordinate our common work: the [prototype board](https://trello.com/b/gFQs9ARW/prototype) and the [orga board](https://trello.com/b/v8thvLem/orga). Everyone can create tasks in one of the boards and update them as progress takes place. To get write access, post a request on slack to one of the admins, then join the board (button on the left panel in one of the boards).  
 
