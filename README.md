@@ -7,9 +7,11 @@ You can join with this [invitation link for Slack](http://slackui5invite.herokua
 Your contributions will drive the vision behind the UI5Lab project: A place where custom controls, templates, helper classes, and code artifacts related to UI5 technology can be discovered and shared by the community. How can this be achieved?
 
 * The custom code should be developed and maintained in individual repositories for maximum flexibility, you are welcome to suggest your code project as a pilot for UI5lab
-  * An example control (work in progress) with a very simple codebase can be found here:
-[UI5Lab-control-simple](https://github.com/openui5/UI5Lab-control-simple)
-  * Feel free to also contribute to the example project to make it more robust
+  * An example control library project (work in progress) with a simple codebase can be found here:
+[UI5Lab-library-simple](https://github.com/openui5/UI5Lab-library-simple)
+  * If you are new to UI5 custom control development you might want to have a look at a basic control example first:
+   [UI5Lab-control-simple](https://github.com/openui5/UI5Lab-control-simple)
+  * Feel free to contribute to the two example projecst to make them more robust and flexible
 
 * In this repository we would like to provide infrastructure for discovering and assembling a compendium of all individual code repositories. The idea is to easily find documentation and samples for all the above projects and to have them listed in a central place
   * A build infrastructure could retrieve the content based on metadata on a regular basis and list it here to  assemble a custom samples browser
