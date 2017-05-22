@@ -44,7 +44,7 @@ What if you'd like to share knowledge? The Wiki page is the right area for that.
 We collected pilot projects wating to be transformed to UI5Lab prototypes from the community:
 * [A SAPUI5 custom control that wraps flatpickr Date Picker](https://github.com/StErMi/openui5-flatpickr)
 * [A SAPUI5 custom control that allow you to generate and easily embed QR code inside your SAPUI5 application](https://github.com/StErMi/openui5-qrcode)
-*[This project shows how to use C3.js and Chart.js within OpenUI5 projects](https://github.com/SAP/openui5-charting-custom-controls)
+* [This project shows how to use C3.js and Chart.js within OpenUI5 projects](https://github.com/SAP/openui5-charting-custom-controls)
 
 Feel free to get in touch with the owners of the repositories or make a fork. 
 A heart-felt "thank you" for your contributions!
