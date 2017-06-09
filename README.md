@@ -1,5 +1,5 @@
 # UI5Lab - What is it?
-A place to gather forces and work on a UI5 community-driven custom repository accompanied by vibrant exchange. 
+A place to jointly work on a UI5 community-driven custom repository accompanied by vibrant exchange. 
 Whatever will be placed here is discussed in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
 You can join with this [invitation link for Slack](http://slackui5invite.herokuapp.com/).
 
