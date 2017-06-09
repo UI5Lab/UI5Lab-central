@@ -9,6 +9,10 @@ fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './src');
 fs.copySync('./node_modules/ui5lab-library-simple/dist/test-resources/', './test');
 fs.copySync('./node_modules/striptoastr/dist/', './src');
 fs.copySync('./node_modules/striptoastr/test/', './test');
+fs.copySync('./node_modules/openui5-qrcode/dist/', './src');
+fs.copySync('./node_modules/openui5-qrcode/src/', './src');
+fs.copySync('./node_modules/openui5-qrcode/test/demo', './test/it/designfuture/qrcode');
+fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfuture/qrcode/index.json');
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
