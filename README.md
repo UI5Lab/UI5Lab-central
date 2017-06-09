@@ -64,6 +64,15 @@ We collected pilot projects waiting to be transformed to UI5Lab prototypes from 
 * [OpenUI5 MessageStrips that Growl](https://github.com/jasper07/StripToastr)
 * [This project shows how to use C3.js and Chart.js within OpenUI5 projects](https://github.com/SAP/openui5-charting-custom-controls)
 
+# Instructions to run the "Central Browser" Prototype
+
+This repository now contains metadata for combining and showcasing all availabe UI5Lab projects
+
+1. Libraries can now be centrally listed in this project by adding them to the libraries.json and package.json file
+2. The ```combineProjects.js``` file will do a copy from the node_modules folder to the resources folder of this project 
+3. You can test the current status by running ```npm install``` and ```grunt serve``` locally, it will load all the required modules and the currently available UI5Lab libraries
+4. Go to [http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/) to display the browser with all configured libraries
+
 Feel free to get in touch with the owners of the repositories or make a fork. 
 A heart-felt "thank you" for your contributions!
 
