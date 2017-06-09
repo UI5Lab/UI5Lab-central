@@ -19,6 +19,7 @@
     "fs-extra": "^3.0.0",
     "ui5lab-browser": "^0.1.0",
     "ui5lab-library-simple": "^0.1.0",
-    "striptoastr": "https://github.com/jasper07/StripToastr"
+    "striptoastr": "https://github.com/jasper07/StripToastr",
+    "openui5-qrcode": "https://github.com/StErMi/openui5-qrcode"
   }
 }

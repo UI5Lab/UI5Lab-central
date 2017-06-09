@@ -1,6 +1,7 @@
 {
     "libraries": [
         "ui5lab.geometry",
-        "ui5lab.striptoastr"
+        "ui5lab.striptoastr",
+	    "it.designfuture.qrcode"
     ]
 }
