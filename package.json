@@ -1,0 +1,24 @@
+{
+  "name": "ui5lab",
+  "version": "0.1.0",
+  "description": "A central repository to discover and showcase all available UI5Lab projects",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified. Please add some.\" && exit 1",
+    "postinstall": "bower install && node combineProjects.js",
+    "start": "grunt"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-openui5": "^0.12.0",
+    "fs-extra": "^3.0.0",
+    "ui5lab-browser": "^0.1.0",
+    "ui5lab-library-simple": "^0.1.0",
+    "striptoastr": "https://github.com/jasper07/StripToastr"
+  }
+}
