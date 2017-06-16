@@ -33,3 +33,8 @@ fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfu
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
 
+// copy everything to be deployed in deploy folder
+fs.copySync('./resources', './deploy/resources');
+fs.copySync('./test', './deploy/test');
+fs.copySync('./index.html', './deploy/index.html');
+
