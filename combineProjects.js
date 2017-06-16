@@ -1,10 +1,12 @@
 var fs = require('fs-extra');
 
+/**************************
+ * UI5 and browser:
+ * Copy the browser project and all needed UI5 libraries from npm_modules and bower_components to a local folder
+ *************************/
+
 // copy browser
 fs.copySync('./node_modules/ui5lab-browser/dist/test-resources/ui5lab/browser', './test/ui5lab/browser');
-
-// copy all loaded projects to the appropriate places (resources and test-resources)
-// TODO: detect projects dynamically and copy them based on metadata in libraries.json file
 
 // ui5
 fs.copySync('./bower_components/openui5-sap.f/resources', './resources');
@@ -12,6 +14,13 @@ fs.copySync('./bower_components/openui5-sap.m/resources', './resources');
 fs.copySync('./bower_components/openui5-sap.ui.layout/resources', './resources');
 fs.copySync('./bower_components/openui5-sap.ui.core/resources', './resources');
 fs.copySync('./bower_components/openui5-themelib_sap_belize/resources', './resources');
+
+/**************************
+ * UI5Lab projects:
+ * Copy all loaded projects to the appropriate places (resources and test-resources)
+ **************************/
+
+// TODO: detect projects dynamically and copy them based on metadata in libraries.json file
 
 // ui5lab.geometry
 fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './resources');
@@ -34,7 +43,11 @@ fs.copySync('./node_modules/ui5-nabi-m/dist/test-resources/', './test');
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
 
-// copy everything to be deployed in deploy folder
+/**************************
+ * Deploy preparations:
+ * Copy everything to be deployed in deploy folder
+ **************************/
+
 // copy preview page by @nitishmeta to root folder
 fs.copySync('./preview', './deploy');
 // copy browser to subfolder browser for the moment
