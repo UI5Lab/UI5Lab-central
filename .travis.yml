@@ -6,6 +6,9 @@ node_js:
 before_script:
   - npm install
 
+script:
+  - npm run lint
+
 deploy:
   provider: pages
   skip_cleanup: true
