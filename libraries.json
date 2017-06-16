@@ -1,7 +1,8 @@
 {
-    "libraries": [
-        "ui5lab.geometry",
-        "ui5lab.striptoastr",
-	    "it.designfuture.qrcode"
-    ]
+	"libraries": [
+		"ui5lab.geometry",
+		"ui5lab.striptoastr",
+		"it.designfuture.qrcode",
+		"nabi.m"
+	]
 }

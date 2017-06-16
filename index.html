@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>UI5Lab Sample Browser</title>
+
+	<script id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,sap.f"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{
+				"ui5lab.browser": "test/ui5lab/browser",
+				"libs": "./test"
+			}'>
+	</script>
+
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			sap.ui.require([
+				"sap/ui/core/ComponentContainer"
+			], function (ComponentContainer) {
+				// initialize the UI component
+				new ComponentContainer({
+					name: "ui5lab.browser",
+					settings: {
+						id: "browser"
+					}
+				}).placeAt("content");
+			});
+		});
+	</script>
+</head>
+<body id="content" class="sapUiBody">
+</body>
+</html>
