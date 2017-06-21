@@ -40,6 +40,10 @@ fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfu
 fs.copySync('./node_modules/ui5-nabi-m/dist/resources/', './resources');
 fs.copySync('./node_modules/ui5-nabi-m/dist/test-resources/', './test');
 
+// openui5.googlemaps
+fs.copySync('./node_modules/openui5-googlemaps/dist/', './resources');
+fs.copySync('./node_modules/openui5-googlemaps/test/', './test');
+
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
 
@@ -54,4 +58,3 @@ fs.copySync('./preview', './deploy');
 fs.copySync('./resources', './deploy/browser/resources');
 fs.copySync('./test', './deploy/browser/test');
 fs.copySync('./index.html', './deploy/browser/index.html');
-
