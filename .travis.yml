@@ -1,0 +1,18 @@
+language: node_js # don't install any environment
+
+node_js:
+- stable
+
+before_script:
+  - npm install
+
+script:
+  - npm run postinstall
+
+deploy:
+  provider: pages
+  local_dir: deploy
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master

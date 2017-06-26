@@ -1,8 +1,13 @@
 {
-  "name": "ui5lab",
+  "name": "ui5lab-central",
   "version": "0.1.0",
   "description": "A central repository to discover and showcase all available UI5Lab projects",
-  "private": false,
+  "private": true,
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/UI5Lab/UI5Lab-library-simple.git"
+  },
+  "license" : "Apache-2.0",
   "scripts": {
     "test": "echo \"Error: no test specified. Please add some.\" && exit 1",
     "postinstall": "bower install && node combineProjects.js",
@@ -17,9 +22,13 @@
     "grunt-eslint": "^19.0.0",
     "grunt-openui5": "^0.12.0",
     "fs-extra": "^3.0.0",
+
     "ui5lab-browser": "^0.1.0",
     "ui5lab-library-simple": "^0.1.0",
+
     "striptoastr": "https://github.com/jasper07/StripToastr",
-    "openui5-qrcode": "https://github.com/StErMi/openui5-qrcode"
+    "openui5-qrcode": "openui5-qrcode",
+    "openui5-googlemaps": "https://github.com/jasper07/openui5-googlemaps",
+    "ui5-nabi-m": "ui5-nabi-m"
   }
 }
