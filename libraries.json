@@ -1,8 +1,9 @@
 {
-	"libraries": [
-		"ui5lab.geometry",
-		"ui5lab.striptoastr",
-		"it.designfuture.qrcode",
-		"nabi.m"
-	]
+    "libraries": [
+        "openui5.googlemaps",
+        "ui5lab.geometry",
+        "ui5lab.striptoastr",
+        "it.designfuture.qrcode",
+        "nabi.m"
+    ]
 }
