@@ -1,5 +1,5 @@
 {
-  "name": "ui5lab",
+  "name": "ui5lab-central",
   "description": "A central repository to discover and showcase all available UI5Lab projects",
   "private": true,
   "dependencies": {
