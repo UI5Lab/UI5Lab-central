@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title> UI5Lab - Coming Soon </title>
+<title> UI5Lab - a custom UI5 library</title>
 <style>
 body, html {
     height: 100%;
@@ -8,9 +8,8 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('assets/comingsoon_bg.jpg');
+    background-image: url('assets/lab_bg.jpg');
     height: 100%;
-    background-position: center;
     background-size: cover;
     position: relative;
     color: white;
@@ -19,13 +18,13 @@ body, html {
 }
 
 .topleft {
-    position: absolute;
+    position: relative;
     top: 16px;
     left: 16px;
 }
 
 .bottomleft {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 16px;
 }
@@ -38,8 +37,33 @@ body, html {
     text-align: center;
 }
 
+.middleLeft {
+    position: absolute;
+    top: 48%;
+    left: 17%;
+    transform: translate(-17%, -17%);
+}
+
+.middleRight{
+    position: relative;
+    top: 33%;
+    left: 48%;
+    transform: translate(-27%, -27%);;
+}
+
+.welcome{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    transform: translate(-21%, -21%);
+    text-align: center;
+}
+
 .links{
     color: white;
+    opacity: 1;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .logoImage {
@@ -51,6 +75,82 @@ body, html {
 .logoText {
     float: left;
     font-size: 40px;
+}
+
+.aboutText {
+    margin-left: 17%;
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.circle1{
+    position: absolute;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background: #ff5a37;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px;
+    top: 0px;
+    left: 47%;
+
+}
+.circle2{
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    background: #37adff;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 230px;
+    position: absolute;
+    top: 50px;
+    left: 30%;
+}
+.circle3{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: #ff9f37;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+}
+.circle4{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: #37efff;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 59%;
+}
+
+.circle5{
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	background: #ff37ef;
+	opacity: 0.5;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 180px;
+	position: absolute;
+	top: 260px;
+	left: 40%;
 }
 
 hr {
@@ -65,44 +165,22 @@ hr {
     <image class="logoImage" src="assets/lab_icon.png" />
     <p class="logoText">UI5Lab</p>
   </div>
-  <div class="middle">
-    <h1>Lab under construction</h1>
-    <hr>
-    <p id="countdown" style="font-size:30px"></p>
+  <div class="welcome">
+    <h1>Join the Lab!</h1>
   </div>
-  <div class="bottomleft">
-    <p style="font-size:30px">Interested in contributing? </p>
-    <p style="font-size:30px">Find out more on <a class="links" href="https://github.com/UI5Lab/UI5Lab-central">GitHub</a> </p>
+  <img src="assets/about_marks.png" class="middleLeft" />
+  <div class="middleLeft">
+    <p class="aboutText"> UI5Lab is a community driven project to establish a repository for UI5 Custom Control Libraries. It is meant to gather forces throughout the community and enable everyone to use UI5 Custom Controls easily </p>
+  </div>
+  <div class="middleRight">
+        <a href="https://ui5lab.github.io/UI5Lab-central/browser/index.html" class="links"><div class="circle1" alt="Explore">Explore</div></a>
+        <a href="http://openui5.org/logo.html" class="links"><div class="circle2" alt="Contribute" href="">Contribute</div></a>
+        <a href="https://github.com/UI5Lab/UI5Lab-central/wiki" class="links"><div class="circle3" alt="Wiki" href="">Wiki</div></a>
+        <a href="contact.html" class="links"><div class="circle4" alt="Contact" href="">Contact</div></a>
+	    <a href="http://openui5.org/logo.html" class="links"><div class="circle5" alt="Consume" href="">Consume</div></a>
+
   </div>
 </div>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jun 30, 2017 14:20:00").getTime();
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="countdown"
-    document.getElementById("countdown").innerHTML = "Opens in " + days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    // If the count down is over, write some text
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("countdown").innerHTML = "Coming Soon";
-    }
-}, 1000);
-</script>
 </body>
 </html>
