@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title> UI5Lab - a custom UI5 library</title>
+<head><link rel="icon" href="favicon.ico" type="image/x-icon"></head>
+<style>
+	body, html {
+		height: 100%;
+		margin: 0;
+		background-image: url('assets/lab_bg.jpg');
+		background-size: cover;
+		position: relative;
+		color: white;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 16px;
+	}
+
+	.topleft {
+		position: relative;
+		top: 16px;
+		left: 16px;
+	}
+
+	.bottomleft {
+		position: relative;
+		bottom: 0;
+		left: 16px;
+	}
+
+	.middle {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.middleLeft {
+		position: absolute;
+		top: 48%;
+		left: 17%;
+		transform: translate(-17%, -17%);
+	}
+
+	.middleRight{
+		position: relative;
+		top: 33%;
+		left: 48%;
+		transform: translate(-27%, -27%);;
+	}
+
+	.welcome{
+		position: absolute;
+		top: 30%;
+		left: 21%;
+		transform: translate(-21%, -21%);
+		text-align: center;
+	}
+
+	.links{
+		color: lightskyblue;
+		opacity: 1;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.title {
+		margin-top: 25px;
+		float: right;
+	}
+
+	.logoImage {
+		width: 55px;
+		margin-top: 25px;
+		float: left;
+	}
+
+	.logoText {
+		float: left;
+		font-size: 40px;
+	}
+
+	.aboutText {
+		margin-left: 17%;
+		text-align: center;
+		width: 400px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	hr {
+		margin: auto;
+		width: 40%;
+	}
+
+
+
+</style>
+
+<body>
+
+
+<div class="bgimg">
+	<div class="topleft">
+		<image class="logoImage" src="assets/lab_icon.png" />
+		<a href="index.html" class="links"><p class="logoText">UI5Lab</p></a>
+	</div>
+	<div class="middleLeft">
+		<h1>How to contribute your Custom Control Library to UI5lab ?</h1>
+		<h2><a class="links" href="#prerequisites" id="prerequisites">Prerequisites</a></h2>
+		<p>To contribute your Custom Control Library to UI5lab using the standard tools, you will need the following</p>
+		<table>
+			<thead>
+			<tr><th> Tool</th><th>  Where to get </th></tr>
+			</thead>
+			<tbody>
+			<tr><td> npm      </td><td> <a class="links" href="https://nodejs.org/en/">Node.js</a> </td></tr>
+			<tr><td> GruntJS      </td><td> <a class="links" href="https://gruntjs.com/">gruntjs</a>  </td></tr>
+			<tr><td> BowerJS </td><td> <a class="links" href="https://bower.io/">Bower</a> </td></tr>
+			<tr><td> grunt-openui5 </td><td> <a class="links" href="https://www.npmjs.com/package/grunt-openui5">package: npmjs</a>  / <a class="links" href="https://github.com/SAP/grunt-openui5">source code: github</a> </td></tr>
+			</tbody>
+		</table>
+		<h2><a class="links" href="#how-to-start" id="how-to-start">How to start?</a></h2>
+		<ol>
+			<li>Get your Custom Control ready.</li>
+			<li>Edit your index.json</li>
+			<li>Generate Pull Request</li>
+		</ol>
+		<h3><a class="links" href="#1-get-your-custom-control-ready" id="1-get-your-custom-control-ready">1. Get your Custom Control ready.</a></h3>
+		<p>Openui5 can be extended with <a class="links" href="https://github.com/UI5Lab/UI5Lab-control-simple">Custom Controls</a> quite easily. There are plenty of <a class="links" href="https://openui5.hana.ondemand.com/#docs/guide/d12d2ee6a5454d799358d425f9e7c4db.html">tutorials</a> and <a class="links" href="https://www.nabisoft.com/tutorials/sapui5/creating-custom-controls-in-sapui5">introductions</a></p>
+		<p>But if you want to use the build tools provided by UI5, you will have to build a <a class="links" href="https://github.com/SAP/openui5/blob/master/docs/controllibraries.md">Control Library</a> by adding some more files or Themes. Again, there are some <a class="links" href="https://medium.com/@stermi/custom-control-101-sapui5-openui5-tipoftheday-customcontrol-fd51a85bbed3">tutorials</a> and <a class="links" href="https://github.com/UI5Lab/UI5Lab-library-simple">introductions</a></p>
+		<h3><a class="links" href="#2-edit-your-indexjson" id="2-edit-your-indexjson">2. Edit your index.json</a></h3>
+		<p>Each Custom Control Library has its own <strong>index.json</strong>. This is a small file with descriptions about the Custom Control Library.</p>
+		<pre><code>{
+    &quot;the.library.namespace&quot;: {
+        &quot;icon&quot;: &quot;a SAP-Icon e.g. sap-icon://database&quot;,
+        &quot;name&quot;: &quot;the Library name&quot;,
+        &quot;description&quot;: &quot;a short description&quot;,
+        &quot;source&quot; : &quot;a link to the source code on github&quot;,
+        &quot;documentation&quot;: &quot;a link to the documentation&quot;,
+        &quot;demo&quot;: &quot;a link to the demontration webpage&quot;,
+        &quot;license&quot;: &quot;the license you chose for your Custom Control Library e.g. Apache 2.0&quot;,
+        &quot;version&quot;: 1.0,
+        &quot;content&quot;: {
+            &quot;Your First Custom Control&quot;: {
+                &quot;id&quot;: &quot;Custom Control ID&quot;,
+                &quot;name&quot;: &quot;Custom Control name&quot;,
+                &quot;type&quot;: &quot;control&quot;,
+                &quot;version&quot;: 1.0,
+                &quot;description&quot;: &quot;a short description&quot;,
+                &quot;samples&quot;: [
+                    {
+                        &quot;id&quot;: &quot;ID of first sample&quot;,
+                        &quot;name&quot;: &quot;sample name 1&quot;,
+                        &quot;description&quot;: &quot;a short sample description&quot;
+                    },
+                    {
+                        &quot;id&quot;: &quot;ID of second sample&quot;,
+                        &quot;name&quot;: &quot;sample name 2&quot;,
+                        &quot;description&quot;: &quot;a short sample description&quot;
+                    }
+                ]
+            }
+        }
+    }
+}
+</code></pre>
+		<p>&quot;content&quot; is a substructure describing 1 or more Custom Controls included in the Library.</p>
+		<p>Good examples are the <strong>index.json</strong> of published UI5lab Libraries like <a class="links" href="https://github.com/UI5Lab/UI5Lab-library-simple/blob/master/test/ui5lab/geometry/index.json">UI5Lab-library-simple</a> or <a class="links" href="https://github.com/StErMi/openui5-qrcode/blob/master/test/index.json">openui5-qrcode</a></p>
+		<h3><a class="links" href="#3-generate-a-pull-request" id="3-generate-a-pull-request">3. Generate a Pull Request</a></h3>
+		<p>Once you are ready to publish your Custom Control Library, simply fork <a class="links" href="https://github.com/UI5Lab/UI5Lab">https://github.com/UI5Lab/UI5Lab</a> and edit the <strong>libraries.json</strong>, <strong>package.json</strong> and <strong>combineProjects.js</strong> file. After that, create a Pull Request. And when this Pull Request is merged into the repository, a Travis job will automagically generate an updated version of UI5lab where your
+			Library is now listed among all the other.</p>
+		<h2><a class="links" href="#need-help-" id="need-help-">Need help ?</a></h2>
+		<p>If you have questions or ideas, join our Slack Channel #UI5Lab.</p>
+	</div>
+</div>
+
+
+
+</body>
+</html>
