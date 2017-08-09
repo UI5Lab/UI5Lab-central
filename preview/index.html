@@ -6,6 +6,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    background-color: #262626;
 }
 
 .bgimg {
@@ -158,6 +159,15 @@ hr {
     margin: auto;
     width: 40%;
 }
+	
+@media screen and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .middleRight{
+        position: relative;
+        top: 66%;
+        left: 0%;
+        transform: translate(-27%, -27%);;
+    }	
 </style>
 <body>
 
@@ -175,7 +185,8 @@ hr {
   </div>
   <div class="middleRight">
         <a href="https://ui5lab.github.io/UI5Lab-central/browser/index.html" class="links"><div class="circle1" alt="Browse Repo">Browse Repo</div></a>
-        <a href="https://github.com/UI5Lab/UI5Lab-central/wiki" target="_blank" class="links"><div class="circle3" alt="Wiki">Wiki</div></a>
+        <a href="https://github.com/UI5Lab/UI5Lab-central/" target="_blank" class="links"><div class="circle2" alt="Contribute" >Contribute</div></a>
+	<a href="https://github.com/UI5Lab/UI5Lab-central/wiki" target="_blank" class="links"><div class="circle3" alt="Wiki">Wiki</div></a>
         <a href="contact.html" class="links"><div class="circle4" alt="Contact" >Contact</div></a>
 	<a href="https://github.com/UI5Lab/UI5Lab-app-simple" target="_blank" class="links"><div class="circle5" alt="Consume" >Consume</div></a>
   </div>
