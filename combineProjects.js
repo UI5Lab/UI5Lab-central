@@ -23,26 +23,46 @@ fs.copySync('./bower_components/openui5-themelib_sap_belize/resources', './resou
 // TODO: detect projects dynamically and copy them based on metadata in libraries.json file
 
 // ui5lab.geometry
-fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './resources');
-fs.copySync('./node_modules/ui5lab-library-simple/dist/test-resources/', './test');
+try {
+	fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './resources');
+	fs.copySync('./node_modules/ui5lab-library-simple/dist/test-resources/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.geometry library: " + e.message);
+}
 
 // ui5lab.striptoastr
-fs.copySync('./node_modules/striptoastr/dist/', './resources');
-fs.copySync('./node_modules/striptoastr/test/', './test');
+try {
+	fs.copySync('./node_modules/striptoastr/dist/', './resources');
+	fs.copySync('./node_modules/striptoastr/test/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.striptoastr library: " + e.message);
+}
 
 // it.designfuture.qrcode
-fs.copySync('./node_modules/openui5-qrcode/dist/', './resources');
-fs.copySync('./node_modules/openui5-qrcode/src/', './src');
-fs.copySync('./node_modules/openui5-qrcode/test/demo', './test/it/designfuture/qrcode');
-fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfuture/qrcode/index.json');
+try {
+	fs.copySync('./node_modules/openui5-qrcode/dist/', './resources');
+	fs.copySync('./node_modules/openui5-qrcode/src/', './src');
+	fs.copySync('./node_modules/openui5-qrcode/test/demo', './test/it/designfuture/qrcode');
+	fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfuture/qrcode/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the it.designfuture.qrcode library: " + e.message);
+}
 
 // nabi.m
-fs.copySync('./node_modules/ui5-nabi-m/dist/resources/', './resources');
-fs.copySync('./node_modules/ui5-nabi-m/dist/test-resources/', './test');
+try {
+	fs.copySync('./node_modules/ui5-nabi-m/dist/resources/', './resources');
+	fs.copySync('./node_modules/ui5-nabi-m/dist/test-resources/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the nabi.m library: " + e.message);
+}
 
 // openui5.googlemaps
-fs.copySync('./node_modules/openui5-googlemaps/dist/', './resources');
-fs.copySync('./node_modules/openui5-googlemaps/test/', './test');
+try {
+	fs.copySync('./node_modules/openui5-googlemaps/dist/', './resources');
+	fs.copySync('./node_modules/openui5-googlemaps/test/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the openui5.googlemaps library: " + e.message)
+}
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
