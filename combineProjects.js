@@ -1,5 +1,4 @@
 var fs = require('fs-extra');
-var ls = require('ls');
 
 /**************************
  * UI5 and browser:
@@ -14,6 +13,7 @@ fs.copySync('./bower_components/openui5-sap.f/resources', './resources');
 fs.copySync('./bower_components/openui5-sap.m/resources', './resources');
 fs.copySync('./bower_components/openui5-sap.ui.layout/resources', './resources');
 fs.copySync('./bower_components/openui5-sap.ui.core/resources', './resources');
+fs.copySync('./bower_components/openui5-sap.ui.unified/resources', './resources');
 fs.copySync('./bower_components/openui5-themelib_sap_belize/resources', './resources');
 
 /**************************
@@ -32,15 +32,6 @@ try {
 }
 
 // ui5lab.striptoastr
-
-for (var file of ls('/./node_modules/striptoastr/*')) {
-  console.log(file.name);
-}
-
-for (var file of ls('/./node_modules/striptoastr/test/*')) {
-  console.log(file.name);
-}
-
 try {
 	fs.copySync('./node_modules/striptoastr/dist/', './resources');
 	fs.copySync('./node_modules/striptoastr/test/', './test');
