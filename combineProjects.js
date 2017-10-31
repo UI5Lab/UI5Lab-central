@@ -49,6 +49,26 @@ try {
 	console.log("an error occured post-processing the it.designfuture.qrcode library: " + e.message);
 }
 
+// it.designfuture.flatpickr
+try {
+	fs.copySync('./node_modules/openui5-flatpickr/dist/', './resources');
+	fs.copySync('./node_modules/openui5-flatpickr/src/', './src');
+	fs.copySync('./node_modules/openui5-flatpickr/test/demo/', './test/it/designfuture/flatpickr');
+	fs.copySync('./node_modules/openui5-flatpickr/test/index.json', './test/it/designfuture/flatpickr/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the it.designfuture.flatpickr library: " + e.message);
+}
+
+// it.designfuture.multiinputdialog
+try {
+	fs.copySync('./node_modules/openui5-multiinputdialog/dist/', './resources');
+	fs.copySync('./node_modules/openui5-multiinputdialog/src/', './src');
+	fs.copySync('./node_modules/openui5-multiinputdialog/test/demo/', './test/it/designfuture/multiinputdialog');
+	fs.copySync('./node_modules/openui5-multiinputdialog/test/index.json', './test/it/designfuture/multiinputdialog/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the it.designfuture.multiinputdialog library: " + e.message);
+}
+
 // nabi.m
 try {
 	fs.copySync('./node_modules/ui5-nabi-m/dist/resources/', './resources');

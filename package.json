@@ -28,6 +28,8 @@
 
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "openui5-qrcode": "https://github.com/StErMi/openui5-qrcode",
+    "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
+    "openui5-multiinputdialog": "https://github.com/StErMi/openui5-multiinputdialog",
     "openui5-googlemaps": "https://github.com/jasper07/openui5-googlemaps",
     "ui5-nabi-m": ">=0.2.1"
   }
