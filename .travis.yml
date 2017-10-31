@@ -4,7 +4,7 @@ node_js:
 - stable
 
 before_script:
-  - npm install
+  - npm install --ignore-scripts
 
 script:
   - npm run postinstall
