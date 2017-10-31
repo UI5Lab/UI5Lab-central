@@ -1,4 +1,5 @@
 var fs = require('fs-extra');
+var ls = require('ls');
 
 /**************************
  * UI5 and browser:
@@ -31,6 +32,15 @@ try {
 }
 
 // ui5lab.striptoastr
+
+for (var file of ls('/./node_modules/striptoastr/*')) {
+  console.log(file.name);
+}
+
+for (var file of ls('/./node_modules/striptoastr/test/*')) {
+  console.log(file.name);
+}
+
 try {
 	fs.copySync('./node_modules/striptoastr/dist/', './resources');
 	fs.copySync('./node_modules/striptoastr/test/', './test');
@@ -42,7 +52,7 @@ try {
 try {
 	fs.copySync('./node_modules/openui5-qrcode/dist/', './resources');
 	fs.copySync('./node_modules/openui5-qrcode/src/', './src');
-	fs.copySync('./node_modules/openui5-qrcode/test/demo', './test/it/designfuture/qrcode');
+	fs.copySync('./node_modules/openui5-qrcode/test/demo/', './test/it/designfuture/qrcode');
 	fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfuture/qrcode/index.json');
 } catch (e) {
 	console.log("an error occured post-processing the it.designfuture.qrcode library: " + e.message);
