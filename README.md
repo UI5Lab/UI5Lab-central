@@ -71,8 +71,8 @@ This repository now contains metadata for combining and showcasing all availabe 
 1. Libraries can now be centrally listed in this project by adding them to the libraries.json and package.json file
 2. The ```combineProjects.js``` file will do a copy from the node_modules folder to the resources folder of this project
 3. You can test the current status by running the following commands. All the required modules like the UI5lab browser and the currently available UI5Lab libraries will be loaded automatically:
-* ```npm install --ignore-scripts``` to ignore the build scripts and bower dependencies of each library
-* ```npm run postinstall``` to run combineProjects.js and copy all files to the correct places
+* ```npm install --ignore-scripts``` to load all required npm dependencies without running their individual scripts
+* ```npm run postinstall``` to load bower dependencies and copy all files to the correct places
 * ```grunt serve``` to run a local serve for testing
 
 4. Go to [http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/) to display the browser with all configured libraries
