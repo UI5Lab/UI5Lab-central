@@ -42,7 +42,7 @@ try {
 // it.designfuture.qrcode
 try {
 	fs.copySync('./node_modules/openui5-qrcode/dist/', './resources');
-	fs.copySync('./node_modules/openui5-qrcode/src/', './src');
+	fs.copySync('./node_modules/openui5-qrcode/src/', './resources');
 	fs.copySync('./node_modules/openui5-qrcode/test/demo/', './test/it/designfuture/qrcode');
 	fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfuture/qrcode/index.json');
 } catch (e) {
@@ -84,6 +84,15 @@ try {
 } catch (e) {
 	console.log("an error occured post-processing the openui5.googlemaps library: " + e.message)
 }
+
+// openui5.parallax
+try {
+	fs.copySync('./node_modules/openui5-parallax/dist/resources/', './resources');
+	fs.copySync('./node_modules/openui5-parallax/dist/test-resources/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the openui5.parallax library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
