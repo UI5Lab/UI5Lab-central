@@ -93,6 +93,16 @@ try {
 	console.log("an error occured post-processing the openui5.parallax library: " + e.message);
 }
 
+// it.designfuture.chartjs
+try {
+	fs.copySync('./node_modules/openui5-chartjs/dist/', './resources');
+	fs.copySync('./node_modules/openui5-chartjs/src/', './src');
+	fs.copySync('./node_modules/openui5-chartjs/test/demo/', './test/it/designfuture/chartjs');
+	fs.copySync('./node_modules/openui5-chartjs/test/index.json', './test/it/designfuture/chartjs/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the it.designfuture.chartjs library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
