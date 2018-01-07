@@ -8,6 +8,7 @@
         "it.designfuture.flatpickr",
         "it.designfuture.multiinputdialog",
         "nabi.m",
-        "it.designfuture.chartjs"
+        "it.designfuture.chartjs",
+        "it.designfuture.toastr"
     ]
 }
