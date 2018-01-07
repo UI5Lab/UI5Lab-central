@@ -2,6 +2,9 @@
 A place to jointly work on a community-driven custom UI5 repository accompanied by vibrant exchange.
 Your contributions will drive our vision: A place where custom controls, templates, helper classes, and other code artifacts related to UI5 technology can be discovered and shared by the community.
 
+**The [UI5Lab browser](http://ui5lab.io/browser/) lists all currently available libraries**
+Have a look at what is already listed and feel free to bring yourself in.
+
 Whatever will be placed here is discussed in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
 You can join with this [invitation link for Slack](http://slackui5invite.herokuapp.com/).
 
