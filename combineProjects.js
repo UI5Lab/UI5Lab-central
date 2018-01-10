@@ -113,6 +113,14 @@ try {
 	console.log("an error occured post-processing the it.designfuture.toastr library: " + e.message);
 }
 
+// ui5lab.wordcloud
+try {
+	fs.copySync('./node_modules/ui5lab-wordcloud/dist/', './resources');
+	fs.copySync('./node_modules/ui5lab-wordcloud/dist/test-resources', './test');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.wordcloud library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');

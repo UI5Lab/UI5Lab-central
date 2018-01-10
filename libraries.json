@@ -9,6 +9,7 @@
         "it.designfuture.multiinputdialog",
         "nabi.m",
         "it.designfuture.chartjs",
-        "it.designfuture.toastr"
+        "it.designfuture.toastr",
+        "ui5lab.wordcloud"
     ]
 }
