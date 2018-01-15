@@ -33,6 +33,7 @@
     "ui5-nabi-m": ">=0.2.1",
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
-    "ui5lab-wordcloud": "^1.0.0"
+    "ui5lab-wordcloud": "^1.0.0",
+    "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife"
   }
 }
