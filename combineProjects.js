@@ -121,6 +121,16 @@ try {
 	console.log("an error occured post-processing the ui5lab.wordcloud library: " + e.message);
 }
 
+// it.designfuture.toastr
+try {
+	fs.copySync('./node_modules/openui5-swissknife/dist/', './resources');
+	fs.copySync('./node_modules/openui5-swissknife/src/', './src');
+	fs.copySync('./node_modules/openui5-swissknife/test/demo-1-49/', './test/it/designfuture/swissknife');
+	fs.copySync('./node_modules/openui5-swissknife/test/index.json', './test/it/designfuture/swissknife/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the it.designfuture.swissknife library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
