@@ -131,6 +131,15 @@ try {
 	console.log("an error occured post-processing the it.designfuture.swissknife library: " + e.message);
 }
 
+// ui5lab.wl.pdf
+try {
+	fs.copySync('./node_modules/ui5lab-wl-pdf/dist/resources', './resources');
+	fs.copySync('./node_modules/ui5lab-wl-pdf/dist/test-resources', './test');
+	fs.copySync('./node_modules/ui5lab-wl-pdf/test/ui5lab/wl/pdf/index.json', './test/ui5lab/wl/pdf/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.wl.pdf library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');

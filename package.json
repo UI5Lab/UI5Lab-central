@@ -34,6 +34,7 @@
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
     "ui5lab-wordcloud": "^1.0.0",
-    "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife"
+    "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife",
+    "ui5lab-wl-pdf":"https://github.com/lemaiwo/UI5LabLibraryPDFViewer"
   }
 }
