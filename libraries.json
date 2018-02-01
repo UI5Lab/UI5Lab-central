@@ -11,6 +11,7 @@
         "it.designfuture.chartjs",
         "it.designfuture.toastr",
         "ui5lab.wordcloud",
-        "it.designfuture.swissknife"
+        "it.designfuture.swissknife",
+		"openui5.camera"
     ]
 }
