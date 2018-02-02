@@ -131,10 +131,18 @@ try {
 	console.log("an error occured post-processing the it.designfuture.swissknife library: " + e.message);
 }
 
+// ui5lab.wl.pdf
+try {
+	fs.copySync('./node_modules/ui5lab-wl-pdf/dist/resources', './resources');
+	fs.copySync('./node_modules/ui5lab-wl-pdf/dist/test-resources', './test');
+	fs.copySync('./node_modules/ui5lab-wl-pdf/test/ui5lab/wl/pdf/index.json', './test/ui5lab/wl/pdf/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.wl.pdf library: " + e.message);
+}
+
 // openui5-camera
 try {
 	fs.copySync('./node_modules/openui5-camera/dist/', './resources');
-	//fs.copySync('./node_modules/openui5-camera/test/demo/', './test/openui5/camera');
 	fs.copySync('./node_modules/openui5-camera/test/openui5/camera/index.json', './test/openui5/camera/index.json');
 } catch (e) {
 	console.log("an error occured post-processing the openui5-camera library: " + e.message);
