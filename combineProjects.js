@@ -134,7 +134,6 @@ try {
 // openui5-camera
 try {
 	fs.copySync('./node_modules/openui5-camera/dist/', './resources');
-	//fs.copySync('./node_modules/openui5-camera/test/demo/', './test/openui5/camera');
 	fs.copySync('./node_modules/openui5-camera/test/openui5/camera/index.json', './test/openui5/camera/index.json');
 } catch (e) {
 	console.log("an error occured post-processing the openui5-camera library: " + e.message);
