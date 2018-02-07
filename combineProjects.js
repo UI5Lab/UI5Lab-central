@@ -148,6 +148,7 @@ try {
 	console.log("an error occured post-processing the openui5-camera library: " + e.message);
 }
 
+
 // ui5lab.wl.img
 try {
 	fs.copySync('./node_modules/ui5lab-wl-img/dist/resources', './resources');
