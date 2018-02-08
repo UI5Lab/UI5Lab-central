@@ -13,6 +13,7 @@
         "ui5lab.wordcloud",
         "it.designfuture.swissknife",
         "ui5lab.wl.pdf",
-        "openui5.camera"
+        "openui5.camera",
+		"ui5lab.wl.img"
     ]
 }
