@@ -157,12 +157,12 @@ try {
 	console.log("an error occured post-processing the ui5lab.wl.img library: " + e.message);
 }
 
-// ui5lab.wl.starwars
+// ui5lab.wl.space
 try {
-	fs.copySync('./node_modules/ui5lab-wl-starwars/dist/resources/', './resources');
-	fs.copySync('./node_modules/ui5lab-wl-starwars/dist/test-resources/', './test');
+	fs.copySync('./node_modules/ui5lab-wl-space/dist/resources/', './resources');
+	fs.copySync('./node_modules/ui5lab-wl-space/dist/test-resources/', './test');
 } catch (e) {
-	console.log("an error occured post-processing the ui5lab.wl.starwars library: " + e.message);
+	console.log("an error occured post-processing the ui5lab.wl.space library: " + e.message);
 }
 
 
