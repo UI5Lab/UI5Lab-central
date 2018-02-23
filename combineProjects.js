@@ -165,6 +165,7 @@ try {
 	console.log("an error occured post-processing the ui5lab.wl.starwars library: " + e.message);
 }
 
+
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
 
