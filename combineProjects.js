@@ -135,7 +135,7 @@ try {
 try {
 	fs.copySync('./node_modules/ui5lab-wl-pdf/dist/resources', './resources');
 	fs.copySync('./node_modules/ui5lab-wl-pdf/dist/test-resources', './test');
-	fs.copySync('./node_modules/ui5lab-wl-pdf/test/ui5lab/wl/pdf/index.json', './test/ui5lab/wl/pdf/index.json');
+	//fs.copySync('./node_modules/ui5lab-wl-pdf/test/ui5lab/wl/pdf/index.json', './test/ui5lab/wl/pdf/index.json');
 } catch (e) {
 	console.log("an error occured post-processing the ui5lab.wl.pdf library: " + e.message);
 }
@@ -156,6 +156,15 @@ try {
 } catch (e) {
 	console.log("an error occured post-processing the ui5lab.wl.img library: " + e.message);
 }
+
+// ui5lab.wl.space
+try {
+	fs.copySync('./node_modules/ui5lab-wl-space/dist/resources/', './resources');
+	fs.copySync('./node_modules/ui5lab-wl-space/dist/test-resources/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.wl.space library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');

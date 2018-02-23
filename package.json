@@ -37,6 +37,7 @@
     "ui5lab-library-simple": ">=0.1.1",
     "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
     "ui5lab-wordcloud": "^1.0.0",
-    "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer"
+    "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
+    "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space"
   }
 }
