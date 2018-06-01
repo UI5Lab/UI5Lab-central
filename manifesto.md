@@ -9,7 +9,7 @@ The objective of this document is to state some intentions, rules, and expectati
 * Achieving vibrant exchange would be great, so don't be shy
 
 ## Technologies
-Open technologies, such as npm, match well our goal to be open, so please try to favor open technologies in the work you want to contribute.    
+Open technologies, such as npm, match well our goal to be open, so please favor open technologies in the work you want to contribute.    
 
 ## Licence 
 The use of open licenses is encouraged. Please always include a license in your project. 
