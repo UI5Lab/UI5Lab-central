@@ -165,6 +165,16 @@ try {
 	console.log("an error occured post-processing the ui5lab.wl.space library: " + e.message);
 }
 
+// openui5-tour
+try {
+	fs.copySync('./node_modules/openui5-tour/dist/', './resources');
+	fs.copySync('./node_modules/openui5-tour/src/', './src');
+	fs.copySync('./node_modules/openui5-tour/demo/', './test/openui5/tour');
+	fs.copySync('./node_modules/openui5-tour/test/openui5/tour/index.json', './test/openui5/tour/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the openui5-tour library: " + e.message);
+}
+
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');

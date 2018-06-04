@@ -2,6 +2,7 @@
     "libraries": [
         "openui5.googlemaps",
         "openui5.parallax",
+	  	"openui5.tour",
         "ui5lab.geometry",
         "ui5lab.striptoastr",
         "it.designfuture.qrcode",
