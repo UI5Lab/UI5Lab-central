@@ -1,6 +1,6 @@
 {
   "name": "ui5lab-central",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A central repository to discover and showcase all available UI5Lab projects",
   "private": true,
   "repository": {
@@ -31,13 +31,14 @@
     "openui5-qrcode": "https://github.com/StErMi/openui5-qrcode",
     "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
+    "openui5-tour": "0.0.4",
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": ">=0.2.1",
     "ui5lab-browser": ">=0.1.0",
     "ui5lab-library-simple": ">=0.1.1",
-    "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
-    "ui5lab-wordcloud": "^1.0.0",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
-    "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space"
+    "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
+    "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space",
+    "ui5lab-wordcloud": "^1.0.0"
   }
 }
