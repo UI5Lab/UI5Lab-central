@@ -1,4 +1,4 @@
-## Contribute your Custom Control Library to UI5lab
+## Contribute a Custom Control Library to UI5lab
 
 To contribute your custom controls to UI5lab you need to transform it into a UI5Lab library.
 A simple example set up according to our best practices can be found in project [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple). 
