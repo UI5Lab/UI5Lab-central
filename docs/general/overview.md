@@ -1,5 +1,7 @@
 !> **TODO** work in progress
 
+## Overview {docsify-ignore}
+
 ![UI5Lab Ecosystem](../media/UI5LabOverview.png)
 
 *High-level overview and current status of the UI5Lab ecosystem*

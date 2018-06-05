@@ -1,9 +1,7 @@
-### Contributions Welcome!
+## Contributions Welcome!
 
 You can contribute in many different ways and in all areas of the project.
 Read this essential information to find out what and where to contribute.
-
-The project is organized in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab). If you are interested in what we do, join with this [invitation link for Slack](http://slackui5invite.herokuapp.com/).
 
 ## What to contribute?
 
@@ -11,21 +9,21 @@ The project is organized in [Slack Channel #UI5Lab](https://openui5.slack.com/me
 
 *High-level overview and current status of the UI5Lab ecosystem*
 
-### Contribute Controls to UI5Lab
+#### Contribute Controls to UI5Lab
 
-Transform your controls into a UI5Lab library as described in [this guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/ContributeLibrary.md) and take a look at the [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple) project
+Transform your controls into a UI5Lab library as described in [this guide](how_to/contribute_custom_control_library.md) and take a look at the [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple) project
 The custom code should be developed and maintained in individual github repositories maintained by the owner of the code for maximum flexibility, you are welcome to suggest your code project as a pilot for UI5lab. We have created the following prototype examples under this organisation as a prototype:
 
   * An example library of custom controls (set up according to the best practices for OpenUI5 development) can be found here:
    [UI5Lab-library-simple](https://github.com/openui5/UI5Lab-library-simple)
   * If you are new to UI5 custom control development you might want to have a look at a very basic control example without any infrastructure files first:
    [UI5Lab-control-simple](https://github.com/openui5/UI5Lab-control-simple)
-  * A very basic app (using the OpenUI5 CDN) with basic consumption of the UI5Lab.geometry library can be found here:
+  * A very basic app (using the OpenUI5 CDN) with basic consumption of the `UI5Lab.geometry` library can be found here:
    [ui5lab-app-simple](https://github.com/openui5/UI5Lab-app-simple)
   * A more sophisticated demo app (with a node and grunt envirnment and openui5 tooling) is available here:
    [openui5-sample-app](https://github.com/sap/openui5-sample-app)
 
-### Contribute to UI5Lab Infrastructure
+#### Contribute to UI5Lab Infrastructure
 
 In this repository we would like to provide infrastructure for discovering and showcasing a compendium of all individual UI5Lab projects. The idea is to easily find documentation and samples for all the projects and to have them listed in a central place
 
@@ -35,7 +33,7 @@ In this repository we would like to provide infrastructure for discovering and s
   * Feel free to contribute to all of the example projects under this organisation to make them more robust and flexible.
   * Templates to kick-start library and app development could be added as new repositories under this organisation
 
-### Define Best Practices
+#### Define Best Practices
 
 An app that wants to consume UI5Lab artifacts needs guidelines, templates, and best practices to integrate the individual pieces of work into their existing codebase.
 Make the creation and consumption of custom artifacts for UI5Lab easier by providing examples or documentation, either here in the documentation or in your own repository:

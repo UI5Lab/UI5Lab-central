@@ -2,7 +2,7 @@
 
 # UI5 Lab <small>1.0.0</small>
 
-> A place to jointly work on a community-driven custom UI5 repository
+> Ein Ort um gemeinsam an einem benutzerdefinierten, community getriebenen UI5 Repository zu arbeiten
 
 * Open Source
 * Community-driven Project

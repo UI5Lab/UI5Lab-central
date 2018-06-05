@@ -6,8 +6,8 @@ UI5Lab projects are published on public registries like npm or bower to be easil
 
 ## Naming
 
-A UI5Lab project should have a unique namespace separated with "." for the UI5 namespace and "-" for the npm package
- * e.g. ui5 namespace "ui5lab.browser" and npm package "ui5lab-browser"
+A UI5Lab project should have a unique namespace separated with `.` for the UI5 namespace and `-` for the npm package
+ * e.g. ui5 namespace `ui5lab.browser` and npm package `ui5lab-browser`
 
 Prefixes should match the following pattern
   * *ui5lab*: example projects, boilerplate templates, technology explorations, documentation, or anything related to the UI5Lab project should start with the prefix "ui5lab"
