@@ -10,14 +10,14 @@ UI5Lab is a community driven repository for UI5 custom control libraries. Your c
 Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all current UI5Lab libraries and controls can be viewed
 
 #### Use a UI5Lab library in your app
-Follow the instructions in [this guide](docs/ConsumeUI5LabLibrary.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
+Follow the instructions in [this guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/ConsumeLibrary.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
 
 #### Contribute to UI5Lab
 Have a look at our [contributing guide](CONTRIBUTING.md) to help us with our mission
 
 # Directions 
 
-* [Project Overview](docs/Architecture.md) - introduction to UI5Lab and information on all related repositories
+* [Project Overview](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/Overview.md) - introduction to UI5Lab and information on all related repositories
 * [Documentation](https://github.com/UI5Lab/UI5Lab-central/tree/master/docs) - detailed description on all UI5Lab topics and tutorials   
 * [Homepage](https://ui5lab.io) - the single point of entry for all UI5Lab topics
 * [Browser](https://ui5lab.io/browser) - lists all libraries and examples in once central place

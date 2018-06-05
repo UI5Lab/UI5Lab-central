@@ -13,7 +13,7 @@ The project is organized in [Slack Channel #UI5Lab](https://openui5.slack.com/me
 
 ## Contribute Controls to UI5Lab
 
-Transform your controls into a UI5Lab library as described in [this guide](docs/ProvideUI5LabLibrary.md) and take a look at the [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple) project
+Transform your controls into a UI5Lab library as described in [this guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/ContributeLibrary.md) and take a look at the [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple) project
 The custom code should be developed and maintained in individual github repositories maintained by the owner of the code for maximum flexibility, you are welcome to suggest your code project as a pilot for UI5lab. We have created the following prototype examples under this organisation as a prototype:
 
   * An example library of custom controls (set up according to the best practices for OpenUI5 development) can be found here:
@@ -38,10 +38,10 @@ In this repository we would like to provide infrastructure for discovering and s
 ## Define Best Practices
 
 An app that wants to consume UI5Lab artifacts needs guidelines, templates, and best practices to integrate the individual pieces of work into their existing codebase.
-Make the creation and consumption of custom artifacts for UI5Lab easier by providing examples or documentation, either here in the [Wiki page](https://github.com/openui5/UI5Lab/wiki) or in your own repository:
+Make the creation and consumption of custom artifacts for UI5Lab easier by providing examples or documentation, either here in the documentation or in your own repository:
 
   * **Naming Conventions, Best Practices, Metadata:** help us defining a common standard for this project and documenting it publicly
-  * **Guides and Documentation:** The overall setup and the infrastructure should be well-described, the [Wiki page](https://github.com/openui5/UI5Lab/wiki) of this repository could be used for it
+  * **Guides and Documentation:** The overall setup and the infrastructure should be well-described, the [documentation](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs) of this repository could be used for it
   * **Tools and Technologies:** Bring in your ideas for tools and supported technologies, this is an open project that should support common technologies like npm, webpack, ...
   * **Discuss:** Try out what we have so far and share your opinion what needs to be done next, we are curious for your ideas and your feedback
 

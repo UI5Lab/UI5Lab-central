@@ -1,4 +1,8 @@
-# TODO
+# TODO - work in progress
+
+![UI5Lab Ecosystem](docs/UI5LabOverview.png)
+
+*High-level overview and current status of the UI5Lab ecosystem*
 
 UI5Lab Browser
 The browser is a draft for displaying libraries and its content based on metadata that is located inside the library projects (see TODO section for improvment ideas). As such, the logic is similar for both use cases:
