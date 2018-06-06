@@ -15,4 +15,5 @@
 * Further Informations
 
   * [Contribute to this Docs](further_informations/contribute_docs.md)
+  * [Contributors](further_informations/contributors.md)
   * [Need Help?](further_informations/need_help.md)
