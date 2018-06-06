@@ -20,7 +20,7 @@ You have created a custom control and would like to share it with the community?
 
 #### Contribute to UI5Lab and help us grow
 You like the idea of having a community-driven repository for UI5 custom control libraries? Help us define new best practices and improve the project.
-Have a look at the repository description below and our [contributing guide]((https://github.com/UI5Lab/UI5Lab-central/blob/master/CONTRIBUTING.md) to see where you can engage.
+Have a look at the repository description below and our [contributing guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/CONTRIBUTING.md) to see where you can engage.
 
 ## Repositories
 
