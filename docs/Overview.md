@@ -9,7 +9,7 @@ It consists of several example and infrastructure repositories described in more
 
 *High-level overview and current status of the UI5Lab ecosystem*
 
-## What's in for me?
+## What's in it for me?
 
 #### Use a UI5Lab library in your app
 UI5Lab libraries are created and published by the community to be used in your app projects. Browse the available libraries and samples to find suitable controls that you want to use in your app.
