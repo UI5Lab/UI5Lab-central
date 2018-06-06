@@ -9,12 +9,25 @@ It consists of several example and infrastructure repositories described in more
 
 *High-level overview and current status of the UI5Lab ecosystem*
 
+## What's in for me?
+
+#### Use a UI5Lab library in your app
+UI5Lab libraries are created and published by the community to be used in your app projects. Browse the available libraries and samples to find suitable controls that you want to use in your app.
+Follow the instructions in [this guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/ConsumeLibrary.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
+
+#### Provide a UI5Lab library for the community
+You have create custom controls and would like to share it with the community? Great! Follow [this guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/ContributeLibrary.md) to publish it on UI5Lab. 
+
+#### Contribute to UI5Lab and help us grow
+You like the idea of having a community-driven repository for UI5 custom control libraries? Help us define new best practices and improve the project.
+Have a look at the repository description below and our [contributing guide]((https://github.com/UI5Lab/UI5Lab-central/blob/master/CONTRIBUTING.md) to see where you can engage.
 
 ## Repositories
 
 ### UI5Lab-app-simple
 
 A simple app that consumes custom controls from the UI5Lab geometry example library.
+You can use this project as a reference for using UI5Lab controls in your app.
 
 Source: [https://github.com/UI5Lab/UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple)
 
@@ -25,6 +38,7 @@ Used in: -
 ### UI5Lab-control-simple
 
 Contains a simple square control that can be used for testing custom controls.
+If you are new to developing controls, this is the place to experiment and try out things.
 
 Source: [https://github.com/UI5Lab/UI5Lab-control-simple](https://github.com/UI5Lab/UI5Lab-control-simple)
 
@@ -33,6 +47,7 @@ Used in: -
 ### UI5Lab-library-simple
 
 A simple control library that holds custom geometrical controls for testing the UI5Lab library structure.
+You can use this project as a reference for creating a UI5Lab control library.
 
 Source: [https://github.com/UI5Lab/UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple)
 
@@ -66,7 +81,8 @@ If a new library should be added to UI5lab a pull request is raised by the contr
 
 ### UI5Lab-browser
 
-A browser to display custom libraries and control examples on the UI5Lab homepage. The app implemented in UI5 can also be used for testing control samples and previewing libraries during development.
+A browser to display custom libraries and control examples on the UI5Lab homepage. 
+The app implemented in UI5 can also be used for testing control samples and previewing libraries during development.
 
 Source: [https://github.com/UI5Lab/UI5Lab-browser](https://github.com/UI5Lab/UI5Lab-browser)
 

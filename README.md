@@ -1,4 +1,4 @@
-![UI5Lab Ecosystem](https://github.com/Michadelic/UI5Lab-central/raw/master/docs/UI5LabLogoPhoenix.png)
+![UI5Lab Ecosystem](https://github.com/UI5Lab/UI5Lab-central/raw/master/docs/UI5LabLogoPhoenix.png)
 
 # What is it
 
