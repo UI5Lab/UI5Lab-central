@@ -13,7 +13,7 @@ Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all curren
 Follow the instructions in [this guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/ConsumeLibrary.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
 
 #### Contribute to UI5Lab
-Have a look at our [contributing guide]((https://github.com/UI5Lab/UI5Lab-central/blob/master/CONTRIBUTING.md) to help us with our mission
+Have a look at our [contributing guide](https://github.com/UI5Lab/UI5Lab-central/blob/master/CONTRIBUTING.md) to help us with our mission
 
 # UI5Lab-central
 This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
