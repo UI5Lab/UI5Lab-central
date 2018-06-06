@@ -3,21 +3,21 @@
 To contribute your custom controls to UI5lab you need to transform it into a UI5Lab library.
 A simple example set up according to our best practices can be found in project [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple). 
 
-Separate from this documentation, you can follow these hands-on tutorials to create your own UI5Lab library and add it to UI5Lab:
+Apart from this documentation, you can follow these hands-on tutorials to create your own UI5Lab library and add it to UI5Lab:
 * Create a UI5 Library for UI5Lab: [https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/](https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/)
 * Add your UI5 Library to UI5Lab: [https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/](https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/)
 
 ## Instructions
 
 
-### 1. Get your Custom Control ready
+### 1. Get Your Custom Control Ready
 Custom controls need to follow a certain file and library structure to be integrated into UI5Lab.
 This blog post describes all the steps in detail with a practical example:
 [Custom Control 101 by @stermi](https://medium.com/@stermi/custom-control-101-sapui5-openui5-tipoftheday-customcontrol-fd51a85bbed3)
 
-When you are ready with your control implementation you can add metadata to integrate it with UI5Lab browser. Each Custom Control library has its own index.json. This is a small file with descriptions about the Custom Control library. 
+When you are done with your control implementation you can add metadata to integrate it with UI5Lab browser. Each Custom Control library has its own index.json. This is a small file with descriptions about the custom control library. 
 
-###  2. Edit your index.json
+###  2. Edit Your index.json
     {
         "the.library.namespace": {
             "icon": "a SAP-Icon e.g. sap-icon://database",
@@ -51,16 +51,16 @@ When you are ready with your control implementation you can add metadata to inte
             }
         }
     }
-"content" is a substructure describing 1 or more Custom Controls included in the Library.
-Good examples are the index.json of published UI5lab Libraries like [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple/blob/master/test/ui5lab/geometry/index.json) or [openui5-qrcode](https://github.com/StErMi/openui5-qrcode/blob/master/test/index.json).
+"content" is a substructure describing 1 or more custom controls included in the library.
+Good examples are the index.json of published UI5lab libraries like [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple/blob/master/test/ui5lab/geometry/index.json) or [openui5-qrcode](https://github.com/StErMi/openui5-qrcode/blob/master/test/index.json).
 
 ### 3. Generate a Pull Request
-Once you are ready to publish your Custom Control Library, simply fork [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central) and edit the libraries.json, package.json and combineProjects.js file. After that, create a Pull Request. And when this Pull Request is merged into the repository, a Travis job will automagically generate an updated version of UI5lab where your Library is now listed among all the other.
+Once you are ready to publish your custom control library, simply fork [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central) and edit the libraries.json, package.json and combineProjects.js file. After that, create a pull request. And when this pull request is merged into the repository, a Travis job will automatically generate an updated version of UI5lab where your library is now listed among all the others.
 The ```combineProjects.js``` file will do a copy from the node_modules folder to the resources folder of this project. Test your library, provide a sample and create a pull request with a meaningful description to list your proejct.
 
-## Need help?
+## Need Help?
 
 We organize this project in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
-If have questions or ideas, join with this [invitation link](http://slackui5invite.herokuapp.com/).
+If have questions or ideas, join via this [invitation link](http://slackui5invite.herokuapp.com/).
 
 
