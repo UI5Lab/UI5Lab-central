@@ -23,22 +23,22 @@ This repository contains essential project information and hosts central infrast
 Run the following commands to test or develop this project:
 
 1. Clone this repository to your local developer workspace
-	```sh
+```sh
 git clone https://github.com/UI5Lab/UI5Lab-central
 cd UI5Lab-central
-	```
+```
 1. Load npm dependencies without running their individual scripts
-	```sh
+```sh
 npm install --ignore-scripts
-	```
+```
 2. Load bower dependencies and copy all files to the correct places 
-	```sh
+```sh
 npm run postinstall
-	``` 
+``` 
 3. Run a local server for testing 
-	```sh
+```sh
 grunt serve
-	```
+```
 
 4. Go to [http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/) to display all available UI5Lab libraries
 
