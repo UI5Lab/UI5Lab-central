@@ -1,4 +1,4 @@
-## Contribute your Custom Control Library to UI5lab
+## Contribute a Custom Control Library to UI5lab {docsify-ignore}
 
 To contribute your custom controls to UI5lab you need to transform it into a UI5Lab library.
 A simple example set up according to our best practices can be found in project [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple). 
@@ -9,15 +9,16 @@ Separate from this documentation, you can follow these hands-on tutorials to cre
 
 ## Instructions
 
+#### 1. Get your Custom Control ready
 
-### 1. Get your Custom Control ready
 Custom controls need to follow a certain file and library structure to be integrated into UI5Lab.
 This blog post describes all the steps in detail with a practical example:
 [Custom Control 101 by @stermi](https://medium.com/@stermi/custom-control-101-sapui5-openui5-tipoftheday-customcontrol-fd51a85bbed3)
 
 When you are ready with your control implementation you can add metadata to integrate it with UI5Lab browser. Each Custom Control library has its own `index.json`. This is a small file with descriptions about the Custom Control library. 
 
-###  2. Edit your index.json
+#### 2. Edit your index.json
+
 ```json
     {
         "the.library.namespace": {
@@ -53,10 +54,12 @@ When you are ready with your control implementation you can add metadata to inte
         }
     }
 ```
+
 `content` is a substructure describing 1 or more Custom Controls included in the Library.
 Good examples are the `index.json` of published UI5lab Libraries like [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple/blob/master/test/ui5lab/geometry/index.json) or [openui5-qrcode](https://github.com/StErMi/openui5-qrcode/blob/master/test/index.json).
 
-### 3. Generate a Pull Request
+#### 3. Generate a Pull Request
+
 Once you are ready to publish your Custom Control Library, simply fork [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central) and edit the `libraries.json`, `package.json` and `combineProjects.js` file. After that, create a Pull Request. And when this Pull Request is merged into the repository, a Travis job will automagically generate an updated version of UI5lab where your Library is now listed among all the other.
 The `combineProjects.js` file will do a copy from the `node_modules` folder to the resources folder of this project. Test your library, provide a sample and create a pull request with a meaningful description to list your proejct.
 

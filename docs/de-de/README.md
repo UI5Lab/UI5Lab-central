@@ -7,22 +7,27 @@ UI5Lab is a community driven repository for UI5 custom control libraries. Your c
 
 ## Quick Start
 
-Get ready with UI5Lab through [quick start](de-de/general/quick_start.md) instructions.
+Get ready with UI5Lab through [quick start](general/quick_start.md) instructions.
 
 #### Browse libraries and samples
+
 Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all current UI5Lab libraries and controls can be viewed
 
 #### Use a UI5Lab library in your app
-Follow the instructions in [this guide](de-de/how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
+
+Follow the instructions in [this guide](how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
 
 #### Contribute to UI5Lab
-Have a look at our [contributing guide](de-de/how_to/contribute_ui5lab.md) to help us with our mission
+
+Have a look at our [contributing guide](how_to/contribute_ui5lab.md) to help us with our mission
 
 ## Troubleshooting
+
 Issues can be created either in this repository or in any of the contributor repositories depending on where the error came from.
 Be sure to include enough details and context to reproduce the issue and follow up with you. 
 
 ## Contact
+
 We organize this project in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
 If you are interested in what we do and discuss, join with this [invitation link](http://slackui5invite.herokuapp.com/) or visit the homepage [https://ui5lab.io](https://ui5lab.io).
 

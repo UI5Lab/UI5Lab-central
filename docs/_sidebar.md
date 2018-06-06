@@ -2,6 +2,7 @@
 
   * [Quick Start](general/quick_start.md)
   * [Overview](general/overview.md)
+  * [Manifesto](general/manifesto.md)
 
 * How-to
 

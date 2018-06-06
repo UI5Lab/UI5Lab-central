@@ -1,4 +1,4 @@
-## Contributions Welcome!
+## Contributions Welcome! {docsify-ignore}
 
 You can contribute in many different ways and in all areas of the project.
 Read this essential information to find out what and where to contribute.
@@ -25,7 +25,7 @@ The custom code should be developed and maintained in individual github reposito
 
 #### Contribute to UI5Lab Infrastructure
 
-In this repository we would like to provide infrastructure for discovering and showcasing a compendium of all individual UI5Lab projects. The idea is to easily find documentation and samples for all the projects and to have them listed in a central place
+In this repository we provide infrastructure for discovering and showcasing a compendium of all individual UI5Lab projects. The idea is to easily find documentation and samples for all the projects and to have them listed in a central place
 
   * A build infrastructure could retrieve the content based on metadata on a regular basis and list it here in a central sample browser
   * The tools to load and display many different custom artifacts from individual code packages are not existing yet for this project. This is where our next steps will happen together.
