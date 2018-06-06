@@ -1,4 +1,4 @@
-## Consume UI5Lab Libraries in Your App {docsify-ignore
+## Consume UI5Lab Libraries in Your App {docsify-ignore}
 
 This tutorial shows you how to consume the custom controls from UI5Lab (in our case the example library [geometry](https://github.com/UI5Lab/UI5Lab-library-simple)) in app projects.
 
@@ -6,7 +6,7 @@ This tutorial shows you how to consume the custom controls from UI5Lab (in our c
 
 	> **Note:** If working behind a proxy, you need to configure it properly (`HTTP_PROXY` / `HTTPS_PROXY` / `NO_PROXY` environment variables)
 
-2. Clone the example app repository and navigate into it
+2. Clone the example app repository and navigate into it.
 
 ```bash
 git clone https://github.com/UI5Lab/UI5Lab-app-simple
@@ -37,7 +37,7 @@ var fs = require('fs-extra');
 fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './webapp/thirdparty');
 ```
 
-5. Install all npm dependencies (also installs all bower dependencies)
+5. Install all npm dependencies (also installs all bower dependencies).
 
 ```bash
 npm install
@@ -97,9 +97,9 @@ npm install
 </mvc:View>
 ```
 
-9. Deploy the application folder to your favorite webserver
+9. Deploy the application folder to your favorite webserver.
 
-10. Choose one of the following entry points to open the app
+10. Choose one of the following entry points to open the app.
 
  * [App page](webapp/index.html) Path to the source code for the demo above
  * [Test page](webapp/test/integration/opaTests.qunit.html) A simple integration test written in OPA
