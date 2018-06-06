@@ -34,7 +34,7 @@
     "openui5-tour": "0.0.4",
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": ">=0.2.1",
-    "ui5lab-browser": ">=0.1.0",
+    "ui5lab-browser": ">=0.1.13",
     "ui5lab-library-simple": ">=0.1.1",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
     "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
