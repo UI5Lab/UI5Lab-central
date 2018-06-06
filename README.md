@@ -15,7 +15,7 @@ Follow the instructions in [this guide](https://github.com/UI5Lab/UI5Lab-central
 #### Contribute to UI5Lab
 Have a look at our [contributing guide]((https://github.com/UI5Lab/UI5Lab-central/blob/master/CONTRIBUTING.md) to help us with our mission
 
-# UI5Lab-browser
+# UI5Lab-central
 This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
 
 #### Setup
