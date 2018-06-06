@@ -2,30 +2,69 @@
 
 ## Introduction
 
-## UI5Lab-central
-
+UI5Lab is a community driven project providing a repository for UI5 Custom Control Libraries. It's purpose is to make it easy for everyone to share, retrieve and use UI5 Custom Controls. Contributions welcome!
+It consists of several example and infrastructure repositories described in more detail below and control libraries provided by contributors.
 
 ![UI5Lab Ecosystem](docs/UI5LabOverview.png)
 
 *High-level overview and current status of the UI5Lab ecosystem*
 
-## UI5Lab-central
 
-> TODO
+## Repositories
 
-## UI5Lab-app-simple
+### UI5Lab-app-simple
 
-> TODO
+A simple app that consumes custom controls from the UI5Lab geometry example library.
 
-## UI5Lab-control-simple
+Source: [https://github.com/UI5Lab/UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple)
 
-> TODO
+Demo: [App with UI5Lab controls](https://ui5lab.github.io/UI5Lab-app-simple/index.html) 
 
-## UI5Lab-library-simple
+Used in: -
 
-> TODO
+### UI5Lab-control-simple
 
-## UI5Lab-browser
+Contains a simple square control that can be used for testing custom controls.
+
+Source: [https://github.com/UI5Lab/UI5Lab-control-simple](https://github.com/UI5Lab/UI5Lab-control-simple)
+
+Used in: -
+
+### UI5Lab-library-simple
+
+A simple control library that holds custom geometrical controls for testing the UI5Lab library structure.
+
+Source: [https://github.com/UI5Lab/UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple)
+
+Demo: [geometry samples](https://ui5lab.io/browser)
+
+Used in: [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central)
+
+> **Note:*** A pull request for a new library should include additions to **libraries.json**, **package.json** and **combineProjects.js**. Make sure that a library always contains a working sample so that users can see what the library is intended to do.
+
+### UI5Lab-central
+
+This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
+The libraries and controls provided by the individual owners can be retrieved and consumed easily from the central browser.
+
+Source: [https://github.com/UI5Lab/UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple)
+
+Demo: [Homepage](https://ui5lab.io/) [Browser](https://ui5lab.io/browser)
+
+Used in: -
+
+A travis build ensures that the UI5Lab browser and the homepage is always listing the latest contributions.
+To edit the ui5lab.io website, modify the index.html file in **UI5Lab-central/preview**. These will become the root of UI5Lab-central/gh-pages once the Travis job is finished
+
+If a new library should be added to UI5lab a pull request is raised by the contributor. Once merged
+* A Travis job that gets automatically called whenever a pull request is merged into UI5lab-central
+* The Travis job will rebuild the complete "UI5Lab-central/gh-pages"-branch. So *gh-pages should never be edited manually*.
+
+* **UI5Lab-central/package.json** allows libraries from npmjs and github. For example
+    1. "openui5-qrcode": https://github.com/StErMi/openui5-qrcode
+    2. "ui5-nabi-m": "^0.1.0"
+
+### UI5Lab-browser
 
 A browser to display custom libraries and control examples on the UI5Lab homepage. The app implemented in UI5 can also be used for testing control samples and previewing libraries during development.
 

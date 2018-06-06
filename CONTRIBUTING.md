@@ -27,7 +27,7 @@ The custom code should be developed and maintained in individual github reposito
 
 ## Contribute to UI5Lab Infrastructure
 
-In this repository we would like to provide infrastructure for discovering and showcasing a compendium of all individual UI5Lab projects. The idea is to easily find documentation and samples for all the projects and to have them listed in a central place
+In this repository we provide infrastructure for discovering and showcasing a compendium of all individual UI5Lab projects. The idea is to easily find documentation and samples for all the projects and to have them listed in a central place
 
   * A build infrastructure could retrieve the content based on metadata on a regular basis and list it here in a central sample browser
   * The tools to load and display many different custom artifacts from individual code packages are not existing yet for this project. This is where our next steps will happen together.
@@ -44,7 +44,6 @@ Make the creation and consumption of custom artifacts for UI5Lab easier by provi
   * **Guides and Documentation:** The overall setup and the infrastructure should be well-described, the [documentation](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs) of this repository could be used for it
   * **Tools and Technologies:** Bring in your ideas for tools and supported technologies, this is an open project that should support common technologies like npm, webpack, ...
   * **Discuss:** Try out what we have so far and share your opinion what needs to be done next, we are curious for your ideas and your feedback
-
 
 
 # How to Contribute?
