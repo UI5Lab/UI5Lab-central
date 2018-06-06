@@ -4,8 +4,8 @@ To contribute your custom controls to UI5lab you need to transform it into a UI5
 A simple example set up according to our best practices can be found in project [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple). 
 
 Apart from this documentation, you can follow these hands-on tutorials to create your own UI5Lab library and add it to UI5Lab:
-* Create a UI5 Library for UI5Lab (template project): [https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/](https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/)
-* Create a UI5 Library for UI5Lab (Web IDE Wizard): [https://blogs.sap.com/2018/03/08/sap-web-ide-ui5-library-template-for-ui5lab/](https://blogs.sap.com/2018/03/08/sap-web-ide-ui5-library-template-for-ui5lab/)
+* Create a UI5Lab Library (template project): [https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/](https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/)
+* Create a UI5Lab Library (Web IDE Wizard): [https://blogs.sap.com/2018/03/08/sap-web-ide-ui5-library-template-for-ui5lab/](https://blogs.sap.com/2018/03/08/sap-web-ide-ui5-library-template-for-ui5lab/)
 * Add your UI5 Library to UI5Lab: [https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/](https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/)
 
 ## Instructions
