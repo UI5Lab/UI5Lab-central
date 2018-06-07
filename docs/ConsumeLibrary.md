@@ -4,19 +4,19 @@ This tutorial shows you how to consume the custom controls from UI5Lab (in our c
 
 1. Install node.js (get it from [nodejs.org](http://nodejs.org/)).
 
-	> **Note:** If working behind a proxy, you need to configure it properly (HTTP_PROXY / HTTPS_PROXY / NO_PROXY environment variables)
+> **Note:** If working behind a proxy, you need to configure it properly (HTTP_PROXY / HTTPS_PROXY / NO_PROXY environment variables)
 
-2. Clone the example app repository and navigate into it
+2. Clone the example app repository and navigate into it.
 
-	```sh
+```sh
 git clone https://github.com/UI5Lab/UI5Lab-app-simple
 cd UI5Lab-app-simple
-	```
+```
 
 3. Adapt the file `package.json` to retrieve the desired Custom Control library.
 (In this demonstration `ui5lab-library-simple`)
 
-	``` json
+``` json
 {
   "scripts": {
     "postinstall": "node postInstall.js"
@@ -26,50 +26,50 @@ cd UI5Lab-app-simple
     "fs-extra": "^3.0.0"
   }
 }
-	```
+```
 
 4. Adapt the file `postInstall.json` to copy the files of the Custom Control library from the nodes_modules-directory to the application folder.
 (In this demonstration to `./webapp/thirdparty`)
 
-	```javascript
+```javascript
 var fs = require('fs-extra');
 
 fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './webapp/thirdparty');
-	```
+```
 
-5. Install all npm dependencies (also installs all bower dependencies)
+5. Install all npm dependencies (also installs all bower dependencies).
 
-	```sh
+```sh
 npm install
-	```
+```
 
 6. Adapt `index.html` to consume the Custom Control library.
 (In this demonstration `ui5lab.geometry`)
 
-	```
+```
 ...
     data-sap-ui-resourceroots='{
         "ui5lab.app.SquareApp": "./",
         "ui5lab.geometry": "./thirdparty/ui5lab/geometry/"
     }'>
 ...
-	```
+```
 
 7. Adapt `opaTest.unit.html` to consume the Custom Control library.
 (In this demonstration `ui5lab.geometry`)
-	```
+```
 ...
     data-sap-ui-resourceroots='{
         "ui5lab.app.SquareApp": "../../",
         "ui5lab.geometry": "../../thirdparty/ui5lab/geometry/"
     }'>
 ...
-	```
+```
 
 8. Adapt `App.view.xml` to consume the Custom Controls.
 (In this demonstration `ui5lab.geometry.Square`, `ui5lab.geometry.Circle` and `ui5lab.geometry.Triangle`)
 
-	```xml
+```xml
 <mvc:View
     controllerName="ui5lab.app.SquareApp.controller.App"
     xmlns:mvc="sap.ui.core.mvc"
@@ -94,11 +94,11 @@ npm install
         </pages>
     </App>
 </mvc:View>
-	```
+```
 
-9. Deploy the application folder to your favorite webserver
+9. Deploy the application folder to your favorite webserver.
 
-10. Choose one of the following entry points to open the app
+10. Choose one of the following entry points to open the app:
 
  * [App page](webapp/index.html) Path to the source code for the demo above
  * [Test page](webapp/test/integration/opaTests.qunit.html) A simple integration test written in OPA
