@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <title> UI5Lab - a custom UI5 library</title>
-<head><link rel="icon" href="favicon.ico" type="image/x-icon"></head>
+
+<head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
 <style>
 	body, html {
 		height: 100%;
@@ -46,14 +49,15 @@
 		transform: translate(-17%, -17%);
 	}
 
-	.middleRight{
+	.middleRight {
 		position: relative;
 		top: 33%;
 		left: 48%;
-		transform: translate(-27%, -27%);;
+		transform: translate(-27%, -27%);
+		;
 	}
 
-	.welcome{
+	.welcome {
 		position: absolute;
 		top: 30%;
 		left: 21%;
@@ -61,7 +65,7 @@
 		text-align: center;
 	}
 
-	.links{
+	.links {
 		color: white;
 		opacity: 1;
 		font-weight: bold;
@@ -87,7 +91,7 @@
 		font-weight: bold;
 	}
 
-	.circle1{
+	.circle1 {
 		position: absolute;
 		border-radius: 50%;
 		width: 180px;
@@ -101,7 +105,8 @@
 		left: 47%;
 
 	}
-	.circle2{
+
+	.circle2 {
 		border-radius: 50%;
 		width: 230px;
 		height: 230px;
@@ -114,7 +119,8 @@
 		top: 50px;
 		left: 30%;
 	}
-	.circle3{
+
+	.circle3 {
 		border-radius: 50%;
 		width: 120px;
 		height: 120px;
@@ -127,7 +133,8 @@
 		top: 200px;
 		left: 50%;
 	}
-	.circle4{
+
+	.circle4 {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
@@ -141,7 +148,7 @@
 		left: 59%;
 	}
 
-	.circle5{
+	.circle5 {
 		border-radius: 50%;
 		width: 180px;
 		height: 180px;
@@ -160,37 +167,50 @@
 		width: 40%;
 	}
 
-	@media screen and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		.middleRight{
+	@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		.middleRight {
 			position: relative;
 			top: 66%;
 			left: 0%;
-			transform: translate(-27%, -27%);;
+			transform: translate(-27%, -27%);
+			;
 		}
 </style>
+
 <body>
 
-<div class="bgimg">
-	<div class="topleft">
-		<image class="logoImage" src="assets/lab_icon.png" />
-		<p class="logoText">UI5Lab</p>
+	<div class="bgimg">
+		<div class="topleft">
+			<image class="logoImage" src="assets/lab_icon.png" />
+			<p class="logoText">UI5Lab</p>
+		</div>
+		<div class="welcome">
+			<h1>Join the Lab!</h1>
+		</div>
+		<img src="assets/about_marks.png" class="middleLeft" />
+		<div class="middleLeft">
+			<p class="aboutText"> UI5Lab is a community driven project providing a repository for UI5 Custom Control Libraries. It is meant to gather
+				forces throughout the community and enable everyone to use UI5 Custom Controls easily </p>
+		</div>
+		<div class="middleRight">
+			<a href="https://ui5lab.github.io/UI5Lab-central/browser/index.html" class="links">
+				<div class="circle1" alt="Browse Repo">Browse Repo</div>
+			</a>
+			<a href="https://github.com/UI5Lab/UI5Lab-central/" target="_blank" class="links">
+				<div class="circle2" alt="Contribute">Contribute</div>
+			</a>
+			<a href="https://ui5lab.github.io/UI5Lab-central/" target="_blank" class="links">
+				<div class="circle3" alt="Docs">Docs</div>
+			</a>
+			<a href="contact.html" class="links">
+				<div class="circle4" alt="Contact">Contact</div>
+			</a>
+			<a href="https://github.com/UI5Lab/UI5Lab-app-simple" target="_blank" class="links">
+				<div class="circle5" alt="Consume">Consume</div>
+			</a>
+		</div>
 	</div>
-	<div class="welcome">
-		<h1>Join the Lab!</h1>
-	</div>
-	<img src="assets/about_marks.png" class="middleLeft" />
-	<div class="middleLeft">
-		<p class="aboutText"> UI5Lab is a community driven project providing a repository for UI5 Custom Control Libraries. It's purpose is to make it easy for everyone to share, retrieve and use UI5 Custom Controls. Contributions welcome!</p>
-	</div>
-	<div class="middleRight">
-		<a href="https://ui5lab.github.io/UI5Lab-central/browser/index.html" class="links"><div class="circle1" alt="Browse Repo">Browse</div></a>
-		<a href="https://github.com/UI5Lab/UI5Lab-central/" target="_blank" class="links"><div class="circle2" alt="Contribute" >Contribute</div></a>
-		<a href="https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/Overview.md" target="_blank" class="links"><div class="circle3" alt="Wiki">Read</div></a>
-		<a href="contact.html" class="links"><div class="circle4" alt="Contact" >Contact</div></a>
-		<a href="https://github.com/UI5Lab/UI5Lab-app-simple" target="_blank" class="links"><div class="circle5" alt="Consume" >Consume</div></a>
-	</div>
-</div>
 
 </body>
+
 </html>

@@ -1,5 +1,3 @@
-![UI5Lab Ecosystem](https://github.com/UI5Lab/UI5Lab-central/raw/master/docs/UI5LabLogoPhoenix.png)
-
 ## UI5Lab-central
 This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
 
@@ -9,7 +7,7 @@ UI5Lab is a community driven repository for UI5 custom control libraries. Your c
 
 ## Quick Start
 
-Get ready with UI5Lab through [quick start](https://ui5lab.github.io/#/general/quick_start.md) instructions.
+Get ready with UI5Lab through [quick start](general/quick_start.md) instructions.
 
 #### Browse libraries and samples
 
@@ -17,11 +15,11 @@ Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all curren
 
 #### Use a UI5Lab library in your app
 
-Follow the instructions in [this guide](https://ui5lab.github.io/#/how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
+Follow the instructions in [this guide](how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
 
 #### Contribute to UI5Lab
 
-Have a look at our [contributing guide](https://ui5lab.github.io/#/how_to/contribute_ui5lab.md) to help us with our mission
+Have a look at our [contributing guide](how_to/contribute_ui5lab.md) to help us with our mission
 
 ## Troubleshooting
 

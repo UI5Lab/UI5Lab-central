@@ -1,0 +1,9 @@
+## Contributors {docsify-ignore}
+
+[<img alt="Michadelic" src="https://avatars3.githubusercontent.com/u/6791333?v=4&s=117" width="117">](https://github.com/Michadelic) |[<img alt="AnnFr" src="https://avatars0.githubusercontent.com/u/24315935?v=4&s=117" width="117">](https://github.com/AnnFr) |[<img alt="avh-sap" src="https://avatars1.githubusercontent.com/u/26061536?v=4&s=117" width="117">](https://github.com/avh-sap) |[<img alt="lemaiwo" src="https://avatars1.githubusercontent.com/u/5943183?v=4&s=117" width="117">](https://github.com/lemaiwo) |[<img alt="jumpifzero" src="https://avatars2.githubusercontent.com/u/566926?v=4&s=117" width="117">](https://github.com/jumpifzero) |[<img alt="StErMi" src="https://avatars3.githubusercontent.com/u/146166?v=4&s=117" width="117">](https://github.com/StErMi) |
+:---: |:---: |:---: |:---: |:---: |:---: |
+[Michadelic](https://github.com/Michadelic) |[AnnFr](https://github.com/AnnFr) |[avh-sap](https://github.com/avh-sap) |[lemaiwo](https://github.com/lemaiwo) |[jumpifzero](https://github.com/jumpifzero) |[StErMi](https://github.com/StErMi) |
+
+[<img alt="nitish-mehta" src="https://avatars3.githubusercontent.com/u/15953522?v=4&s=117" width="117">](https://github.com/nitish-mehta) |[<img alt="mauriciolauffer" src="https://avatars1.githubusercontent.com/u/443888?v=4&s=117" width="117">](https://github.com/mauriciolauffer) |[<img alt="KleinL31" src="https://avatars2.githubusercontent.com/u/20817406?v=4&s=117" width="117">](https://github.com/KleinL31) |[<img alt="vobujs" src="https://avatars2.githubusercontent.com/u/6573426?v=4&s=117" width="117">](https://github.com/vobujs) |
+:---: |:---: |:---: |:---: |
+[nitish-mehta](https://github.com/nitish-mehta) |[mauriciolauffer](https://github.com/mauriciolauffer) |[KleinL31](https://github.com/KleinL31) |[vobujs](https://github.com/vobujs) |
