@@ -21,7 +21,7 @@ Follow the instructions in [this guide](https://ui5lab.github.io/UI5Lab-docs/#/h
 
 #### Contribute to UI5Lab
 
-Have a look at our [contributing guide](https://ui5lab.github.io/#/how_to/contribute_ui5lab.md) to help us with our mission
+Have a look at our [contributing guide](https://ui5lab.github.io/UI5Lab-docs/#/how_to/contribute_ui5lab) to help us with our mission
 
 ## Troubleshooting
 
