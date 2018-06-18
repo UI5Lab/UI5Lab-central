@@ -17,7 +17,7 @@ Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all curren
 
 #### Use a UI5Lab library in your app
 
-Follow the instructions in [this guide](https://ui5lab.github.io/#/how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
+Follow the instructions in [this guide](https://ui5lab.github.io/UI5Lab-docs/#/how_to/consume_library) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
 
 #### Contribute to UI5Lab
 
