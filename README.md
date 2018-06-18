@@ -9,7 +9,7 @@ UI5Lab is a community driven repository for UI5 custom control libraries. Your c
 
 ## Quick Start
 
-Get ready with UI5Lab through [quick start](https://ui5lab.github.io/#/general/quick_start.md) instructions.
+Get ready with UI5Lab through [quick start](https://ui5lab.github.io/UI5Lab-docs/#/general/quick_start) instructions.
 
 #### Browse libraries and samples
 
