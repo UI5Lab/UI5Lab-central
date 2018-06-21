@@ -1,4 +1,4 @@
-![UI5Lab Ecosystem](https://github.com/UI5Lab/UI5Lab-central/raw/master/docs/UI5LabLogoPhoenix.png)
+![UI5Lab Ecosystem](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/media/UI5LabLogoPhoenix.png)
 
 ## UI5Lab-central
 This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
