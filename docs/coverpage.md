@@ -1,8 +1,8 @@
-![logo](../media/ui5-logo.png)
+![logo](media/UI5LabLogoPhoenix.png)
 
 # UI5 Lab <small>1.0.0</small>
 
-> Ein Ort um gemeinsam an einem benutzerdefinierten, community getriebenen UI5 Repository zu arbeiten
+> A place to jointly work on a community-driven custom UI5 repository
 
 * Open Source
 * Community-driven Project
