@@ -27,11 +27,11 @@ The custom code should be developed and maintained in individual GitHub reposito
 
 In this repository we provide infrastructure for discovering and showcasing a compendium of all individual UI5Lab projects. The idea is to easily find documentation and samples for all the projects and to have them listed in a central place
 
-  * A build infrastructure could retrieve the content based on metadata on a regular basis and list it here in a central sample browser
+  * A build infrastructure retrieves the content based on library metadata and lists it here in a central sample browser
   * The tools to load and display many different custom artifacts from individual code packages do not exist yet for this project. This is where we will take the next steps together.
   * A public homepage showcasing and featuring all projects that are made available for UI5Lab is work in progress, we have registered the domains ui5lab.io and ui5lab.com
   * Feel free to contribute to all of the example projects under this organization to make them more robust and flexible.
-  * Templates to kick-start library and app development could be added as new repositories under this organization
+  * Templates to kick-start library and app development may be added as new repositories under this organization
 
 #### Define Best Practices
 
@@ -39,7 +39,7 @@ An app that wants to consume UI5Lab artifacts needs guidelines, templates, and b
 Make the creation and consumption of custom artifacts for UI5Lab easier by providing examples or documentation, either here in the documentation or in your own repository:
 
   * **Naming Conventions, Best Practices, Metadata:** help us to define a common standard for this project and to document it publicly.
-  * **Guides and Documentation:** The overall setup and the infrastructure should be well-described. The [documentation](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs) of this repository could be used for this.
+  * **Guides and Documentation:** Make it easy for developers to use UI5Lab libraries by improving to our [documentation](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs).
   * **Tools and Technologies:** Bring in your ideas for tools and supported technologies. This is an open project that should support common technologies like npm, webpack, ...
   * **Discuss:** Try out what we have so far and share your opinion as to what needs to be done next, we are curious about your ideas and your feedback.
 

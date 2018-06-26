@@ -1,25 +1,31 @@
-## UI5Lab-central
-This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
+## What is UI5Lab
 
-## What is it
+UI5Lab is a community driven repository for UI5 Custom Control Libraries. It's purpose is to make it easy for everyone to share, retrieve and use UI5 Custom Controls. Contributions welcome! 
 
-UI5Lab is a community driven repository for UI5 custom control libraries. Your contributions will drive our vision: A place where custom controls, templates, helper classes, and other code artifacts related to UI5 technology can be discovered and shared with the community. 
-
-## Quick Start
-
-Get ready with UI5Lab through [quick start](general/quick_start.md) instructions.
+## Get Started
 
 #### Browse libraries and samples
 
-Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all current UI5Lab libraries and controls can be viewed
+Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all current UI5Lab libraries and controls can be viewed.
 
 #### Use a UI5Lab library in your app
 
-Follow the instructions in [this guide](how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project 
+Follow the instructions in [this guide](how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project.
 
 #### Contribute to UI5Lab
 
-Have a look at our [contributing guide](how_to/contribute_ui5lab.md) to help us with our mission
+Have a look at our [contributing guide](how_to/contribute_ui5lab.md) to help us with our mission.
+
+#### Develop or test a UI5Lab repository
+
+Check the [README](https://github.com/UI5Lab/UI5Lab-central/blob/master/README.md) file of the project repositories for detailed setup instructions.
+
+## Directions
+
+* [Homepage](https://ui5lab.io) - the single point of entry for UI5Lab
+* [Documentation](https://ui5lab.io/docs) - project overview and tutorials
+* [Browser](https://ui5lab.io/browser) - all UI5Lab libraries and examples
+* [Demo](https://ui5lab.github.io/UI5Lab-app-simple/index.html) - an example app consuming simple UI5Lab controls
 
 ## Troubleshooting
 
