@@ -2,11 +2,10 @@
 
 # What is it
 
-UI5Lab is a community driven repository for UI5 custom control libraries. Your contributions will drive our vision: A place where custom controls, templates, helper classes, and other code artifacts related to UI5 technology can be discovered and shared with the community. 
+UI5Lab is a community driven repository for UI5 Custom Control Libraries. It's purpose is to make it easy for everyone to share, retrieve and use UI5 Custom Controls. Contributions welcome!
 
 # UI5Lab-central
-This repository contains essential project information and hosts central infrastructure that links together all contributed libraries.
-Have a look at our [documentation](http://ui5lab.io/docs/) to get started.
+This repository contains essential project information and hosts central infrastructure that links together all contributed libraries. Have a look at our [documentation](http://ui5lab.io/docs/) for more details. 
 
 ### Setup
 
