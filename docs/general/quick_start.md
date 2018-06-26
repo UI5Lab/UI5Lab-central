@@ -1,30 +1,21 @@
 ## Quick Start {docsify-ignore}
 
-Run the following commands to test or develop this project:
+UI5Lab is a community-driven repository for UI5 custom control libraries. It's purpose is to make it easy for everyone to share, retrieve and use UI5 custom controls. Contributions welcome!
 
-1. Clone this repository to your local developer workspace
-```bash
-git clone https://github.com/UI5Lab/UI5Lab-central
-cd UI5Lab-central
-```
+#### Explore UI5Lab
+We provide examples, best practices, and infrastructure to share and retrieve custom control libraries from and for the community.
+Have a look at our [browser](https://ui5lab.io/browser) to see all currently available controls or check our [project overview](general/overview.md) for more details. 
 
-2. Load npm dependencies without running their individual scripts
-```bash
-npm install --ignore-scripts
-```
+#### Use a UI5Lab library in your app
 
-3. Load bower dependencies and copy all files to the correct places 
-```bash
-npm run postinstall
-``` 
+UI5Lab libraries are created and published by the community to be used in your app projects. Browse the available libraries and samples to find suitable controls that you want to use in your app.
+Follow [these instructions](how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project.
 
-4. Run a local server for testing 
-```bash
-grunt serve
-```
+#### Provide a UI5Lab library for the community
 
-4. Go to [http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/) to display all available UI5Lab libraries
+You have created a custom control and would like to share it with the community? Great! Follow [this guide](how_to/contribute_custom_control_library.md) to publish it on UI5Lab. 
 
-> **Note:** This project joins all individual code repositories (libraries and tools like the [UI5Lab browser](https://github.com/UI5Lab/UI5Lab-browser)) so that they can be viewed together. All required modules will be loaded to your local workspace automatically. You can easily modify the assets and test the changes immediately. The same environment manages the homepage of UI5Lab where all libraries are publicly listed. For more instructions check the documentation.
+#### Contribute to UI5Lab and help us grow
 
-!> TODO: Add dev-ready docker container 🖖
+You like the idea of having a community-driven repository for UI5 custom control libraries? Help us define new best practices and improve the project.
+Have a look at the repository description below and our [contributing guide](how_to/contribute_ui5lab.md) to see where you can engage.

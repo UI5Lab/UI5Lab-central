@@ -1,27 +1,12 @@
+# Project Overview {docsify-ignore}
+
 ## Introduction
 
-UI5Lab is a community-driven project providing a repository for UI5 custom control libraries. It's purpose is to make it easy for everyone to share, retrieve and use UI5 custom controls. Contributions welcome!
-It consists of several example and infrastructure repositories described in more detail below and control libraries provided by contributors.
+UI5Lab consists of several repositories described in more detail below and control libraries provided by contributors.
 
 ![UI5Lab Ecosystem](../media/UI5LabOverview.png)
 
 *High-level overview and current status of the UI5Lab ecosystem*
-
-## What's in it for me?
-
-#### Use a UI5Lab library in your app
-
-UI5Lab libraries are created and published by the community to be used in your app projects. Browse the available libraries and samples to find suitable controls that you want to use in your app.
-Follow the instructions in [this guide](https://ui5lab.github.io/UI5Lab-central/#/how_to/consume_library.md) or take a look at the [UI5Lab-app-simple](https://github.com/UI5Lab/UI5Lab-app-simple) project.
-
-#### Provide a UI5Lab library for the community
-
-You have created a custom control and would like to share it with the community? Great! Follow [this guide](https://ui5lab.github.io/UI5Lab-central/#/how_to/contribute_custom_control_library.md) to publish it on UI5Lab. 
-
-#### Contribute to UI5Lab and help us grow
-
-You like the idea of having a community-driven repository for UI5 custom control libraries? Help us define new best practices and improve the project.
-Have a look at the repository description below and our [contributing guide](https://ui5lab.github.io/UI5Lab-central/#/how_to/contribute_ui5lab.md) to see where you can engage.
 
 ## Repositories
 
@@ -69,10 +54,9 @@ Demo: [Homepage](https://ui5lab.io/) [Browser](https://ui5lab.io/browser)
 
 Used in: -
 
-A Travis build ensures that the UI5Lab browser and the homepage always list the latest contributions.
-To edit the [ui5lab.io](https://ui5lab.io) website, modify the `index.html` file in `UI5Lab-central/preview`. These will become the root of `UI5Lab-central/gh-pages` once the Travis job is finished
+A Travis build ensures that the UI5Lab browser, the documentation, and the homepage always list the latest contributions.
 
-!> TODO: adapt text to new docsify documentation workflow
+#### Libraries
 
 If a new library should be added to UI5lab a pull request is raised by the contributor. Once merged
 * a Travis job runs, which is called automatically whenever a pull request is merged into UI5lab-central.
@@ -82,6 +66,12 @@ So **gh-pages should never be edited manually**.
 * `UI5Lab-central/package.json` allows libraries from npmjs and GitHub. For example:
     1. `"openui5-qrcode": https://github.com/StErMi/openui5-qrcode`
     2. `"ui5-nabi-m": "^0.1.0"`
+
+#### Homepage
+To edit the [ui5lab.io](https://ui5lab.io) website, modify the `index.html` file in `UI5Lab-central/preview`. These will become the root of `UI5Lab-central/gh-pages` once the Travis job is finished.
+
+#### Documentation
+Our [documentation](https://ui5lab.io/docs) is located in `UI5Lab-central/docs`. It is parsed by Docsify and made available under `UI5Lab-central/gh-pages/docs` once the Travis job is finished.
 
 ### UI5Lab-browser
 
