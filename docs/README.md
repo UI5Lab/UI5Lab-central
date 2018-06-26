@@ -4,6 +4,8 @@ UI5Lab is a community driven repository for UI5 Custom Control Libraries. It's p
 
 ## Get Started
 
+New here? Take a look at our [quick start](general/quick_start.md) guide.
+
 #### Browse libraries and samples
 
 Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all current UI5Lab libraries and controls can be viewed.

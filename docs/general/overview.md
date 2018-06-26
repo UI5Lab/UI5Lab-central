@@ -68,7 +68,7 @@ So **gh-pages should never be edited manually**.
     2. `"ui5-nabi-m": "^0.1.0"`
 
 #### Homepage
-To edit the [ui5lab.io](https://ui5lab.io) website, modify the `index.html` file in `UI5Lab-central/preview`. These will become the root of `UI5Lab-central/gh-pages` once the Travis job is finished.
+To edit the [ui5lab.io](https://ui5lab.io) website, modify the `index.html` file in `UI5Lab-central/homepage`. These will become the root of `UI5Lab-central/gh-pages` once the Travis job is finished.
 
 #### Documentation
 Our [documentation](https://ui5lab.io/docs) is located in `UI5Lab-central/docs`. It is parsed by Docsify and made available under `UI5Lab-central/gh-pages/docs` once the Travis job is finished.
