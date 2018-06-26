@@ -185,7 +185,7 @@ fs.copySync('./libraries.json', './test/libraries.json');
  **************************/
 
 // copy preview page by @nitishmeta to root folder
-fs.copySync('./preview', './deploy');
+fs.copySync('./homepage', './deploy');
 // copy docsify pages by @nlsltz to docs folder
 fs.copySync('./docs', './deploy/docs');
 // copy browser to subfolder browser for the moment
