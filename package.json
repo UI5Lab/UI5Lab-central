@@ -29,6 +29,7 @@
     "openui5-multiinputdialog": "https://github.com/StErMi/openui5-multiinputdialog",
     "openui5-parallax": "0.1.3",
     "openui5-qrcode": "https://github.com/StErMi/openui5-qrcode",
+    "openui5-smart-mockserver": "^0.1.7",
     "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
     "openui5-tour": "0.0.4",
