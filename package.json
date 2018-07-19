@@ -36,6 +36,7 @@
     "ui5-nabi-m": "0.3.0",
     "ui5lab-browser": "*",
     "ui5lab-library-simple": "*",
+    "ui5lab-tn-icons": "https://github.com/TNFlexso/ui5lab-icons",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
     "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
     "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space",
