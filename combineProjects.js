@@ -1,3 +1,5 @@
+'use strict';
+
 var fs = require('fs-extra');
 
 /**************************
@@ -173,6 +175,16 @@ try {
 	fs.copySync('./node_modules/openui5-tour/test/openui5/tour/index.json', './test/openui5/tour/index.json');
 } catch (e) {
 	console.log("an error occured post-processing the openui5-tour library: " + e.message);
+}
+
+// openui5-smart-mockserver
+try {
+	fs.copySync('./node_modules/openui5-smart-mockserver/dist/', './resources');
+	fs.copySync('./node_modules/openui5-smart-mockserver/src/', './src');
+	fs.copySync('./node_modules/openui5-smart-mockserver/demo/', './test/openui5/tour');
+	fs.copySync('./node_modules/openui5-smart-mockserver/test/openui5/smartmockserver/index.json', './test/openui5/smartmockserver/index.json');
+} catch (e) {
+	console.log("an error occured post-processing the openui5-smart-mockserver library: " + e.message);
 }
 
 
