@@ -21,6 +21,7 @@
     "@openui5/themelib_sap_belize": "^1.56.4"
   },
   "devDependencies": {
+    "eslint": "^5.2.0",
     "fs-extra": "^3.0.1",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",

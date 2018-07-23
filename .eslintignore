@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+dist/
+bower_components/
+src/
+test/
+resources/
