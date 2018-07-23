@@ -4,19 +4,19 @@ var fs = require('fs-extra');
 
 /**************************
  * UI5 and browser:
- * Copy the browser project and all needed UI5 libraries from npm_modules and bower_components to a local folder
+ * Copy the browser project and all needed UI5 libraries from npm_modules to a local folder
  *************************/
 
 // copy browser
 fs.copySync('./node_modules/ui5lab-browser/dist/test-resources/ui5lab/browser', './test/ui5lab/browser');
 
 // ui5
-fs.copySync('./bower_components/openui5-sap.f/resources', './resources');
-fs.copySync('./bower_components/openui5-sap.m/resources', './resources');
-fs.copySync('./bower_components/openui5-sap.ui.layout/resources', './resources');
-fs.copySync('./bower_components/openui5-sap.ui.core/resources', './resources');
-fs.copySync('./bower_components/openui5-sap.ui.unified/resources', './resources');
-fs.copySync('./bower_components/openui5-themelib_sap_belize/resources', './resources');
+fs.copySync('./node_modules/@openui5/sap.f/src', './resources');
+fs.copySync('./node_modules/@openui5/sap.m/src', './resources');
+fs.copySync('./node_modules/@openui5/sap.ui.layout/src', './resources');
+fs.copySync('./node_modules/@openui5/sap.ui.core/src', './resources');
+fs.copySync('./node_modules/@openui5/sap.ui.unified/src', './resources');
+fs.copySync('./node_modules/@openui5/themelib_sap_belize/src', './resources');
 
 /**************************
  * UI5Lab projects:
