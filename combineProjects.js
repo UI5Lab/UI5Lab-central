@@ -177,6 +177,15 @@ try {
 	console.log("an error occured post-processing the openui5-tour library: " + e.message);
 }
 
+
+// ui5lab.tn.icons
+try {
+	fs.copySync('./node_modules/ui5lab-tn-icons/dist/resources/', './resources');
+	fs.copySync('./node_modules/ui5lab-tn-icons/dist/test-resources/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the ui5lab.tn.icons library: " + e.message);
+}
+
 // openui5-smart-mockserver
 try {
 	fs.copySync('./node_modules/openui5-smart-mockserver/dist/', './resources');
@@ -186,7 +195,6 @@ try {
 } catch (e) {
 	console.log("an error occured post-processing the openui5-smart-mockserver library: " + e.message);
 }
-
 
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
