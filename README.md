@@ -27,14 +27,19 @@ npm install --ignore-scripts
 npm run postinstall
 ``` 
 
-4. Run a local server for testing 
-```bash
-grunt serve
+> **Note:** This step will generate a folder ```browser``` and and combine all UI5Lab libraries dynamically. Do not modify its contents or check-in this folder. 
+
+4. Run a local Web server for testing:
+
+```sh
+ui5 serve
 ```
 
-4. Go to [http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/) to display all available UI5Lab libraries
+> **Note:** Run ```npm install --global @ui5/cli``` if the ```ui5``` command is not registered (for more information see [ui5 tooling](https://github.com/SAP/ui5-tooling]))
 
-> **Note:** This project joins all individual code repositories (libraries and tools like the [UI5Lab browser](https://github.com/UI5Lab/UI5Lab-browser)) so that they can be viewed together. All required modules will be loaded to your local workspace automatically. You can easily modify the assets and test the changes immediately. The same environment manages the homepage of UI5Lab where all libraries are publicly listed. For more instructions check the documentation.
+4. Go to [http://localhost:8080/index.html](http://localhost:8080/index.html) to display all available UI5Lab libraries
+
+> **Note:** This project joins all individual code repositories (libraries and tools like the [UI5Lab browser](https://github.com/UI5Lab/UI5Lab-browser)) so that they can be viewed together. All required modules will be loaded to your local workspace automatically. The same environment manages the homepage of UI5Lab where all libraries are publicly listed. For more instructions check the documentation.
 
 # Directions
 

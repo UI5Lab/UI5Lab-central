@@ -1,9 +1,7 @@
 node_modules
 deploy
+browser
 dist
-src
-test
-resources
 .idea
 
 # General
