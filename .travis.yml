@@ -4,6 +4,7 @@ node_js:
 - stable
 
 before_script:
+  - npm config set ignore-scripts true
   - npm install --ignore-scripts
 
 script:
