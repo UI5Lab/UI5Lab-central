@@ -2,7 +2,6 @@
 src
 test
 node_modules
-bower_components
 .idea
 .editorconfig
 .eslintrc

@@ -10,6 +10,6 @@ The code of each participating project is owned, governed and maintained by the 
 The repository owners are responsible for maintaining a working package and appropriate content to be showcased here.
  
 The codebase of the browser app is loaded from the [UI5Lab-browser](https://github.com/ui5lab/ui5lab-browser) repository. 
-The [OpenUI5 libraries](http://githhub.com/OpenUI5) needed to display the samples are loaded as bower dependencies.
+The [OpenUI5 libraries](http://github.com/OpenUI5) are needed to display the samples and are loaded as npm dependencies.
 
 For more information, please refer to the [README](https://github.com/ui5lab/ui5lab-central) of the UI5Lab-central repository. 

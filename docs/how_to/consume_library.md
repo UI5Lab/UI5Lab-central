@@ -37,7 +37,7 @@ var fs = require('fs-extra');
 fs.copySync('./node_modules/ui5lab-library-simple/dist/resources/', './webapp/thirdparty');
 ```
 
-5. Install all npm dependencies (also installs all bower dependencies).
+5. Install all npm dependencies.
 
 ```bash
 npm install

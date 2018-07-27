@@ -3,6 +3,8 @@ language: node_js # don't install any environment
 node_js:
 - stable
 
+install: true # skip standard npm installation
+
 before_script:
   - npm install --ignore-scripts
 

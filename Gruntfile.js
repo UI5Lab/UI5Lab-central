@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			src: 'src',
 			test: 'test',
 			dist: 'dist',
-			bower_components: 'bower_components'
+			resources: 'resources'
 		},
 
 		connect: {
@@ -24,19 +24,10 @@ module.exports = function(grunt) {
 			src: {
 				options: {
 					resources: [
-						'<%= dir.bower_components %>/openui5-sap.ui.core/resources',
-						'<%= dir.bower_components %>/openui5-sap.m/resources',
-						'<%= dir.bower_components %>/openui5-sap.f/resources',
-						'<%= dir.bower_components %>/openui5-sap.ui.layout/resources',
-						'<%= dir.bower_components %>/openui5-themelib_sap_belize/resources',
+						'<%= dir.resources %>',
 						'<%= dir.src %>'
 					],
 					testresources: [
-						'<%= dir.bower_components %>/openui5-sap.ui.core/test-resources',
-						'<%= dir.bower_components %>/openui5-sap.m/test-resources',
-						'<%= dir.bower_components %>/openui5-sap.f/test-resources',
-						'<%= dir.bower_components %>/openui5-sap.ui.layout/test-resources',
-						'<%= dir.bower_components %>/openui5-themelib_sap_belize/test-resources',
 						'<%= dir.test %>'
 					]
 				}
@@ -44,19 +35,10 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					resources: [
-						'<%= dir.bower_components %>/openui5-sap.ui.core/resources',
-						'<%= dir.bower_components %>/openui5-sap.m/resources',
-						'<%= dir.bower_components %>/openui5-sap.f/resources',
-						'<%= dir.bower_components %>/openui5-sap.ui.layout/resources',
-						'<%= dir.bower_components %>/openui5-themelib_sap_belize/resources',
+						'<%= dir.resources %>',
 						'<%= dir.dist %>/resources'
 					],
 					testresources: [
-						'<%= dir.bower_components %>/openui5-sap.ui.core/test-resources',
-						'<%= dir.bower_components %>/openui5-sap.m/test-resources',
-						'<%= dir.bower_components %>/openui5-sap.f/test-resources',
-						'<%= dir.bower_components %>/openui5-sap.ui.layout/test-resources',
-						'<%= dir.bower_components %>/openui5-themelib_sap_belize/test-resources',
 						'<%= dir.dist %>/test-resources'
 					]
 				}

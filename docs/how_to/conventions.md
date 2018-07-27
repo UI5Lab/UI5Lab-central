@@ -4,7 +4,7 @@ This page collects best practice conventions for creating UI5Lab projects.
 
 ### Tooling
 
-UI5Lab projects are published on public registries like npm or bower to be easily consumed in app projects.
+UI5Lab projects are published on public registries like npm to be easily consumed in app projects.
 
 ### Naming
 

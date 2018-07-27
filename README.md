@@ -22,7 +22,7 @@ cd UI5Lab-central
 npm install --ignore-scripts
 ```
 
-3. Load bower dependencies and copy all files to the correct places 
+3. Copy all files to the correct places 
 ```bash
 npm run postinstall
 ``` 
