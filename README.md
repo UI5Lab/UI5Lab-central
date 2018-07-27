@@ -29,10 +29,10 @@ npm run postinstall
 
 > **Note:** This step will generate a folder ```browser``` and and combine all UI5Lab libraries dynamically. Do not modify its contents or check-in this folder. 
 
-4. Run a local Web server for testing:
+4. Run a local Web server with the ui5 tools for testing:
 
 ```sh
-ui5 serve
+npm start
 ```
 
 > **Note:** Run ```npm install --global @ui5/cli``` if the ```ui5``` command is not registered (for more information see [ui5 tooling](https://github.com/SAP/ui5-tooling]))
