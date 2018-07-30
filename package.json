@@ -1,6 +1,6 @@
 {
   "name": "ui5lab-central",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A central repository to discover and showcase all available UI5Lab projects",
   "private": true,
   "repository": {
@@ -11,24 +11,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified. Please add some.\" && exit 1",
     "postinstall": "node combineProjects.js",
-    "start": "grunt"
+    "start": "ui5 serve"
   },
   "dependencies": {
     "@openui5/sap.f": "^1.56.4",
     "@openui5/sap.m": "^1.56.4",
     "@openui5/sap.ui.core": "^1.56.4",
     "@openui5/sap.ui.layout": "^1.56.4",
-    "@openui5/themelib_sap_belize": "^1.56.4"
-  },
-  "devDependencies": {
-    "eslint": "^5.2.0",
-    "fs-extra": "^3.0.1",
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-eslint": "^21.0.0",
-    "grunt-openui5": "^0.14.0",
+    "@openui5/themelib_sap_belize": "^1.56.4",
     "openui5-camera": "0.0.11",
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
@@ -42,11 +32,15 @@
     "openui5-tour": "0.0.10",
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": "0.3.0",
-    "ui5lab-browser": "~0.1.14",
+    "ui5lab-browser": "git+https://github.com/mauriciolauffer/UI5Lab-browser.git",
     "ui5lab-library-simple": "*",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
     "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
     "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space",
     "ui5lab-wordcloud": "1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "fs-extra": "^3.0.1"
   }
 }
