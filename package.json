@@ -14,33 +14,33 @@
     "start": "ui5 serve"
   },
   "dependencies": {
-    "@openui5/sap.f": "^1.56.4",
-    "@openui5/sap.m": "^1.56.4",
-    "@openui5/sap.ui.core": "^1.56.4",
-    "@openui5/sap.ui.layout": "^1.56.4",
-    "@openui5/themelib_sap_belize": "^1.56.4",
+    "@openui5/sap.f": "~1.56.4",
+    "@openui5/sap.m": "~1.56.4",
+    "@openui5/sap.ui.core": "~1.56.4",
+    "@openui5/sap.ui.layout": "~1.56.4",
+    "@openui5/themelib_sap_belize": "~1.56.4",
     "openui5-camera": "0.0.11",
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
     "openui5-googlemaps": "https://github.com/jasper07/openui5-googlemaps",
     "openui5-multiinputdialog": "https://github.com/StErMi/openui5-multiinputdialog",
     "openui5-parallax": "0.1.3",
-    "openui5-qrcode": "https://github.com/StErMi/openui5-qrcode",
-    "openui5-smart-mockserver": "^0.1.7",
+    "openui5-qrcode": "1.0.3",
+    "openui5-smart-mockserver": "0.2.1",
     "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
-    "openui5-tour": "0.0.10",
+    "openui5-tour": "0.0.11",
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": "0.3.0",
     "ui5lab-browser": "git+https://github.com/mauriciolauffer/UI5Lab-browser.git",
-    "ui5lab-library-simple": "*",
+    "ui5lab-library-simple": "0.1.3",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
     "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
     "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space",
-    "ui5lab-wordcloud": "1.0.0"
+    "ui5lab-wordcloud": "1.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.2.0",
-    "fs-extra": "^3.0.1"
+    "eslint": "~5.2.0",
+    "fs-extra": "~3.0.1"
   }
 }
