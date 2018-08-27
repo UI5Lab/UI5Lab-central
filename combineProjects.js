@@ -43,10 +43,10 @@ try {
 
 // it.designfuture.qrcode
 try {
-	fs.copySync('./node_modules/openui5-qrcode/dist/', './resources');
-	fs.copySync('./node_modules/openui5-qrcode/src/', './resources');
-	fs.copySync('./node_modules/openui5-qrcode/test/demo/', './test/it/designfuture/qrcode');
-	fs.copySync('./node_modules/openui5-qrcode/test/index.json', './test/it/designfuture/qrcode/index.json');
+	fs.copySync('./node_modules/openui5-qrcode/dist/resources', './resources');
+	fs.copySync('./node_modules/openui5-qrcode/src/', './src');
+	fs.copySync('./node_modules/openui5-qrcode/demo/webapp/', './test/it/designfuture/qrcode');
+	fs.copySync('./node_modules/openui5-qrcode/test/it/designfuture/qrcode/index.json', './test/it/designfuture/qrcode/index.json');
 } catch (e) {
 	console.log("an error occured post-processing the it.designfuture.qrcode library: " + e.message);
 }
