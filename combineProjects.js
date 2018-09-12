@@ -13,7 +13,7 @@ const newUI5LabBrowserTestResourcesPath = newUI5LabBrowserPath + '/test-resource
  *************************/
 
 // copy browser
-fs.copySync('./node_modules/ui5lab-browser/dist/resources/ui5lab/browser', newUI5LabBrowserPath); //new UI5Lab-browser with UI5 tooling
+fs.copySync('./node_modules/ui5lab-browser/dist', newUI5LabBrowserPath); //new UI5Lab-browser with UI5 tooling
 fs.copySync('./libraries.json', newUI5LabBrowserPath + '/libraries.json'); //new UI5Lab-browser with UI5 tooling
 
 
