@@ -196,6 +196,14 @@ try {
 	console.log("an error occured post-processing the openui5-smart-mockserver library: " + e.message);
 }
 
+// ui5.sign
+try {
+	fs.copySync('./node_modules/ui5-sign/dist/resources/', './resources');
+	fs.copySync('./node_modules/ui5-sign/dist/test-resources/', './test');
+} catch (e) {
+	console.log("an error occured post-processing the ui5.sign library: " + e.message);
+}
+
 // copy central library.json that lists all UI5Lab projects
 fs.copySync('./libraries.json', './test/libraries.json');
 
