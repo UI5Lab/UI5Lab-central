@@ -1,4 +1,4 @@
-![UI5Lab Logo](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/media/UI5LabLogoPhoenix.png)
+![UI5Lab Logo](https://raw.githubusercontent.com/UI5Lab/UI5Lab-central/master/docs/media/UI5LabLogoPhoenix.png)
 
 # What is it
 
@@ -25,7 +25,10 @@ npm install --ignore-scripts
 3. Copy all files to the correct places 
 ```bash
 npm run postinstall
-``` 
+```
+
+> *Note:* to test the deployment that is triggered via Travis call `npm run deploy`. All resources for deployment will be put in a subfolder `deploy`.
+ 
 
 4. Run a local server for testing 
 ```bash
