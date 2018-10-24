@@ -9,7 +9,7 @@ before_script:
 - npm install --ignore-scripts
 
 script:
-- npm run postinstall
+- npm deploy
 
 deploy:
   provider: pages
