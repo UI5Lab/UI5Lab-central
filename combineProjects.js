@@ -36,6 +36,7 @@ for (let library in npmPackage.dependencies) {
 	}
 }
 
+
 /**************************
  * Deploy preparations:
  * Copy everything to be deployed in deploy folder

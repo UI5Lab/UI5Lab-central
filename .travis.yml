@@ -6,6 +6,7 @@ node_js:
 install: true # skip standard npm installation
 
 before_script:
+
 - npm install --ignore-scripts
 
 script:
