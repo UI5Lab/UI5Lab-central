@@ -9,7 +9,7 @@ before_script:
 - npm install --ignore-scripts
 
 script:
-- npm deploy
+- npm run deploy
 
 deploy:
   provider: pages
@@ -17,4 +17,4 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
-	branch: master
+    branch: master
