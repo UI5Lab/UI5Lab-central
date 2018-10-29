@@ -4,7 +4,8 @@ dist
 src
 test
 resources
-.idea
+.idea/
+webapp/
 
 # General
 .DS_Store

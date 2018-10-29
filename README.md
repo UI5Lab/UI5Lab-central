@@ -1,4 +1,4 @@
-![UI5Lab Logo](https://github.com/UI5Lab/UI5Lab-central/blob/master/docs/media/UI5LabLogoPhoenix.png)
+![UI5Lab Logo](https://raw.githubusercontent.com/UI5Lab/UI5Lab-central/master/docs/media/UI5LabLogoPhoenix.png)
 
 # What is it
 
@@ -25,14 +25,17 @@ npm install --ignore-scripts
 3. Copy all files to the correct places 
 ```bash
 npm run postinstall
-``` 
+```
+
+> *Note:* to test the deployment that is triggered via Travis call `npm run deploy`. All resources for deployment will be put in a subfolder `deploy`.
+ 
 
 4. Run a local server for testing 
 ```bash
-grunt serve
+npm start
 ```
 
-4. Go to [http://localhost:8080/test-resources/ui5lab/browser/](http://localhost:8080/test-resources/ui5lab/browser/) to display all available UI5Lab libraries
+4. Go to [http://localhost:8080/index.html](http://localhost:8080/index.html) to display all available UI5Lab libraries
 
 > **Note:** This project joins all individual code repositories (libraries and tools like the [UI5Lab browser](https://github.com/UI5Lab/UI5Lab-browser)) so that they can be viewed together. All required modules will be loaded to your local workspace automatically. You can easily modify the assets and test the changes immediately. The same environment manages the homepage of UI5Lab where all libraries are publicly listed. For more instructions check the documentation.
 

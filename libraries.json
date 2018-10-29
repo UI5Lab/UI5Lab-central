@@ -1,23 +1,27 @@
 {
-    "libraries": [
-        "openui5.googlemaps",
-        "openui5.parallax",
-	  	"openui5.tour",
-	    "openui5.smartmockserver",
-        "ui5lab.geometry",
-        "ui5lab.striptoastr",
-        "it.designfuture.qrcode",
-        "it.designfuture.flatpickr",
-        "it.designfuture.multiinputdialog",
-        "nabi.m",
-        "it.designfuture.chartjs",
-        "it.designfuture.toastr",
-        "ui5lab.wordcloud",
-        "it.designfuture.swissknife",
-        "ui5lab.wl.pdf",
-        "openui5.camera",
-		"ui5lab.wl.img",
-		"ui5lab.wl.space",
-	    "ui5lab.tn.icons"
-    ]
+  "libraries": [
+	"openui5.googlemaps",
+	"openui5.parallax",
+	"openui5.tour",
+	"openui5.smartmockserver",
+	"openui5.password",
+	"openui5.validator",
+	"openui5.model.json.crud",
+	"ui5lab.geometry",
+	"ui5lab.striptoastr",
+	"it.designfuture.qrcode",
+	"it.designfuture.flatpickr",
+	"it.designfuture.multiinputdialog",
+	"nabi.m",
+	"it.designfuture.chartjs",
+	"it.designfuture.toastr",
+	"ui5lab.wordcloud",
+	"it.designfuture.swissknife",
+	"ui5lab.wl.pdf",
+	"openui5.camera",
+	"ui5lab.wl.img",
+	"ui5lab.wl.space",
+	"ui5lab.tn.icons",
+	"ui5.sign"
+  ]
 }
