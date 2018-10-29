@@ -1,6 +1,6 @@
 {
   "name": "ui5lab-central",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A central repository to discover and showcase all available UI5Lab projects",
   "private": true,
   "repository": {
@@ -20,8 +20,6 @@
     "@openui5/sap.ui.core": "^1.58.4",
     "@openui5/sap.ui.layout": "^1.58.4",
     "@openui5/themelib_sap_belize": "^1.58.4",
-    "ui5lab-browser": "^1.0.0",
-    "ui5lab-library-simple": "^1.0.0",
     "openui5-camera": "~0.0.11",
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
@@ -32,18 +30,20 @@
     "openui5-password": "~0.1.2",
     "openui5-qrcode": "~1.0.3",
     "openui5-smart-mockserver": "~0.2.3",
-    "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife",
+    "openui5-swissknife": "git+https://github.com/WittmerJ/openui5-swissknife.git",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
     "openui5-tour": "~0.0.13",
     "openui5-validator": "~0.1.8",
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": "~0.3.0",
+    "ui5-sign": "https://github.com/kvsrikanthj/ui5-library-Signature",
+    "ui5lab-browser": "^1.0.0",
+    "ui5lab-library-simple": "^1.0.0",
+    "ui5lab-tn-icons": "https://github.com/TNFlexso/ui5lab-icons",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
     "ui5lab-wl-pdf": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
     "ui5lab-wl-space": "https://github.com/lemaiwo/UI5Lab-library-space",
-    "ui5lab-wordcloud": "~1.0.1",
-    "ui5lab-tn-icons": "https://github.com/TNFlexso/ui5lab-icons",
-    "ui5-sign": "https://github.com/kvsrikanthj/ui5-library-Signature"
+    "ui5lab-wordcloud": "~1.0.1"
   },
   "devDependencies": {
     "eslint": "^5.2.0",
