@@ -32,6 +32,7 @@ for (let library in oLibraries.libraries) {
 
 	console.log("Processing bootstrap options for library: " + sLibraryNamespace);
 
+	aLibraryEntryPoints.push("./deploy/browser/test-resources/openui5/googlemaps/qunit/unitTests.qunit.html");
 	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/*.html");
 	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/**/*.html");
 
