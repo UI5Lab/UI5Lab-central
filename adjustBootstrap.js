@@ -5,7 +5,7 @@ const optionDefinitions = [
 ];
 
 const commandLineArgs = require('command-line-args');
-const fs = require('fs');
+const fs = require('fs-extra');
 const replace = require('replace-in-file');
 
 // config parameters
@@ -30,7 +30,7 @@ for (let library in oLibraries.libraries) {
 	var aLibraryEntryPoints = [];
 	var aEntryPointsWithExistingResourceRoots;
 
-	console.log("Processing bootstrap options for library:" + sLibraryNamespace);
+	console.log("Processing bootstrap options for library: " + sLibraryNamespace);
 
 	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/*.html");
 	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/**/*.html");
@@ -68,6 +68,7 @@ for (let library in oLibraries.libraries) {
 	try {
 		// collect all files that are to be changed to CDN bootstrap
 		let changesBootstrap = replace.sync(oReplaceBootstrapOptions);
+		console.log("All entry points of this lib: " + changesBootstrap);
 		// remove duplicates by converting to a set and back to array
 		changesBootstrap = [...new Set(changesBootstrap)];
 		for (var i = 0; i < Object.keys(changesBootstrap).length; i++) {
