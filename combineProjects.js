@@ -19,6 +19,8 @@ const oOptions = commandLineArgs(optionDefinitions);
  * Copy the browser project and all needed UI5 libraries from npm_modules to a local folder
  *************************/
 
+console.log("Copying browser to: " + newUI5LabBrowserPath);
+
 // copy browser
 fs.copySync('./node_modules/ui5lab-browser/dist', newUI5LabBrowserPath); //new UI5Lab-browser with UI5 tooling
 fs.copySync('./libraries.json', newUI5LabBrowserPath + '/libraries.json'); //new UI5Lab-browser with UI5 tooling
@@ -28,6 +30,8 @@ fs.copySync('./libraries.json', newUI5LabBrowserPath + '/libraries.json'); //new
  * UI5Lab projects:
  * Copy all loaded projects to the appropriate places (resources and test-resources)
  **************************/
+
+console.log("Copying libraries");
 
 for (let library in npmPackage.dependencies) {
 	//Does not process @openui5 namespace or ui5lab-browser
@@ -42,6 +46,8 @@ for (let library in npmPackage.dependencies) {
  **************************/
 
 if (oOptions.deploy) {
+	console.log("Copy files to deploy folder");
+
 	// copy preview page by @nitishmeta to root folder
 	fs.copySync('./homepage', './deploy');
 	// copy docsify pages by @nlsltz to docs folder

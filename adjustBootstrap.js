@@ -35,6 +35,7 @@ for (let library in oLibraries.libraries) {
 	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/*.html");
 	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/**/*.html");
 
+	console.log("Library Entry Points " + aLibraryEntryPoints);
 	// replace local with CDN bootstrap
 	const oReplaceBootstrapOptions = {
 		allowEmptyPaths: true,
