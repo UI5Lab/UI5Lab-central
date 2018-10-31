@@ -10,8 +10,8 @@
   "license": "Apache-2.0",
   "scripts": {
     "test": "echo \"Error: no test specified. Please add some.\" && exit 1",
-    "postinstall": "node combineProjects & node adjustBootstrap",
-    "deploy": "node combineProjects --deploy & node adjustBootstrap --deploy",
+    "postinstall": "node combineProjects && node adjustBootstrap",
+    "deploy": "node combineProjects --deploy && node adjustBootstrap --deploy",
     "start": "ui5 serve"
   },
   "dependencies": {
