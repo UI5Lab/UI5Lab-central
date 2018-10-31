@@ -38,12 +38,11 @@ for (let library in oLibraries.libraries) {
 	// replace local with CDN bootstrap
 	const oReplaceBootstrapOptions = {
 		allowEmptyPaths: true,
-		dry: true,
 		//Glob(s)
 		files: aLibraryEntryPoints,
 		//Replacement to make (string or regex)
 		from: /src="([^"]*sap-ui-core\.js)"/g,
-		to: ''
+		to: 'src="$1"'
 	};
 
 	// checks for resource roots without changing anything
