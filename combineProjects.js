@@ -5,11 +5,12 @@ const optionDefinitions = [
 ];
 
 const commandLineArgs = require('command-line-args');
+const glob = require('glob');
 const fs = require('fs-extra');
 const npmPackage = require('./package.json');
-const newUI5LabBrowserPath = './webapp';
-const newUI5LabBrowserResourcesPath = newUI5LabBrowserPath + '/resources';
-const newUI5LabBrowserTestResourcesPath = newUI5LabBrowserPath + '/test-resources';
+const sBrowserPath = './webapp';
+const sResourcesPath = sBrowserPath + '/resources/';
+const sTestResourcesPath = sBrowserPath + '/test-resources/';
 
 // config parameters
 const oOptions = commandLineArgs(optionDefinitions);
@@ -19,11 +20,11 @@ const oOptions = commandLineArgs(optionDefinitions);
  * Copy the browser project and all needed UI5 libraries from npm_modules to a local folder
  *************************/
 
-console.log("Copying browser and global libraries file to " + newUI5LabBrowserPath);
+console.log("Copying browser and global libraries file to " + sBrowserPath);
 
 // copy browser
-fs.copySync('./node_modules/ui5lab-browser/dist', newUI5LabBrowserPath); //new UI5Lab-browser with UI5 tooling
-fs.copySync('./libraries.json', newUI5LabBrowserPath + '/libraries.json'); //new UI5Lab-browser with UI5 tooling
+fs.copySync('./node_modules/ui5lab-browser/dist', sBrowserPath); //new UI5Lab-browser with UI5 tooling
+fs.copySync('./libraries.json', sBrowserPath + '/libraries.json'); //new UI5Lab-browser with UI5 tooling
 
 
 /**************************
@@ -60,59 +61,77 @@ if (oOptions.deploy) {
 
 /*** helper functions ***/
 
-function copyLibraryToUI5LabBrowser(library) {
+function copyLibraryToUI5LabBrowser(sLibraryPackage) {
 	try {
-		const libraryPath = './node_modules/' + library;
-		//Does not copy libraries which have UI5 tooling because it will be loaded automatically by UI5 tooling
-		// when deploying to gh_pages always copy libraries as we do not have ui5 tools there
-		if (oOptions.deploy || !_hasUI5Tooling(libraryPath)) {
-			console.log("Copying community library " + library);
-			_copyLibraryToResources(libraryPath);
-			_copyLibraryToTestResources(libraryPath);
+		const sLibraryNodePath = './node_modules/' + sLibraryPackage;
+		// does not copy libraries which have UI5 tooling during development (will be served by the UI5 tooling)
+		// when in deploy mode always copy libraries as we do not have ui5 tools on gh-pages branch
+		if (oOptions.deploy || !_hasUI5Tooling(sLibraryNodePath)) {
+			console.log("Copying community library " + sLibraryPackage);
+			_copyLibraryResources(sLibraryNodePath);
+			_copyLibraryTestResources(sLibraryNodePath);
 		}
-
 	} catch(err) {
-		console.log("An error occured post-processing library: " + library + err.message);
+		console.log("An error occured post-processing library: " + sLibraryPackage + err.message);
 	}
 }
 
-function _copyLibraryToResources(libraryPath) {
-	const copyFromPath = _getLibraryDistOrSrcPath(libraryPath);
-	fs.copySync(copyFromPath, newUI5LabBrowserResourcesPath);
+function _copyLibraryResources(sLibraryNodePath) {
+	const sLibraryNamespacePath = _getLibraryNamespace(sLibraryNodePath).replace(/\./g, '/');
+	const sCopyFromPath = _getLibraryDistOrSrcPath(sLibraryNodePath) + sLibraryNamespacePath;
+	const sCopyToPath = sResourcesPath + sLibraryNamespacePath;
+	console.log("Copying resources from " + sCopyFromPath);
+	fs.copySync(sCopyFromPath, sCopyToPath);
 }
 
-function _copyLibraryToTestResources(libraryPath) {
-	const copyFromPath = _getLibraryTestPath(libraryPath);
-	fs.copySync(copyFromPath, newUI5LabBrowserTestResourcesPath);
+function _copyLibraryTestResources(sLibraryNodePath) {
+	const sLibraryNamespacePath = _getLibraryNamespace(sLibraryNodePath).replace(/\./g, '/');
+	const sCopyFromPath = _getLibraryTestPath(sLibraryNodePath) + sLibraryNamespacePath;
+	const sCopyToPath = sTestResourcesPath + sLibraryNamespacePath;
+	console.log("Copying test resources from " + sCopyFromPath);
+	fs.copySync(sCopyFromPath, sCopyToPath);
 }
 
-function _getLibraryDistOrSrcPath(libraryPath) {
-	const distResources = libraryPath + '/dist/resources';
-	const dist = libraryPath + '/dist';
-	const src = libraryPath + '/src';
+function _getLibraryNamespace(sLibraryNodePath) {
+	// new convention: property ui5lab.namespace in package.json
+	// read library namespace from package.json
+	var oPackage = require(sLibraryNodePath + '/package.json');
+	if  (oPackage.ui5lab && oPackage.ui5lab.namespace) {
+		// return namespace from package.json
+		return oPackage.ui5lab.namespace;
+	} else {
+		// old convention: root key in index.json
+		// find index.json file and extract namespace from root key
+		var sLibraryIndexPath = glob.sync(sLibraryNodePath + '/**/index.json').pop();
+		var oIndex = require(sLibraryIndexPath);
+		return Object.keys(oIndex).pop();
+	}
+}
+
+function _getLibraryDistOrSrcPath(sLibraryNodePath) {
+	const sDistResourcesPath = sLibraryNodePath + '/dist/resources/';
+	const sDistPath = sLibraryNodePath + '/dist/';
+	const sSrcPath = sLibraryNodePath + '/src/';
+	if (fs.existsSync(sDistResourcesPath)) {
+		return sDistResourcesPath;
+	} else if (fs.existsSync(sDistPath)) {
+		return sDistPath;
+	} else if (fs.existsSync(sSrcPath)) {
+		return sSrcPath;
+	}
+}
+
+function _getLibraryTestPath(sLibraryNodePath) {
+	const sDistTestResourcesPath = sLibraryNodePath + '/dist/test-resources/';
+	const sTestPath = sLibraryNodePath + '/test/';
 	let copyFromPath = null;
-	if (fs.existsSync(distResources)) {
-		copyFromPath = distResources;
-	} else	if (fs.existsSync(dist)) {
-		copyFromPath = dist;
-	} else	if (fs.existsSync(src)) {
-		copyFromPath = src;
+	if (fs.existsSync(sDistTestResourcesPath)) {
+		return sDistTestResourcesPath;
+	} else if (fs.existsSync(sTestPath)) {
+		return sTestPath;
 	}
-	return copyFromPath;
 }
 
-function _getLibraryTestPath(libraryPath) {
-	const distTestResources = libraryPath + '/dist/test-resources';
-	const test = libraryPath + '/test';
-	let copyFromPath = null;
-	if (fs.existsSync(distTestResources)) {
-		copyFromPath = distTestResources;
-	} else	if (fs.existsSync(test)) {
-		copyFromPath = test;
-	}
-	return copyFromPath;
-}
-
-function _hasUI5Tooling(libraryPath) {
-	return (fs.existsSync(libraryPath + '/ui5.yaml'));
+function _hasUI5Tooling(sLibraryNodePath) {
+	return (fs.existsSync(sLibraryNodePath + '/ui5.yaml'));
 }
