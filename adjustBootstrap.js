@@ -5,7 +5,8 @@ const optionDefinitions = [
 ];
 
 const commandLineArgs = require('command-line-args');
-const fs = require('fs');
+const glob = require('glob');
+const fs = require('fs-extra');
 const replace = require('replace-in-file');
 
 // config parameters
@@ -17,9 +18,9 @@ var filesWithResources = 0;
 var filesWithoutResources = 0;
 
 if (oOptions.deploy) {
-	sPath = "./deploy/browser/";
+	sPath = "./deploy/browser/test-resources/";
 } else {
-	sPath = "./webapp/";
+	sPath = "./webapp/test-resources/";
 }
 
 // this script adjusts the samples for each libraries to CDN bootstrap
@@ -27,13 +28,13 @@ if (oOptions.deploy) {
 // and injects CDN bootstrap and a path to the local library resources
 for (let library in oLibraries.libraries) {
 	var sLibraryNamespace = oLibraries.libraries[library];
-	var aLibraryEntryPoints = [];
 	var aEntryPointsWithExistingResourceRoots;
+	var sLibraryPath = sPath + sLibraryNamespace.replace(/\./g, '/');
 
-	console.log("Processing bootstrap options for library:" + sLibraryNamespace);
+	console.log("Processing bootstrap options for library: " + sLibraryNamespace);
 
-	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/*.html");
-	aLibraryEntryPoints.push(sPath + "test-resources/" + sLibraryNamespace.replace(/\./g, '/') + "/**/*.html");
+	var aLibraryEntryPoints = glob.sync(sLibraryPath + '/**/*.html');
+	console.log("Library Entry Points " + aLibraryEntryPoints);
 
 	// replace local with CDN bootstrap
 	const oReplaceBootstrapOptions = {
@@ -68,6 +69,7 @@ for (let library in oLibraries.libraries) {
 	try {
 		// collect all files that are to be changed to CDN bootstrap
 		let changesBootstrap = replace.sync(oReplaceBootstrapOptions);
+		console.log("All entry points of this lib: " + changesBootstrap);
 		// remove duplicates by converting to a set and back to array
 		changesBootstrap = [...new Set(changesBootstrap)];
 		for (var i = 0; i < Object.keys(changesBootstrap).length; i++) {
@@ -75,6 +77,7 @@ for (let library in oLibraries.libraries) {
 			// no resource roots: add it after CDN bootstrap in the same line
 			if (!(aEntryPointsWithExistingResourceRoots.includes(changesBootstrap[i]))){
 				filesWithoutResources++;
+				console.log('No library resource roots defined');
 				try {
 					const file = replace.sync({
 						allowEmptyPaths: true,
@@ -84,11 +87,14 @@ for (let library in oLibraries.libraries) {
 						from: /src="([^"]*sap-ui-core\.js)"/g,
 						to: 'src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" data-sap-ui-resourceroots=\'{"' + sLibraryNamespace + '" : "./resources/' + sLibraryNamespace.replace(/\./g, '/') + '"}\''
 					});
-					console.log('Adding library resource roots of: ', file.join(', '));
+					if (file.length) {
+						console.log('Adding library resource roots of: ', file.join(', '));
+					}
 				} catch (error) {
 					console.error('Error occurred:', error);
 				}
 			} else {
+				console.log('Library resource roots defined');
 				filesWithResources++;
 				// replace local sap-ui-core with CDN
 				try {
@@ -100,7 +106,9 @@ for (let library in oLibraries.libraries) {
 						from: /src="([^"]*sap-ui-core\.js)"/g,
 						to: 'src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"'
 					});
-					console.log('Replace bootstrap source of: ', file.join(', '));
+					if (file.length) {
+						console.log('Replace bootstrap source of: ', file.join(', '));
+					}
 				} catch (error) {
 					console.error('Error occurred:', error);
 				}
@@ -115,7 +123,9 @@ for (let library in oLibraries.libraries) {
 						from: new RegExp('data-sap-ui-resourceroots=\'{(?!"' + sLibraryNamespace + '")'),
 						to: 'data-sap-ui-resourceroots=\'{"' + sLibraryNamespace + '" : "./resources/' + sLibraryNamespace.replace(/\./g, '/') + '", '
 					});
-					console.log('Adding library resource roots of: ', file.join(', '));
+					if (file.length) {
+						console.log('Adding library resource roots of: ', file.join(', '));
+					}
 				} catch (error) {
 					console.error('Error occurred:', error);
 				}
@@ -124,7 +134,7 @@ for (let library in oLibraries.libraries) {
 	} catch (error) {
 		console.error('Error occurred:', error);
 	}
-};
+}
 
 console.log("--------------------------------------------");
 console.log("FilesWithResources: " + filesWithResources);
