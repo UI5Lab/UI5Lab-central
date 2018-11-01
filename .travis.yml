@@ -10,7 +10,6 @@ before_script:
 
 script:
 - npm run deploy
-- npm run deployAdjust
 
 deploy:
   provider: pages

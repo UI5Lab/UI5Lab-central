@@ -11,8 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified. Please add some.\" && exit 1",
     "postinstall": "node combineProjects && node adjustBootstrap",
-    "deploy": "node combineProjects --deploy",
-    "deployAdjust": "node adjustBootstrap --deploy",
+    "deploy": "node combineProjects --deploy && node adjustBootstrap --deploy",
     "start": "ui5 serve"
   },
   "dependencies": {
