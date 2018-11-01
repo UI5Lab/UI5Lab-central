@@ -19,7 +19,7 @@ const oOptions = commandLineArgs(optionDefinitions);
  * Copy the browser project and all needed UI5 libraries from npm_modules to a local folder
  *************************/
 
-console.log("Copying browser to: " + newUI5LabBrowserPath);
+console.log("Copying browser and global libraries file to " + newUI5LabBrowserPath);
 
 // copy browser
 fs.copySync('./node_modules/ui5lab-browser/dist', newUI5LabBrowserPath); //new UI5Lab-browser with UI5 tooling
@@ -31,7 +31,7 @@ fs.copySync('./libraries.json', newUI5LabBrowserPath + '/libraries.json'); //new
  * Copy all loaded projects to the appropriate places (resources and test-resources)
  **************************/
 
-console.log("Copying libraries");
+console.log("Copying community libraries to webapp folder");
 
 for (let library in npmPackage.dependencies) {
 	//Does not process @openui5 namespace or ui5lab-browser
@@ -46,7 +46,7 @@ for (let library in npmPackage.dependencies) {
  **************************/
 
 if (oOptions.deploy) {
-	console.log("Copy files to deploy folder");
+	console.log("Copying homepage, documentation, and browser with all community libraries to deploy folder");
 
 	// copy preview page by @nitishmeta to root folder
 	fs.copySync('./homepage', './deploy');
@@ -66,6 +66,7 @@ function copyLibraryToUI5LabBrowser(library) {
 		//Does not copy libraries which have UI5 tooling because it will be loaded automatically by UI5 tooling
 		// when deploying to gh_pages always copy libraries as we do not have ui5 tools there
 		if (oOptions.deploy || !_hasUI5Tooling(libraryPath)) {
+			console.log("Copying community library " + library);
 			_copyLibraryToResources(libraryPath);
 			_copyLibraryToTestResources(libraryPath);
 		}

@@ -22,7 +22,7 @@ cd UI5Lab-central
 npm install --ignore-scripts
 ```
 
-3. Copy all files to the correct places 
+3. Copy all files to the correct places and adjust bootstrap to CDN
 ```bash
 npm run postinstall
 ```
