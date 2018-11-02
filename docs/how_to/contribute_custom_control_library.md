@@ -6,6 +6,7 @@ A simple example set up according to our best practices can be found in project 
 Apart from this documentation, you can follow these hands-on tutorials to create your own UI5Lab library and add it to UI5Lab:
 * Create a UI5 Library for UI5Lab: [https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/](https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/)
 * Add your UI5 Library to UI5Lab: [https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/](https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/)
+* Migrate your UI5Lab library to the new UI5 tooling[https://blogs.sap.com/2018/11/02/migrate-your-ui5lab-library-to-the-new-ui5-tooling/]
 
 ## Instructions
 
