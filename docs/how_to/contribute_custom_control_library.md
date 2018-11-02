@@ -3,10 +3,12 @@
 To contribute your custom controls to UI5lab you need to transform it into a UI5Lab library.
 A simple example set up according to our best practices can be found in project [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple). 
 
+**Note:** Please use the new [OpenUI5 npm modules](https://www.npmjs.com/org/openui5) and the (UI5 tooling)[https://github.com/SAP/ui5-tooling] when creating new community libraries - we do not recommend to use bower and grunt anymore. If you like to switch your library to our latest recommendations, see the [migration guide](https://blogs.sap.com/2018/11/02/migrate-your-ui5lab-library-to-the-new-ui5-tooling/) for more details.
+
 Apart from this documentation, you can follow these hands-on tutorials to create your own UI5Lab library and add it to UI5Lab:
-* Create a UI5 Library for UI5Lab: [https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/](https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/)
-* Add your UI5 Library to UI5Lab: [https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/](https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/)
-* Migrate your UI5Lab library to the new UI5 tooling[https://blogs.sap.com/2018/11/02/migrate-your-ui5lab-library-to-the-new-ui5-tooling/]
+* [Create a UI5 Library for UI5Lab](https://blogs.sap.com/2018/03/02/create-your-own-ui5-library-for-ui5lab/)
+* [Add your UI5 Library to UI5Lab](https://blogs.sap.com/2018/03/02/add-your-ui5-library-to-ui5lab/)
+* [Migrate your UI5Lab library to the new UI5 tooling](https://blogs.sap.com/2018/11/02/migrate-your-ui5lab-library-to-the-new-ui5-tooling/)
 
 ## Instructions
 
