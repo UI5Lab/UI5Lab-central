@@ -1,6 +1,6 @@
 {
   "name": "ui5lab-central",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A central repository to discover and showcase all available UI5Lab projects",
   "private": true,
   "repository": {
