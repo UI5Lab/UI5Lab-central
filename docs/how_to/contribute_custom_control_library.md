@@ -63,6 +63,6 @@ Good examples are the `index.json` of published UI5lab libraries like [UI5Lab-li
 
 #### 3. Generate a Pull Request
 
-Once you are ready to publish your custom control library, simply fork [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central) and edit the `libraries.json`, `package.json` and `combineProjects.js` file. After that, create a pull request. And when this pull request is merged into the repository, a Travis job will automatically generate an updated version of UI5lab where your Library is now listed among all the others.
-The `combineProjects.js` file will do a copy from the `node_modules` folder to the resources folder of this project. Test your library, provide a sample and create a pull request with a meaningful description to list your proejct.
+Once you are ready to publish your custom control library, simply fork [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central) and edit the `libraries.json` and `package.json` files. After that, create a pull request. And when this pull request is merged into the repository, a Travis job will automatically generate an updated version of UI5lab where your Library is now listed among all the others.
+The `combineProjects.js` file will do a copy from the `node_modules` folder to the resources folder of this project. Test your library, provide a sample and create a pull request with a meaningful description to list your project.
 
