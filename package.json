@@ -27,7 +27,7 @@
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
     "openui5-googlemaps": "https://github.com/jasper07/openui5-googlemaps",
-    "openui5-model-json-crud": "0.0.6",
+    "openui5-model-json-crud": "^0.0.8",
     "openui5-multiinputdialog": "https://github.com/StErMi/openui5-multiinputdialog",
     "openui5-parallax": "^1.0.0",
     "openui5-password": "^0.1.4",
