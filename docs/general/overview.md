@@ -41,7 +41,7 @@ Demo: [geometry samples](https://ui5lab.io/browser)
 
 Used in: [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central)
 
-> **Note:** A pull request for a new library should include additions to `libraries.json`, `package.json` and `combineProjects.js`. Make sure that a library always contains a working sample so that users can see what the library is intended to do.
+> **Note:** A pull request for a new library should include additions to `libraries.json` and `package.json`. Make sure that a library always contains a working sample so that users can see what the library is intended to do.
 
 ### UI5Lab-central
 
