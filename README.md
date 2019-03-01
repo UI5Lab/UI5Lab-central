@@ -54,6 +54,6 @@ Be sure to include enough details and context to reproduce the issue and follow 
 # Contact
 
 We organize this project in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
-If you are interested in what we do and discuss, join with this [invitation link](http://slackui5invite.herokuapp.com/) or visit the homepage [https://ui5lab.io](https://ui5lab.io).
+If you are interested in what we do and discuss, join with this [invitation link](https://ui5-slack-invite.cfapps.eu10.hana.ondemand.com/) or visit the homepage [https://ui5lab.io](https://ui5lab.io).
 
 *The UI5Lab Community*
