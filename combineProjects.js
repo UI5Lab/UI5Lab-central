@@ -55,8 +55,6 @@ if (oOptions.deploy) {
 	fs.copySync('./docs', './deploy/docs');
 	// copy browser to subfolder browser for the moment
 	fs.copySync('./webapp', './deploy/browser');
-	// override development index with productive CDN bootstrap index
-	fs.copySync('./index.html', './deploy/browser/index.html');
 }
 
 /*** helper functions ***/
