@@ -24,7 +24,6 @@ console.log("Copying browser and global libraries file to " + sBrowserPath);
 
 // copy browser
 fs.copySync('./node_modules/ui5lab-browser/dist', sBrowserPath); //new UI5Lab-browser with UI5 tooling
-fs.copySync('./libraries.json', sBrowserPath + '/libraries.json'); //new UI5Lab-browser with UI5 tooling
 
 
 /**************************
@@ -71,7 +70,8 @@ function copyLibraryToUI5LabBrowser(sLibraryPackage) {
 			_copyLibraryResources(sLibraryNodePath);
 			_copyLibraryTestResources(sLibraryNodePath);
 		}
-	} catch(err) {
+		_addToBrowserLibrariesFile(sLibraryNodePath);
+	} catch (err) {
 		console.log("An error occured post-processing library: " + sLibraryPackage + err.message);
 	}
 }
@@ -124,7 +124,6 @@ function _getLibraryDistOrSrcPath(sLibraryNodePath) {
 function _getLibraryTestPath(sLibraryNodePath) {
 	const sDistTestResourcesPath = sLibraryNodePath + '/dist/test-resources/';
 	const sTestPath = sLibraryNodePath + '/test/';
-	let copyFromPath = null;
 	if (fs.existsSync(sDistTestResourcesPath)) {
 		return sDistTestResourcesPath;
 	} else if (fs.existsSync(sTestPath)) {
@@ -134,4 +133,44 @@ function _getLibraryTestPath(sLibraryNodePath) {
 
 function _hasUI5Tooling(sLibraryNodePath) {
 	return (fs.existsSync(sLibraryNodePath + '/ui5.yaml'));
+}
+
+function _addToBrowserLibrariesFile(sLibraryNodePath) {
+	console.log("Adding library to browser libs file...");
+	try {
+		const browserLibraryFilePath = sBrowserPath + '/libraries.json';
+		const metadata = _getLibraryMetadata(sLibraryNodePath);
+		const librariesFile = require(browserLibraryFilePath);
+		librariesFile.libraries.push(metadata);
+		fs.writeFileSync(browserLibraryFilePath, JSON.stringify(librariesFile), 'utf8', (err) => (console.log));
+	} catch (err) {
+		console.error(err);
+	}
+}
+
+function _getLibraryMetadata(libraryNodePath) {
+	let libraryMetadata = {};
+	const libPackage = require(libraryNodePath + '/package.json');
+	if  (libPackage.ui5lab) {
+		const metadata = {};
+		let repositoryUrl = '';
+		if (libPackage.repository) {
+			repositoryUrl = libPackage.repository.url;
+		}
+		metadata.icon = libPackage.ui5lab.icon || '';
+		metadata.name = libPackage.ui5lab.name || libPackage.name;
+		metadata.description = libPackage.description || '';
+		metadata.source = repositoryUrl || '';
+		metadata.documentation = libPackage.homepage || '';
+		metadata.demo = libPackage.ui5lab.demo || '';
+		metadata.version = libPackage.version || '';
+		metadata.license = libPackage.license || '';
+		metadata.content = libPackage.ui5lab.content || {};
+		metadata.keywords = libPackage.keywords || [];
+		libraryMetadata[libPackage.ui5lab.namespace] = metadata;
+	} else {
+		const libraryIndexPath = glob.sync(libraryNodePath + '/**/index.json').pop();
+		libraryMetadata = require(libraryIndexPath);
+	}
+	return libraryMetadata;
 }
