@@ -167,10 +167,15 @@ function _getLibraryMetadata(libraryNodePath) {
 		metadata.license = libPackage.license || '';
 		metadata.content = libPackage.ui5lab.content || {};
 		metadata.keywords = libPackage.keywords || [];
+		metadata.keywords = metadata.keywords.join();
 		libraryMetadata[libPackage.ui5lab.namespace] = metadata;
 	} else {
 		const libraryIndexPath = glob.sync(libraryNodePath + '/**/index.json').pop();
 		libraryMetadata = require(libraryIndexPath);
+		const libName = Object.keys(libraryMetadata)[0];
+		const libEntry = libraryMetadata[libName];
+		libEntry.keywords = libEntry.keywords || [];
+		libEntry.keywords = libEntry.keywords.join();
 	}
 	return libraryMetadata;
 }
