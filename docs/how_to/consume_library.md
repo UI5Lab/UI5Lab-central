@@ -28,7 +28,7 @@ cd UI5Lab-app-simple
 }
 ```
 
-4. Adapt the file `postInstall.json` to copy the files of the Custom Control library from the `nodes_modules` directory to the application folder.
+4. Adapt the file `postInstall.js` to copy the files of the Custom Control library from the `nodes_modules` directory to the application folder.
 (In this demonstration to `./webapp/thirdparty`)
 
 ```javascript
