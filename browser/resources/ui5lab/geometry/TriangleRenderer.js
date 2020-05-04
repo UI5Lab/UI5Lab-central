@@ -1,0 +1,4 @@
+/*!
+ * ${copyright}
+ */
+sap.ui.define([],function(){"use strict";var t={};t.render=function(t,e){t.write("<div");t.writeControlData(e);t.writeAttribute("tabindex","0");t.addClass("ui5labTriangle");t.writeClasses();t.addStyle("border-width","0 "+e.getSize()/2+"px "+e.getSize()*.86+"px "+e.getSize()/2+"px");t.addStyle("transform","rotate("+e.getRotation()+"deg)");t.writeStyles();t.write(">");t.write('<div class="ui5labTriangleText"');t.addStyle("top",e.getSize()/2.5+"px");t.addStyle("left","-"+e.getSize()/2+"px");t.addStyle("width",e.getSize()+"px");t.writeStyles();t.write(">");t.write('<div id="'+e.getId()+'-rotation" class="ui5labTriangleRotation">');t.writeEscaped(e.getRotation()+"°");t.write("</div>");t.writeEscaped(e.getText());t.write("</div>");t.write("</div>")};return t},true);

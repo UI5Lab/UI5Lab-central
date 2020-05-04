@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unit tests for Master-Detail</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta charset="UTF-8">
+    <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" data-sap-ui-libs="sap.m" data-sap-ui-xx-bindingSyntax="complex" data-sap-ui-theme="sap_bluecrystal" data-sap-ui-preload="async" data-sap-ui-accessibility="false"
+        data-sap-ui-resourceroots='{"ui5lab": "../../../../src/ui5lab", "test.unit": "./"}'>
+    </script>
+    <script>
+        jQuery.sap.require("sap.ui.qunit.qunit-css");
+        jQuery.sap.require("sap.ui.thirdparty.qunit");
+        jQuery.sap.require("sap.ui.qunit.qunit-junit");
+        jQuery.sap.require("sap.ui.qunit.qunit-coverage");
+
+        // Phantom js does not have a function.bind implementation so we are using a polyfill
+        if (!Function.prototype.bind) {
+            Function.prototype.bind = function(oThis) {
+                return jQuery.proxy(this, oThis);
+            };
+        }
+
+        /* filter only openui5 results */
+        if (window.blanket) {
+            window.blanket.options("sap-ui-cover-only", "ui5lab/striptoastr");
+        }
+
+        QUnit.config.autostart = false;
+        sap.ui.getCore().attachInitEvent(function() {
+            sap.ui.require(
+                ["test/unit/StripToastr"],
+                function() {
+                    QUnit.start();
+                }
+            );
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+</body>
+
+</html>

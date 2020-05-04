@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>openui5.tour</name>
+  <vendor>Mauricio Lauffer</vendor>
+  <version>0.0.18</version>
+  <documentation>An OpenUI5 library to give a guided tour through your UI5 webapp.</documentation>
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.m</libraryName>
+    </dependency>
+  </dependencies>
+  <appData></appData>
+</library>

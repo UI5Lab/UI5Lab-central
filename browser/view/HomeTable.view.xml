@@ -1,0 +1,76 @@
+<mvc:View
+	controllerName="ui5lab.browser.controller.HomeTable"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<Table
+		id="table"
+		width="auto"
+		items="{
+			path: 'homeView>/libraries'
+		}"
+		noDataText="{i18n>homeNoDataText}"
+		busyIndicatorDelay="{sampleListView>/tableBusyDelay}"
+		growing="true"
+		growingScrollToLoad="true">
+
+		<columns>
+			<Column id="nameColumn">
+				<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+			</Column>
+			<Column id="DescriptionColumn" demandPopin="true" minScreenWidth="Tablet">
+				<Text text="{i18n>tableDescriptionColumnTitle}" id="descriptionColumnTitle"/>
+			</Column>
+			<Column id="LicenseColumn" demandPopin="true" minScreenWidth="Tablet">
+				<Text text="{i18n>tableLicenseColumnTitle}" id="licenszeColumnTitle"/>
+			</Column>
+			<Column id="InfoColumn" demandPopin="true" minScreenWidth="Desktop">
+				<Text text="{i18n>tableInfoColumnTitle}" id="infoColumnTitle"/>
+			</Column>
+		</columns>
+
+		<items>
+			<ColumnListItem
+				type="Navigation"
+				press=".onShowLibrary">
+				<cells>
+					<layout:HorizontalLayout>
+						<core:Icon
+							class="sapUiTinyMarginEnd"
+							src="{homeView>icon}"
+							size="2rem"
+							color="Default">
+						</core:Icon>
+						<layout:VerticalLayout>
+							<Label design="Bold" text="{homeView>name}"/>
+							<Text text="{homeView>id}"/>
+						</layout:VerticalLayout>
+					</layout:HorizontalLayout>
+					<Text text="{homeView>description}"/>
+					<Text text="{homeView>license}"/>
+					<layout:VerticalLayout
+						visible="{= ${homeView>source} !== undefined || ${homeView>documentation} !== undefined || ${homeView>demo} !== undefined ? true : false }">
+						<Link
+							href="{homeView>source}"
+							visible="{= ${homeView>source} === undefined ? false : true }"
+							target="_blank"
+							text="{i18n>homeSourceCode}"/>
+						<Link
+							href="{homeView>documentation}"
+							target="_blank"
+							text="{i18n>homeDocumentation}"/>
+						<Link
+							href="{homeView>demo}"
+							visible="{= ${homeView>demo} === undefined ? false : true }"
+							target="_blank"
+							text="{i18n>homeDemo}"/>
+					</layout:VerticalLayout>
+				</cells>
+			</ColumnListItem>
+		</items>
+
+	</Table>
+
+</mvc:View>

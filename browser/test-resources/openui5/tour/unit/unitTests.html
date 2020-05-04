@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mauricio Lauffer">
+  <meta http-equiv="Content-Security-Policy"
+        content=" default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval' 'unsafe-inline'">
+  <title>Unit Test for openui5-tour</title>
+  <link rel="stylesheet" href="/resources/sap/ui/thirdparty/qunit-2.css" type="text/css" media="screen">
+  <script id="sap-ui-bootstrap"
+          src="/resources/sap-ui-core.js"
+          data-sap-ui-animation="false"
+          data-sap-ui-async="true"
+          data-sap-ui-compatVersion="edge"
+          data-sap-ui-language="en"
+          data-sap-ui-libs="sap.m"
+          data-sap-ui-logLevel="WARNING"
+          data-sap-ui-oninit="module:test/unit/unitTests"
+          data-sap-ui-resourceroots='{
+          "openui5.tour": "/resources/openui5/tour",
+          "test.unit": "./"}'></script>
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+</body>
+</html>

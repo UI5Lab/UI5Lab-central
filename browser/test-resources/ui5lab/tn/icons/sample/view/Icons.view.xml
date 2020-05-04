@@ -1,0 +1,12 @@
+<mvc:View controllerName="be.tn.IconsDemo.controller.Icons" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Page title="{view>/title}">
+		<content>
+			<SearchField placeholder="Search Icon ..." liveChange="onSearch"/>
+			<List items="{/}" growing="true" growingThreshold="50" growingScrollToLoad="false" id="iconList">
+				<StandardListItem title="{name}" icon="{icon}" description="{icon}" iconDensityAware="false" iconInset="false" type="Active"
+					press="onItemPress"/>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

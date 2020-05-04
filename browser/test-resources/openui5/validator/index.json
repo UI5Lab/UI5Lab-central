@@ -1,0 +1,27 @@
+{
+  "openui5.validator": {
+    "icon": "sap-icon://accept",
+    "name": "Validator",
+    "description": "An OpenUI5 library to validate fields",
+    "source" : "https://github.com/mauriciolauffer/openui5-validator",
+    "documentation": "https://github.com/mauriciolauffer/openui5-validator#readme",
+    "demo": "https://mauriciolauffer.github.io/openui5-validator/demo/webapp/index.html",
+    "license" : "MIT",
+    "version": 1.0,
+    "content": {
+      "Validator": {
+        "id": "Validator",
+        "name": "Validator Control",
+        "type": "control",
+        "version": 1.0,
+        "description": "An OpenUI5 library to validate fields",
+        "samples": [{
+          "id": "Validator",
+          "name": "Validator Control Example",
+          "description": "Basic form validation with configurable parameters",
+          "url": "https://mauriciolauffer.github.io/openui5-validator/demo/webapp/index.html"
+        }]
+      }
+    }
+  }
+}

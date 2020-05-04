@@ -1,0 +1,42 @@
+<mvc:View
+	controllerName="ui5lab.browser.controller.Object"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:browser="ui5lab.browser.control">
+
+	<Page
+		id="page"
+		navButtonPress="onNavBack"
+		showNavButton="true"
+		showFooter="false"
+		busy="{objectView>/busy}"
+		busyIndicatorDelay="{objectView>/delay}">
+		<customHeader>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Title text="{
+					parts: [
+						'i18n>objectTitle',
+						'name'
+					],
+					formatter: '.formatter.formatMessage'
+				}"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://{= ${objectView>/fullscreen} === true ? 'exit-' : '' }full-screen" press=".toggleFullScreen" tooltip="{= ${objectView>/fullScreen} === false ? 'Enter' : 'Exit' } Full Screen Mode"/>
+				<Button icon="sap-icon://inspect" press=".openInNewTab" tooltip="Open in new Tab"/>
+				<Button icon="sap-icon://decline" press=".onClose" tooltip="Close column"/>
+			</Toolbar>
+		</customHeader>
+		<content>
+			<ObjectHeader
+				id="objectHeader"
+				title="{name}"
+				intro="{description}"
+				responsive="true">
+			</ObjectHeader>
+			<browser:IframeSample href="{objectView>/href}"/>
+ 		</content>
+
+	</Page>
+
+</mvc:View>

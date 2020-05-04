@@ -1,0 +1,29 @@
+{
+    "openui5.camera": {
+        "icon": "sap-icon://camera",
+        "name": "OpenUI5 Camera",
+        "description": "Take pictures in your UI5 app. Pure javascript implementation.",
+        "source" : "https://github.com/jumpifzero/openui5-camera",
+        "documentation": "https://github.com/jumpifzero/openui5-camera",
+        "demo": "https://jumpifzero.github.io/openui5-camera/test/demo/",
+        "license": "MIT",
+        "version": "0.0.11",
+        "content": {
+            "Camera": {
+                "id": "camera",
+                "name": "Camera",
+                "type": "control",
+                "version": "0.0.9",
+                "description": "Take pictures in your UI5 app. Pure javascript implementation.",
+                "samples": [
+                    {
+                        "id": "camera",
+                        "name": "Simple demo",
+                        "description": "Click the camera preview to push png's into the model",
+                        "url": "https://jumpifzero.github.io/openui5-camera/test/demo/"
+                    }
+                ]
+            }
+        }
+    }
+}

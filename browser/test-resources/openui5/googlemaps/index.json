@@ -1,0 +1,100 @@
+{
+    "openui5.googlemaps": {
+        "icon": "sap-icon://world",
+        "name": "Google Maps",
+        "description": "A library of controls to integrate Google Maps in a UI5 application",
+        "source": "https://github.com/jasper07/openui5-googlemaps.git",
+        "documentation": "http://jasper07.github.io/openui5-googlemaps/",
+        "demo": "https://jasper07.github.io/openui5-googlemaps/",
+        "version": "1.0.0",
+        "license": "MIT",
+        "content": {
+            "Map": {
+                "id": "Map",
+                "name": "Map",
+                "type": "control",
+                "description": "Map control",
+                "samples": [{
+                        "id": "app1",
+                        "name": "Map 1",
+                        "description": "List Binding Demo (declares library in app manifest file)",
+                        "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/app1/"
+                    },
+                    {
+                        "id": "app2",
+                        "name": "Map 2",
+                        "description": "Mash up Demo",
+                        "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/app2/"
+                    }
+                ]
+            },
+            "Directions": {
+                "id": "Directions",
+                "name": "Directions",
+                "type": "control",
+                "description": "Directions service",
+                "samples": [{
+                        "id": "directionstest",
+                        "name": "Directions",
+                        "description": "Directions test",
+                        "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/directionstest.html"
+                    },
+                    {
+                        "id": "directionstestwaypoints",
+                        "name": "Directions with waypoints",
+                        "description": "Directions Demo (with waypoints - uses Chinese API)",
+                        "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/directionstestwaypoints.html"
+                    }
+                ]
+            },
+            "Marker": {
+                "id": "Marker",
+                "name": "Marker",
+                "type": "control",
+                "description": "Place map markers on a map",
+                "samples": [{
+                    "id": "markertest",
+                    "name": "Marker",
+                    "description": "Marker test",
+                    "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/markertest.html"
+                }]
+            },
+            "MarkerCluster": {
+                "id": "MarkerCluster",
+                "name": "MarkerCluster",
+                "type": "control",
+                "description": "Use marker clusters to display a large number of markers on a map",
+                "samples": [{
+                    "id": "markerclustertest",
+                    "name": "Marker Cluster",
+                    "description": "Marker Cluster with geojson data",
+                    "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/markerclustertest.html"
+                }]
+            },
+            "Polyline": {
+                "id": "PolyLine",
+                "name": "PolyLine",
+                "type": "control",
+                "description": "Draw a line on a map",
+                "samples": [{
+                    "id": "PolylineSample",
+                    "name": "Polyline Sample",
+                    "description": "Sample showing a Polyline",
+                    "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/PolylineSample.html"
+                }]
+            },
+            "MapUtils": {
+                "id": "MapUtils",
+                "name": "MapUtils",
+                "type": "control",
+                "description": "Map Utility methods",
+                "samples": [{
+                    "id": "search",
+                    "name": "Search",
+                    "description": "Search Demo (using japanese language)",
+                    "url": "https://jasper07.secondphase.com.au/openui5-googlemaps/samples/search.html"
+                }]
+            }
+        }
+    }
+}

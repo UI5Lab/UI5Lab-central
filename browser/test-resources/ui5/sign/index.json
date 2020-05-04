@@ -1,0 +1,27 @@
+{
+  "ui5.sign": {
+    "icon": "sap-icon://signature",
+    "name": "Signature library",
+    "description": "A library with Signature control for UI5",
+    "source": "https://github.com/kvsrikanthj/ui5-library-Signature",
+    "documentation": "https://github.com/kvsrikanthj/ui5-library-Signature/blob/master/README.md",
+    "license": "MIT",
+    "version": 1.0,
+    "content": {
+      "Signature": {
+        "id": "Signature",
+        "name": "Signature Control",
+        "type": "control",
+        "version": 1.0,
+        "description": "Easily create SVG signatures with mouse and touch inputs",
+        "samples": [
+          {
+            "id": "Signature",
+            "name": "Signature",
+            "description": "SVG Signature control with mouse and touch input"
+          }
+        ]
+      }
+    }
+  }
+}

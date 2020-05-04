@@ -1,0 +1,58 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "nabi.m",
+		"type": "library",
+		"embeds":[],
+		"applicationVersion":{
+			"version":"0.3.0"
+		 },
+		"title":"Nabi Mobile Controls",
+		"description":"Nabi Mobile Controls by nabisoft",
+		"openSourceComponents": [
+			{
+				"name": "PDF.js",
+				"version" : "1.9.426",
+				"url": "https://mozilla.github.io/pdf.js/",
+				"packagedWithMySelf": true
+			}, {
+				"name": "canvas-to-blob.js",
+				"version" : "3.14.0",
+				"url": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
+				"packagedWithMySelf": true
+			}
+		],
+		"resources": "resources.json",
+        "offline": true
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["base", "sap_hcb", "sap_belize", "sap_belize_plus"]
+	},
+
+	"sap.ui5": {
+		"resources": {
+			"js": [ ],
+			"css": [ ]
+		},
+		"dependencies": {
+			"minUI5Version": "1.44.0",
+			"libs": {
+				"sap.ui.core" : { },
+				"sap.m": { },
+				"sap.ui.unified" : { "lazy": true }
+			}
+		},
+		"contentDensities" : {
+			"compact": true,
+			"cozy": true
+		}
+	}
+
+}

@@ -1,0 +1,30 @@
+{
+  "sap.app": {
+    "id": "openui5.smartmockserver",
+    "type": "library",
+    "applicationVersion": {
+      "version": "0.2.7"
+    },
+    "title": "An extended version of UI5 MockServer which generates meaningful mock data."
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    }
+  }
+}

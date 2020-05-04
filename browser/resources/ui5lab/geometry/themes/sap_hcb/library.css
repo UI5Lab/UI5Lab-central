@@ -1,0 +1,55 @@
+/*!
+ * ${copyright}
+ */
+/*!
+ * ${copyright}
+ */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+.ui5labSquare {
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1rem;
+  display: inline-block;
+}
+.ui5labSquareRound {
+  border-radius: 1rem;
+}
+.ui5labSquareAngled {
+  border-radius: 0;
+}
+.ui5labCircle {
+  border-radius: 999999px;
+  padding-top: 0;
+}
+.ui5labTriangle {
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1rem;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+.ui5labTriangle:focus {
+  outline-width: 0;
+}
+.ui5labTriangleText {
+  position: relative;
+  width: 100%;
+}
+.ui5labTriangleRotation {
+  font-size: 200%;
+}
+/* ============================== */
+/* Global CSS for 'sap_hcb' theme */
+/* ============================== */
+
+/* Inline theming parameters */
+#sap-ui-theme-ui5lab\.geometry{background-image:url('data:text/plain;utf-8,%7B%7D')}

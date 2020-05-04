@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var e={};e.render=function(e,r){e.write("<div");e.writeControlData(r);e.addClass("openui5-qrcode");e.writeClasses();e.write(">");e.renderControl(r.getAggregation("__qrcodeHTML"));e.write("</div>")};return e},true);

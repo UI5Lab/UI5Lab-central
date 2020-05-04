@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Sample - ui5lab.geometry.Square</title>
+
+	<base href="../../../../">
+	<!--[if lte IE 9]><script>
+	(function() {
+		var baseTag = document.getElementsByTagName('base')[0];
+		baseTag.href = baseTag.href;
+	})();
+	</script><![endif]-->
+
+	<script id="sap-ui-bootstrap"
+		src="resources/sap-ui-core.js"
+		data-sap-ui-libs="ui5lab.geometry"
+		data-sap-ui-theme="sap_belize">
+	</script>
+
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			// set up model
+			var oModel = new sap.ui.model.json.JSONModel({
+				size: 200,
+				text: "Hello UI5Lab!"
+			});
+			sap.ui.getCore().setModel(oModel);
+
+			// create control
+			var oSquare = new ui5lab.geometry.Square({
+				size: "{/size}",
+				text: "{/text}",
+				shape: "AngledCorners"
+			});
+			oSquare.placeAt("content");
+		});
+	</script>
+</head>
+<body id="content" class="sapUiBody" style="height:100vh; width:100vw;">
+</body>
+</html>

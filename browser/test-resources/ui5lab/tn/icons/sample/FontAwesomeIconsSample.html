@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Example - ui5lab.tn.icons</title>
+    <base href="../../../../../">
+    <!--[if lte IE 9]><script type="text/javascript">
+    (function() {
+        var baseTag = document.getElementsByTagName('base')[0];
+        baseTag.href = baseTag.href;
+    })();
+</script><![endif]-->
+    <!-- ********************************************************************** -->
+    <!-- SAPUI5 Bootstrap:                                                     -->
+    <!-- Extend the "libs" property if you like to import additional libraries  -->
+    <!-- ********************************************************************** -->
+	<!-- src sdk TODO : check if works in UI5Lab -> other solution possible ? -->
+    <script id="sap-ui-bootstrap"
+            type="text/javascript"
+            data-sap-ui-libs="sap.m"
+            src="resources/sap-ui-core.js" 
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-resourceroots='{"be.tn.IconsDemo": "test-resources/ui5lab/tn/icons/sample", "ui5lab.tn.icons": "resources/ui5lab/tn/icons"}'>
+    </script>
+
+    <script type="text/javascript">
+        sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "be.tn.IconsDemo",
+						settings: {
+							iconSet: "fa"
+						}
+					})
+				}).placeAt("content");
+			});
+    </script>
+</head>
+<body class="sapUiBody" role="application">
+<div id="content"></div>
+</body>
+</html>

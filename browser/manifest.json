@@ -1,0 +1,138 @@
+{
+	"_version": "1.12.0",
+
+	"sap.app": {
+		"id": "ui5lab.browser",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://lab",
+			"favIcon": "sap-icon://lab",
+			"phone": "sap-icon://lab",
+			"phone@2": "sap-icon://lab",
+			"tablet": "sap-icon://lab",
+			"tablet@2": "sap-icon://lab"
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "ui5lab.browser.view.App",
+			"type": "XML",
+			"id": "app",
+			"async": true
+		},
+
+		"dependencies": {
+			"minUI5Version": "1.60.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.layout": {}
+			}
+		},
+
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ui5lab.browser.i18n.i18n"
+				}
+			}
+		},
+
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "ui5lab.browser.view",
+				"controlId": "app",
+				"controlAggregation": "beginColumnPages",
+				"bypassed": {
+					"target": ["notFound"]
+				},
+				"async": true
+			},
+
+			"routes": [
+				{
+					"pattern": ":?query:",
+					"name": "home",
+					"target": ["home"]
+				},
+				{
+					"pattern": "Samples/{libraryId}",
+					"name": "sampleList",
+					"target": ["sampleList", "home"]
+				},
+				{
+					"pattern": "Samples/{libraryId}/Sample/{objectId}",
+					"name": "object",
+					"target": ["object", "sampleList", "home"]
+				}
+			],
+
+			"targets": {
+				"home": {
+					"viewName": "Home",
+					"viewId": "home",
+					"viewLevel": 1
+				},
+				"homeGrid": {
+					"parent": "home",
+					"viewName": "HomeGrid",
+					"viewId": "homeGrid",
+					"controlId": "projects",
+					"controlAggregation": "content"
+				},
+				"homeTable": {
+					"parent": "home",
+					"viewName": "HomeTable",
+					"viewId": "homeTable",
+					"controlId": "projects",
+					"controlAggregation": "content"
+				},
+				"sampleList": {
+					"controlAggregation": "midColumnPages",
+					"viewName": "SampleList",
+					"viewId": "sampleList",
+					"viewLevel": 1
+				},
+				"object": {
+					"controlAggregation": "endColumnPages",
+					"viewName": "Object",
+					"viewId": "object",
+					"viewLevel": 2
+				},
+				"objectNotFound": {
+					"viewName": "ObjectNotFound",
+					"viewId": "objectNotFound"
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		}
+	}
+}

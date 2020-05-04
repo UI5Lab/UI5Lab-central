@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+           xmlns:smartmockserver="https://www.npmjs.com/package/openui5-smart-mockserver"
+           xmlns:sap="http://www.sap.com/Protocols/SAPData">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="NorthwindModel" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Customer">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="true" />
+        <Property Name="CompanyName" Type="Edm.String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+        <Property Name="ContactName" Type="Edm.String" Nullable="true" MaxLength="30" Unicode="true" FixedLength="false" />
+        <Property Name="ContactTitle" Type="Edm.String" Nullable="true" MaxLength="30" Unicode="true" FixedLength="false" />
+        <Property Name="Address" Type="Edm.String" Nullable="true" MaxLength="60" Unicode="true" FixedLength="false" />
+        <Property Name="City" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
+        <Property Name="Region" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
+        <Property Name="PostalCode" Type="Edm.String" Nullable="true" MaxLength="10" Unicode="true" FixedLength="false" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
+        <Property Name="Phone" Type="Edm.String" Nullable="true" MaxLength="24" Unicode="true" FixedLength="false" />
+        <Property Name="Fax" Type="Edm.String" Nullable="true" MaxLength="24" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="Employee">
+        <Key>
+          <PropertyRef Name="EmployeeID" />
+        </Key>
+        <Property Name="EmployeeID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+        <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" MaxLength="30" Unicode="true" FixedLength="false" />
+        <Property Name="TitleOfCourtesy" Type="Edm.String" Nullable="true" MaxLength="25" Unicode="true" FixedLength="false" />
+        <Property Name="BirthDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="HireDate" Type="Edm.DateTime" Nullable="true" />
+        <Property Name="Address" Type="Edm.String" Nullable="true" MaxLength="60" Unicode="true" FixedLength="false" />
+        <Property Name="City" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
+        <Property Name="Region" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
+        <Property Name="PostalCode" Type="Edm.String" Nullable="true" MaxLength="10" Unicode="true" FixedLength="false" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
+        <Property Name="HomePhone" Type="Edm.String" Nullable="true" MaxLength="24" Unicode="true" FixedLength="false" />
+        <Property Name="Extension" Type="Edm.String" Nullable="true" MaxLength="4" Unicode="true" FixedLength="false" />
+        <Property Name="Photo" Type="Edm.Binary" Nullable="true" MaxLength="Max" FixedLength="false" />
+        <Property Name="Notes" Type="Edm.String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="ReportsTo" Type="Edm.Int32" Nullable="true" />
+        <Property Name="PhotoPath" Type="Edm.String" Nullable="true" MaxLength="255" Unicode="true" FixedLength="false" />
+      </EntityType>
+
+      <EntityType Name="SmartMockServerAnnotationsEntity">
+        <Key>
+          <PropertyRef Name="CustomerID" />
+        </Key>
+        <Property Name="CustomerID" Type="Edm.String" Nullable="false" MaxLength="5" Unicode="true" smartmockserver:rule="random.number" />
+        <Property Name="CompanyName" Type="Edm.String" Nullable="false" MaxLength="40" Unicode="true" smartmockserver:rule="company.companyName"/>
+        <Property Name="Address" Type="Edm.String" Nullable="true" MaxLength="60" Unicode="true" smartmockserver:rule="address.streetAddress" />
+        <Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" smartmockserver:rule="address.country" />
+        <Property Name="Phone" Type="Edm.String" Nullable="true" MaxLength="24" Unicode="true" />
+      </EntityType>
+
+      <EntityType Name="SAPSemanticEntity" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="EntityID"/>
+        </Key>
+        <Property Name="EntityID" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="UUID"
+                  sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+        <Property Name="RegularField" Type="Edm.String"/>
+        <Property Name="wholeday" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="wholeday"/>
+        <Property Name="city" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="city"/>
+        <Property Name="country" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="country"/>
+        <Property Name="pobox" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="pobox"/>
+        <Property Name="zip" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="zip"/>
+        <Property Name="region" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="region"/>
+        <Property Name="street" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="street"/>
+        <Property Name="bday" Type="Edm.DateTimeOffset" Precision="0" sap:unicode="false" sap:label="Time Stamp"
+                  sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                  sap:semantics="bday"/>
+        <Property Name="class" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="class"/>
+        <Property Name="categories" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="categories"/>
+        <Property Name="contact" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="contact"/>
+        <Property Name="due" Type="Edm.DateTimeOffset" Precision="0" sap:unicode="false" sap:label="Time Stamp"
+                  sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                  sap:semantics="due"/>
+        <Property Name="completed" Type="Edm.DateTimeOffset" Precision="0" sap:unicode="false"
+                  sap:label="Time Stamp" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                  sap:filterable="false" sap:semantics="completed"/>
+        <Property Name="dtstart" Type="Edm.DateTimeOffset" Precision="0" sap:unicode="false"
+                  sap:label="Time Stamp" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+                  sap:filterable="false" sap:semantics="dtstart"/>
+        <Property Name="description" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                  sap:semantics="description"/>
+        <Property Name="duration" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="duration"/>
+        <Property Name="transp" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="transp"/>
+        <Property Name="fbtype" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="fbtype"/>
+        <Property Name="location" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="location"/>
+        <Property Name="status" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="status"/>
+        <Property Name="percent_complete" Type="Edm.String" MaxLength="50" sap:unicode="false"
+                  sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                  sap:semantics="percent-complete"/>
+        <Property Name="priority" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="priority"/>
+        <Property Name="summary" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="summary"/>
+        <Property Name="dtend" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="dtend"/>
+        <Property Name="vcard" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="vcard"/>
+        <Property Name="vevent" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="vevent"/>
+        <Property Name="vtodo" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="vtodo"/>
+        <Property Name="nickname" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="nickname"/>
+        <Property Name="email" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="email"/>
+        <Property Name="givenname" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="givenname"/>
+        <Property Name="name" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="name"/>
+        <Property Name="geo_lat" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="geo-lat"/>
+        <Property Name="geo_lon" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="geo-lon"/>
+        <Property Name="currency_code" Type="Edm.String" MaxLength="50" sap:unicode="false"
+                  sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                  sap:semantics="currency-code"/>
+        <Property Name="title" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="title"/>
+        <Property Name="familyname" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="familyname"/>
+        <Property Name="from" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="from"/>
+        <Property Name="bcc" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="bcc"/>
+        <Property Name="cc" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="cc"/>
+        <Property Name="keywords" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="keywords"/>
+        <Property Name="received" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="received"/>
+        <Property Name="sender" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="sender"/>
+        <Property Name="body" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="body"/>
+        <Property Name="to" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="to"/>
+        <Property Name="subject" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="subject"/>
+        <Property Name="middlename" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="middlename"/>
+        <Property Name="org" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="org"/>
+        <Property Name="org_role" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="org-role"/>
+        <Property Name="org_unit" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="org-unit"/>
+        <Property Name="parameters" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="parameters"/>
+        <Property Name="aggregate" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="aggregate"/>
+        <Property Name="suffix" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="suffix"/>
+        <Property Name="note" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="note"/>
+        <Property Name="tel" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="tel"/>
+        <Property Name="honorific" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="honorific"/>
+        <Property Name="unit_of_measure" Type="Edm.String" MaxLength="50" sap:unicode="false"
+                  sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"
+                  sap:semantics="unit-of-measure"/>
+        <Property Name="photo" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="photo"/>
+        <Property Name="url" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:creatable="false"
+                  sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="url"/>
+      </EntityType>
+    </Schema>
+    <Schema Namespace="ODataWeb.Northwind.Model" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="NorthwindEntities" p7:LazyLoadingEnabled="true" m:IsDefaultEntityContainer="true" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="Customers" EntityType="NorthwindModel.Customer" />
+        <EntitySet Name="Employees" EntityType="NorthwindModel.Employee" />
+        <EntitySet Name="SmartMockServerAnnotationsEntitySet" EntityType="NorthwindModel.SmartMockServerAnnotationsEntity" />
+        <EntitySet Name="SAPSemanticEntitySet" EntityType="NorthwindModel.SAPSemanticEntity"
+                   sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false"
+                   sap:addressable="false" sap:content-version="1"/>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

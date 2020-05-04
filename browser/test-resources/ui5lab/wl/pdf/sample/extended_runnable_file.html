@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Example - ui5lab.wl.pdf</title>
+      <base href="../../../../../">
+      <!--[if lte IE 9]><script type="text/javascript">
+         (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+         })();
+      </script><![endif]-->
+      <!-- ********************************************************************** -->
+      <!-- SAPUI5 Bootstrap:                                                     -->
+      <!-- Extend the "libs" property if you like to import additional libraries  -->
+      <!-- ********************************************************************** -->
+     
+      <script id="sap-ui-bootstrap" type="text/javascript" data-sap-ui-libs="ui5lab.wl.pdf" src="resources/sap-ui-core.js" data-sap-ui-theme="sap_belize">
+      </script>
+      
+      <script type="text/javascript"> 
+		sap.ui.getCore().attachInit(function () {
+			// set up model
+			var oModel = new sap.ui.model.json.JSONModel({
+				pdfSource: ""
+			});
+			sap.ui.getCore().setModel(oModel);
+		var uploader = new sap.ui.unified.FileUploader({change:function(oEvent){
+			var reader = new FileReader(),
+				me = this;
+			reader.onload = function(oEvent){
+				sap.ui.getCore().getModel().setProperty("/pdfSource", oEvent.target.result);
+			};
+			reader.readAsDataURL(oEvent.getParameter("files")[0]);
+			
+		}});
+         var pdfViewer = new ui5lab.wl.pdf.PdfViewer({
+                         pdfSource: "{/pdfSource}",
+                         height:"700px"
+         });
+         var oHorizontalBox = new sap.ui.layout.VerticalLayout({content:[uploader,pdfViewer]});
+         oHorizontalBox.placeAt("content");
+		});
+      </script>
+<script src="https://trackerexta90daed17.hana.ondemand.com/tracker/js/privacy.js" type="text/javascript"></script>
+<style>.facadebtn{display:inline-block;width:60px;height:60px;background-color:#009de0;border-radius:50px;text-align:center;box-shadow: 2px 2px 3px #999;opacity:.3;}
+.facadebtn .sapUiIcon{color:#FFF;font-size:1.5rem;cursor:pointer;line-height:60px;width:60px;}
+.facadebtn:hover{opacity:1;}
+#interactive.viewport video{width:320px;height:240px;}
+.facade .sapMSLITitleOnly, .facade .sapMILILabel {font-size: 1rem;}
+#interactive.viewport .drawingBuffer{width:320px;height:240px;position:absolute;}
+</style>
+<script type="text/javascript">
+window.swa = {
+	"baseUrl": "https://trackerexta90daed17.hana.ondemand.com/tracker/",
+	"clicksEnabled": false,
+	"pubToken": "09cb080a-19aa-f641-8c5b-f38ad7ff1a1b",
+	"optOutCookieTimeout": 63113852,
+	"visitorCookieTimeout": 63113852,
+	"logger": false,
+	"loggingUrl": "https://trackerexta90daed17.hana.ondemand.com/tracker/",
+	"pageLoadEnabled": false,
+	"customEventsEnabled": true,
+	"hotkeysEnabled": false,
+	"loggingEnabled": true,
+	"dntLevel": 1,
+	"bannerEnabled": false,
+	"licenseUrl": "about:blank",
+	"bannerText": "<strong>This site uses <a href=\"about:blank\" target=\"_blank\">SAP Web Analytics</a>.</strong>",
+	"cookiesEnabled": true,
+	"optOutGroup": "09cb080a-19aa-f641-8c5b-f38ad7ff1a1b",
+	"sessionCookieTimeout": 1800,
+	"referralCookieTimeout": 15778463,
+	"frameExclusionSelector": ".swa_ignore",
+	"textExclusionSelector": "",
+	"referrerOfTop": false,
+	"test": false,
+	"currentEvent": "custom",
+	"_respectDNT": true,
+	"loggerLoaded": true,
+	"plugin": {
+		"clickedElements": [],
+		"customEventAddValues": []
+	},
+	"custom1": {
+		"ref": "HAT_PreviewOn"
+	},
+	"custom2": {
+		"ref": "USAGE"
+	},
+	"custom8": {
+		"ref": null,
+		"isStatic": true
+	},
+	"custom4": {
+		"ref": null,
+		"isStatic": true
+	},
+	"custom5": {
+		"ref": null,
+		"isStatic": true
+	},
+	"custom9": {
+		"ref": null,
+		"isStatic": true
+	},
+	"custom10": {
+		"ref": "p935700trial",
+		"isStatic": true
+	},
+	"custom11": {
+		"ref": "ee41f8c1ec915d9f89dfd82de7a3bc21",
+		"isStatic": true
+	},
+	"custom3": {
+		"ref": "NONE_SAP",
+		"isStatic": true
+	},
+	"custom6": {
+		"ref": "180118",
+		"isStatic": true
+	},
+	"custom7": {}
+};
+window._facadeSettings = {"cordova-plugin-device-orientation":false,"accelerometer":{},"compass":{}};
+	window.sIdeOrigin = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com";
+	window.sap_webide_FacadePreview = true;
+	window.sFacadePath = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/cordovafacade/cordova.js";
+	window.sFacadeCfgViewPath = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/view/";
+	window.bridgeHtml = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/cordovafacade/MessageBridge.html";
+	window.msgDefPath = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/mobileextend/MessageDef.js";
+	window.msgBridgePath = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/mobileextend/MessageBridge.js";
+	window.meCssPath = "https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/css/mobileExtend.css";
+</script>
+<script src="https://webidecp-p935700trial.dispatcher.hanatrial.ondemand.com/hatdi_uf2d18766/hybrid/cordovafacade/floatingButton.js" type="text/javascript"></script>
+   </head>
+   <body class="sapUiBody" role="application">
+      <h1 id="header">Test Page for <code>ui5lab.wl.pdf</code></h1>
+      <div id="content"></div>
+   </body>
+</html>

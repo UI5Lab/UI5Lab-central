@@ -1,0 +1,49 @@
+{
+  "_version": "1.9.0",
+  "sap.app": {
+    "id": "ui5lab.geometry",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "UI5 library: ui5lab.geometry",
+    "description": "UI5 library: ui5lab.geometry",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_plus",
+      "sap_hcb"
+    ]
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.60",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.60.0"
+        }
+      }
+    },
+    "library": {
+      "i18n": false,
+      "content": {
+        "controls": [
+          "ui5lab.geometry.Square",
+          "ui5lab.geometry.Circle",
+          "ui5lab.geometry.Triangle"
+        ],
+        "elements": [],
+        "types": [
+          "ui5lab.geometry.SquareType"
+        ],
+        "interfaces": []
+      }
+    }
+  }
+}

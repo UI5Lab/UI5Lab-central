@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title>StripToastr Test PlayGround</title>
+    <base href="../../../../">
+    <!--[if lte IE 9]><script>
+	(function() {
+		var baseTag = document.getElementsByTagName('base')[0];
+		baseTag.href = baseTag.href;
+	})();
+	</script><![endif]-->
+    <script id="sap-ui-bootstrap" src="resources/sap-ui-core.js" data-sap-ui-libs="sap.m, ui5lab.striptoastr" data-sap-ui-xx-bindingSyntax="complex" data-sap-ui-theme="sap_belize" data-sap-ui-preload="async" data-sap-ui-accessibility="false">
+    </script>
+    <style type="text/css">
+        .newButton.sapMBtn {
+            margin-left: 0.25rem;
+        }
+        
+        .stripToastr.sapMMsgStrip {
+            margin-bottom: 0.75rem!important;
+            width: 300px;
+            -moz-box-shadow: 0 0 12px #999;
+            -webkit-box-shadow: 0 0 12px #999;
+            box-shadow: 0 0 12px #999;
+            -webkit-transition: opacity 1s;
+            transition: opacity 1s;
+        }
+    </style>
+    <script>
+        sap.ui.getCore().attachInitEvent(function() {
+            sap.ui.require([
+                "ui5lab/striptoastr/StripToastr", "sap/m/Link", "sap/m/Button", "sap/m/Input", "sap/m/ComboBox",
+                "sap/m/Label", "sap/m/CheckBox", "sap/ui/core/Item", "sap/ui/layout/VerticalLayout", "sap/ui/layout/HorizontalLayout", "sap/ui/layout/form/SimpleForm"
+            ], function(StripToastr, Link, Button, Input, ComboBox, Label, CheckBox, Item,
+                VerticalLayout, HorizontalLayout, SimpleForm) {
+
+                var oLast = null;
+
+                var oTextLabel = new Label({
+                    text: "Text"
+                });
+                var oTextInput = new Input({
+                    value: "text to display",
+                    placeholder: "Enter text"
+                });
+
+                var oTimeOutLabel = new Label({
+                    text: "Time Out"
+                });
+                var oTimeOutInput = new Input({
+                    value: 5000,
+                    type: "Number",
+                    placeholder: "Duration"
+                });
+
+                var oTypeLabel = new Label({
+                    text: "Type"
+                });
+                var oTypeComboBox = new ComboBox({
+                    items: ["Error", "Warning", "Information", "Success"].map(function(item) {
+                        return {
+                            key: item,
+                            text: item
+                        };
+                    }),
+                    selectedKey: "Error"
+                });
+
+                var oPositionLabel = new Label({
+                    text: "Position"
+                });
+                var oPositionComboBox = new ComboBox({
+                    items: ["begin top", "begin center", "begin bottom", "left top", "left center", "left bottom",
+                        "center top", "center center", "center bottom", "right top", "right center", "right bottom",
+                        "end top", "end center", "end bottom"
+                    ].map(function(item) {
+                        return {
+                            key: item,
+                            text: item
+                        };
+                    }),
+                    selectedKey: "right top"
+                });
+
+                var oCustomIconLabel = new Label({
+                    text: "Custom Icon"
+                });
+                var oCustomIconInput = new Input({
+                    placeholder: "eg. sap-icon://locked"
+                });
+
+                var oShowIconCB = new CheckBox({
+                    text: "Show Icon",
+                    selected: true
+                });
+                var oShowCloseButtonCB = new CheckBox({
+                    text: "Show Close Button",
+                    selected: true
+                });
+
+                var oNewestFirstCB = new CheckBox({
+                    text: "Newest On Top",
+                    selected: false
+                });
+
+                var oShowBtn = new Button({
+                    text: "Show",
+                    type: "Accept",
+                    press: function() {
+                        var oData = {
+                            text: oTextInput.getValue(),
+                            type: oTypeComboBox.getSelectedKey(),
+                            position: oPositionComboBox.getSelectedKey(),
+                            showIcon: oShowIconCB.getSelected(),
+                            customIcon: oCustomIconInput.getValue(),
+                            newestFirst: oNewestFirstCB.getSelected(),
+                            showCloseButton: oShowCloseButtonCB.getSelected(),
+                            timeOut: parseInt(oTimeOutInput.getValue(), 10)
+                        };
+                        fnShowToast(oData);
+                    }
+                });
+
+                var oClearBtn = new Button({
+                    text: "Clear All",
+                    type: "Reject",
+                    press: function() {
+                        StripToastr.clear();
+                    }
+                }).addStyleClass("newButton");
+
+                var oClearLastBtn = new Button({
+                    text: "Clear Last",
+                    type: "Reject",
+                    press: function() {
+                        StripToastr.clear(oLast);
+                    }
+                }).addStyleClass("newButton");
+
+                var aToasts = [{
+                    text: "Error with default icon and close button",
+                    type: "Error",
+                }, {
+                    text: "Warning with default icon and close button",
+                    type: "Warning",
+                }, {
+                    text: "Success with default icon and close button",
+                    type: "Success",
+                    timeOut: 8000
+                }, {
+                    text: "Information with default icon.",
+                    type: "Information",
+                    timeOut: 9000
+                }, {
+                    text: "Information with custom icon",
+                    type: "Information",
+                    showIcon: true,
+                    customIcon: "sap-icon://locked",
+                    timeOut: 8900
+                }, {
+                    text: "Error with link",
+                    type: "Error",
+                    showCloseButton: true,
+                    link: new Link({
+                        text: "Fork Me On Github",
+                        target: "_blank",
+                        href: "https://github.com/jasper07/StripToastr"
+                    }),
+                    timeOut: 10000
+                }];
+
+                var fnShowToast = function(options) {
+                    oLast = StripToastr.notify(options);
+                    return oLast;
+                };
+
+                var i = 0;
+
+                var fnDelayToast = function() {
+                    if (i === aToasts.length) {
+                        return;
+                    }
+                    window.setTimeout(function() {
+                        fnShowToast(aToasts[i]);
+                        i++;
+                        fnDelayToast();
+                    }, 1100);
+                };
+
+                var oSimpleForm = new SimpleForm({
+                    editable: true,
+                    layout: "ResponsiveGridLayout",
+                    labelSpanL: 3,
+                    labelSpanM: 3,
+                    emptySpanL: 4,
+                    emptySpanM: 4,
+                    columnsL: 1,
+                    columnsM: 1,
+                    content: [new sap.ui.core.Title({
+                            text: "Add/Remove message"
+                        }),
+                        oTextLabel, oTextInput, oTypeLabel, oTypeComboBox, oPositionLabel, oPositionComboBox,
+                        oCustomIconLabel, oCustomIconInput, oTimeOutLabel, oTimeOutInput,
+                        new sap.m.Label(),
+                        oShowIconCB, new Label(), oShowCloseButtonCB, new Label(), oNewestFirstCB,
+                        new Label(),
+                        new HorizontalLayout({
+                            content: [oShowBtn, oClearBtn, oClearLastBtn]
+                        })
+                    ]
+                });
+
+                var oPage = new sap.m.Page({
+                    showHeader: false,
+                    enableScrolling: false,
+                    title: "StripToastr Test PlayGround",
+                    content: [oSimpleForm]
+                });
+
+                var app = new sap.m.App("myApp", {
+                    initialPage: oPage
+                });
+
+                app.addPage(oPage).placeAt("content");
+
+                fnDelayToast();
+
+            });
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="content"></body>
+<a href="https://github.com/jasper07/StripToastr"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+        alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+</html>

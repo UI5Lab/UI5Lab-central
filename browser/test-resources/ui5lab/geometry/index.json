@@ -1,0 +1,58 @@
+{
+	"ui5lab.geometry": {
+		"icon": "sap-icon://database",
+		"name": "Geometry",
+		"description": "Example UI5Lab library containing geometrical controls",
+		"source" : "https://github.com/UI5Lab/UI5Lab-library-simple",
+		"documentation": "https://github.com/UI5Lab/UI5Lab-library-simple/blob/master/README.md",
+		"demo" : "https://ui5lab.github.io/UI5Lab-app-simple/index.html",
+		"license": "Apache 2.0",
+		"version": "1.0.0",
+		"content": {
+			"Square": {
+				"id": "Square",
+				"name": "Square",
+				"type": "control",
+				"description": "An awesome geometrical shape that is under-represented in today's modern UIs",
+				"samples": [
+					{
+						"id": "SquareSimple",
+						"name": "Simple Square",
+						"description": "Minimalistic example of a Square control"
+					},
+					{
+						"id": "SquareInteraction",
+						"name": "Square with user interaction",
+						"description": "Square control connected to a Slider to illustrate user interaction"
+					}
+				]
+			},
+			"Circle": {
+				"id": "Circle",
+				"name": "Circle",
+				"type": "control",
+				"description": "A circle is a square with infinite angles so we extend it and make it round",
+				"samples": [
+					{
+						"id": "Circle",
+						"name": "Extended Circle",
+						"description": "Basic example that shows a circle control extending a square in action"
+					}
+				]
+			},
+			"Triangle": {
+				"id": "Triangle",
+				"name": "Equal-sided Triangle",
+				"type": "control",
+				"description": "Lacks one angle to make it a square, and that makes it special",
+				"samples": [
+					{
+						"id": "Triangle",
+						"name": "Rotating Triangle",
+						"description": "Press the triangle or arrow keys to rotate, simple yet effective user interaction"
+					}
+				]
+			}
+		}
+	}
+}

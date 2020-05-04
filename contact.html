@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title> UI5Lab - a custom UI5 library</title>
+<head><link rel="icon" href="favicon.ico" type="image/x-icon"></head>
+<style>
+	body, html {
+		height: 100%;
+		margin: 0;
+	}
+
+	.bgimg {
+		background-image: url('assets/lab_bg.jpg');
+		height: 100%;
+		background-size: cover;
+		position: relative;
+		color: white;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 25px;
+	}
+
+	.topleft {
+		position: relative;
+		top: 16px;
+		left: 16px;
+	}
+
+	.bottomleft {
+		position: relative;
+		bottom: 0;
+		left: 16px;
+	}
+
+	.middle {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.middleLeft {
+		position: absolute;
+		top: 48%;
+		left: 17%;
+		transform: translate(-17%, -17%);
+	}
+
+	.middleRight{
+		position: relative;
+		top: 33%;
+		left: 48%;
+		transform: translate(-27%, -27%);;
+	}
+
+	.welcome{
+		position: absolute;
+		top: 30%;
+		left: 21%;
+		transform: translate(-21%, -21%);
+		text-align: center;
+	}
+
+	.links{
+		color: lightskyblue;
+		opacity: 1;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.mailImage {
+		align: center;
+	}
+
+	.logoImage {
+		width: 55px;
+		margin-top: 25px;
+		float: left;
+	}
+
+	.logoText {
+		float: left;
+		font-size: 40px;
+	}
+
+	.aboutText {
+		margin-left: 17%;
+		text-align: center;
+		width: 400px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	hr {
+		margin: auto;
+		width: 40%;
+	}
+
+
+
+</style>
+<body>
+
+<div class="bgimg">
+	<div class="topleft">
+		<image class="logoImage" src="assets/lab_icon.png" />
+		<a href="index.html" class="links"><p class="logoText">UI5Lab</p></a>
+	</div>
+	<div class="welcome">
+		<h1>Contact us!</h1>
+	</div>
+	<img src="assets/about_marks.png" class="middleLeft" />
+	<div class="middleLeft">
+		<p class="aboutText">If you want to get in touch with the UI5lab community, feel free to <a href="http://slackui5invite.herokuapp.com/" class="links">join OpenUI5/#ui5lab on Slack </a></p>
+
+		<p class="aboutText">For questions about this website contact the coreteam via mail: <image class="mailImage" src="assets/mail.png" /></p>
+	</div>
+</div>
+
+</body>
+</html>

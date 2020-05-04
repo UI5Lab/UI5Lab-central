@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Renderer","sap/m/InputBaseRenderer"],function(e,t){"use strict";const r=e.extend(t);r.writeInnerAttributes=function(e,t){e.writeAttribute("type","password");if(!t.getEnabled()){e.writeAttribute("readonly","readonly")}};return r},true);

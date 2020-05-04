@@ -1,0 +1,81 @@
+{
+	"nabi.m": {
+		"icon": "sap-icon://pdf-reader",
+		"name": "Nabi Mobile",
+		"description": "Nabi mobile controls",
+		"source" : "https://github.com/nzamani/ui5-nabi-m",
+		"documentation": "https://github.com/nzamani/ui5-nabi-m/blob/master/README.md",
+		"license" : "Apache 2.0",
+		"version": 1.0,
+		"content": {
+			"PDFViewer": {
+				"id": "PDFViewer",
+				"name": "PDF Viewer",
+				"type": "control",
+				"version": 1.0,
+				"description": "A cross device PDF viewer",
+				"samples": [
+					{
+						"id": "PDFViewer",
+						"name": "Simple PDFViewer",
+						"description": "Basic example illustrating how to display PDF files on any device"
+					},
+					{
+						"id": "InPagePDFViewer",
+						"name": "In-Page PDFViewer",
+						"description": "Displays a PDF file inside an sap.m.Page control (In-Page display)"
+					}
+				]
+			},
+			"ImageFileUploader": {
+				"id": "ImageFileUploader",
+				"name": "Image File Uploader",
+				"type": "control",
+				"version": 1.0,
+				"description": "Allows to scale images before they are uploaded",
+				"samples": [
+					{
+						"id": "ImageFileUploader",
+						"name": "Image File Uploader",
+						"description": "Scale image by factor of 0.5 before uploading it."
+					},
+					{
+						"id": "ImageFileUploaderMimes",
+						"name": "Image File Uploader Mimes",
+						"description": "Allow only pdf, jpg, and png mimes to be selected."
+					},
+					{
+						"id": "ImageFileUploaderBoundary",
+						"name": "Image File Uploader Boundary",
+						"description": "Use scaleType \"Boundary\" and set max scaled size to 3 MB."
+					},
+					{
+						"id": "ImageFileUploaderUploadType",
+						"name": "Image File Uploader Upload Type",
+						"description": "Use uploadType \"jpg\" + use scaledJpgQuality = 1 (i.e. png files will be converted to jpeg and then uploaded)."
+					},
+					{
+						"id": "ImageFileUploaderCondSize",
+						"name": "Image File Uploader Condition Size",
+						"description": "Use scaleType \"Boundary\" but scale only if file is larger than 5 MB."
+					},
+					{
+						"id": "ImageFileUploaderCondReso",
+						"name": "Image File Uploader Condition Resolution",
+						"description": "Use scaleType \"Boundary\" but scale only if resolution > 1680 * 1050"
+					},
+					{
+						"id": "ImageFileUploaderCondBoundary",
+						"name": "Image File Uploader Condition Boundary",
+						"description": "Use scaleType \"Boundary\" but scale only if width > 1680 or height > 1050 pixels."
+					},
+					{
+						"id": "ImageFileUploaderCondAny",
+						"name": "Image File Uploader Condition Any",
+						"description": "Use scaleType \"Boundary\" but scale only if file size, boundary, or resolution condition matches."
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+<mvc:View
+	controllerName="ui5lab.browser.controller.Home"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<Page id="page">
+		<customHeader>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<core:Icon src="sap-icon://lab"/>
+				<Title text="{i18n>homeViewTitle}"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://sys-help" press=".onHelp" tooltip="{i18n>helpButtonText}" visible="{appView>/helpVisible}"/>
+			</Toolbar>
+		</customHeader>
+		<content>
+			<Panel
+				id="projects"
+				class="sapUiResponsiveMargin sapUiNoContentPadding"
+				width="auto">
+				<headerToolbar>
+					<OverflowToolbar height="3rem">
+						<Title text="{homeView>/title}"/>
+						<ToolbarSpacer />
+						<SearchField
+							id="searchField"
+							liveChange=".onSearch"
+							width="auto">
+						</SearchField>
+						<!-- width: bugfix for faulty initial toolbar rendering behaviour -->
+						<SegmentedButton
+							width="{= ${device>/support/touch} ? '5.0625rem' : '4.0625rem'}"
+							selectedKey="grid"
+							select=".onSelect">
+							<items>
+								<SegmentedButtonItem icon="sap-icon://grid" key="Grid"/>
+								<SegmentedButtonItem icon="sap-icon://list" key="Table"/>
+							</items>
+							<layoutData>
+								<OverflowToolbarLayoutData priority="NeverOverflow"/>
+							</layoutData>
+						</SegmentedButton>
+					</OverflowToolbar>
+				</headerToolbar>
+				<content>
+					<!-- filled by routing, either grid or table based on user's choice  -->
+				</content>
+			</Panel>
+		</content>
+		<MessageStrip
+			class="sapUiResponsiveMargin"
+			text="{i18n>UI5LabProjectDescription}"
+			type="Information"
+			showIcon="true"
+			customIcon="sap-icon://sap-ui5">
+			<link>
+				<Link
+					text="UI5Lab"
+					target="_blank"
+					href="https://github.com/UI5Lab/UI5Lab-central" />
+			</link>
+		</MessageStrip>
+	</Page>
+
+</mvc:View>

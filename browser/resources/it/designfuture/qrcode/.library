@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>it.designfuture.qrcode</name>
+  <vendor>OpenUI5 QRCode</vendor>
+  <copyright>${copyright}</copyright>
+  <version>${version}</version>
+  
+  <documentation>Custom Control to render a QRCode</documentation>
+  
+  <dependencies>
+	<dependency>
+	  <libraryName>sap.ui.core</libraryName>
+	</dependency>
+  </dependencies>
+  
+  <appData>
+  </appData>
+
+</library>

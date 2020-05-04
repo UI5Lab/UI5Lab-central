@@ -1,0 +1,83 @@
+{
+    "Pyrmont": {
+        "lat": -33.895,
+        "lng": 151.275
+    },
+    "Places": [
+        {
+            "location": "Location1",
+            "lat": -33.86142,
+            "lng": 151.20654
+        },
+        {
+            "location": "Location2",
+            "lat": -33.861286,
+            "lng": 151.20654
+        },
+        {
+            "location": "Location3",
+            "lat": -33.857307,
+            "lng": 151.20921
+        },
+        {
+            "location": "Locatio4",
+            "lat": -33.854935,
+            "lng": 151.20692
+        },
+        {
+            "location": "Location5",
+            "lat": -33.8591,
+            "lng": 151.21335
+        },
+        {
+            "location": "Location6",
+            "lat": -33.862785,
+            "lng": 151.20926
+        },
+        {
+            "location": "Location7",
+            "lat": -33.861694,
+            "lng": 151.20761
+        },
+        {
+            "location": "Location8",
+            "lat": -33.84896,
+            "lng": 151.21117
+        },
+        {
+            "location": "Location9",
+            "lat": -33.852306,
+            "lng": 151.21078
+        },
+        {
+            "location": "Location10",
+            "lat": -33.854008,
+            "lng": 151.2082
+        },
+        {
+            "location": "Location11",
+            "lat": -33.849716,
+            "lng": 151.2113
+        },
+        {
+            "location": "Location12",
+            "lat": -33.860794,
+            "lng": 151.21284
+        },
+        {
+            "location": "Location13",
+            "lat": -33.920456,
+            "lng": 151.25636
+        },
+        {
+            "location": "Location14",
+            "lat": -33.856785,
+            "lng": 151.2153
+        },
+        {
+            "location": "Location15",
+            "lat": -33.864548,
+            "lng": 151.20738
+        }
+    ]
+}

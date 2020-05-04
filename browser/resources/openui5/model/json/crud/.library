@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>openui5.model.json.crud</name>
+  <vendor>Mauricio Lauffer</vendor>
+  <version>0.0.10</version>
+  <documentation>An OpenUI5 library which extends JSONModel to support CRUD (Create, Read, Update, Delete) operations.</documentation>
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+  <appData></appData>
+</library>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>openui5.password</name>
+  <vendor>Mauricio Lauffer</vendor>
+  <version>0.1.9</version>
+  <documentation>An OpenUI5 Control which checks password strength and validates it against predefined rules</documentation>
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.m</libraryName>
+    </dependency>
+  </dependencies>
+  <appData></appData>
+</library>

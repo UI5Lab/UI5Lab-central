@@ -1,0 +1,28 @@
+{
+	"ui5lab.wl.img": {
+		"icon": "sap-icon://picture",
+		"name": "Image library",
+		"description": "A library to view images based on a base64 data uri",
+		"source" : "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
+		"documentation": "https://github.com/lemaiwo/UI5LabLibraryImageViewer/blob/master/README.md",
+		"demo": "https://lemaiwo.github.io/UI5LabLibraryImageViewer/test/ui5lab/wl/img/demo/",
+		"license": "MIT",
+		"version": 1.0,
+		"content": {
+			"imageviewer": {
+				"id": "imageviewer",
+				"name": "imageviewer",
+				"type": "control",
+				"version": 1.0,
+				"description": "A image viewer Control that will show an image based on a base64 uri. This allows you to show uploaded images immediately instead of uploading it to the server. No need for a static file url anymore.",
+				"samples": [
+					{
+						"id": "ImageViewer",
+						"name": "Image Viwer Example",
+						"description": "Upload a Image and show it immediately as a base 64 data uri"
+					}
+				]
+			}
+		}
+	}
+}

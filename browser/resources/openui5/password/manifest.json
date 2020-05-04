@@ -1,0 +1,31 @@
+{
+  "sap.app": {
+    "id": "openui5.password",
+    "type": "library",
+    "applicationVersion": {
+      "version": "0.1.9"
+    },
+    "title": "An OpenUI5 Control which checks password strength and validates it against predefined rules."
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    }
+  }
+}

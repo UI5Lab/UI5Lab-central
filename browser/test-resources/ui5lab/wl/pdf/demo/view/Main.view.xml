@@ -1,0 +1,14 @@
+<mvc:View controllerName="be.wl.PDFExample.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:pdf="ui5lab.wl.pdf">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<u:FileUploader id="upload" name="upload" tooltip="Upload your image" change="onFileChange" maximumFileSize="10" sameFilenameAllowed="true"></u:FileUploader>
+					<Button text="Open PDF in dialog" press="onOpenPDFViewer"/>
+					<pdf:PdfViewer pdfSource="{/pdfsource}" height="700px"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

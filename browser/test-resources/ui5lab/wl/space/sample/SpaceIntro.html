@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Example - ui5lab.wl.space</title>
+    <base href="../../../../../">
+    <!--[if lte IE 9]><script type="text/javascript">
+    (function() {
+        var baseTag = document.getElementsByTagName('base')[0];
+        baseTag.href = baseTag.href;
+    })();
+</script><![endif]-->
+    <!-- ********************************************************************** -->
+    <!-- SAPUI5 Bootstrap:                                                     -->
+    <!-- Extend the "libs" property if you like to import additional libraries  -->
+    <!-- ********************************************************************** -->
+
+    <script id="sap-ui-bootstrap"
+            type="text/javascript"
+            data-sap-ui-libs="ui5lab.wl.space"
+            src="../../../../../resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-resourceroots='{"ui5lab.wl.space.samples.SpaceIntro": "./test-resources/ui5lab/wl/space/sample"}'>
+    </script>
+
+    <script type="text/javascript">
+        sap.ui.getCore().attachInit(function () {
+            var oSpaceIntro = new ui5lab.wl.space.Intro({
+                intro:"Welcome to UI5Lab",
+                logo:jQuery.sap.getModulePath("ui5lab.wl.space.samples.SpaceIntro") +"/images/logo.png",
+                title:"Contribute to UI5Lab",
+                text:"UI5Lab is a community driven project to establish a repository for UI5 Custom Control Libraries. It is meant to gather forces throughout the community and enable everyone to use UI5 Custom Controls easily. "
+            });
+            oSpaceIntro.placeAt("content");
+        });
+    </script>
+</head>
+<body class="sapUiBody" role="application">
+<div id="content"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Example - ui5lab.wl.pdf</title>
+      <base href="../../../../../">
+      <!--[if lte IE 9]><script type="text/javascript">
+         (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+         })();
+      </script><![endif]-->
+      <!-- ********************************************************************** -->
+      <!-- SAPUI5 Bootstrap:                                                     -->
+      <!-- Extend the "libs" property if you like to import additional libraries  -->
+      <!-- ********************************************************************** -->
+     
+      <script id="sap-ui-bootstrap" 
+         type="text/javascript"
+         data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.unified,ui5lab.wl.pdf"
+         src="resources/sap-ui-core.js"
+         data-sap-ui-theme="sap_belize">
+      </script>
+      
+      <script type="text/javascript"> 
+		sap.ui.getCore().attachInit(function () {
+			// set up model
+			var oModel = new sap.ui.model.json.JSONModel({
+				pdfSource: ""
+			});
+			sap.ui.getCore().setModel(oModel);
+		var uploader = new sap.ui.unified.FileUploader({change:function(oEvent){
+			var reader = new FileReader(),
+				me = this;
+			reader.onload = function(oEvent){
+				sap.ui.getCore().getModel().setProperty("/pdfSource", oEvent.target.result);
+			};
+			reader.readAsDataURL(oEvent.getParameter("files")[0]);
+			
+		}});
+         var pdfViewer = new ui5lab.wl.pdf.PdfViewer({
+                         pdfSource: "{/pdfSource}",
+                         height:"700px"
+         });
+         var oHorizontalBox = new sap.ui.layout.VerticalLayout({content:[uploader,pdfViewer]});
+         oHorizontalBox.placeAt("content");
+		});
+      </script>
+   </head>
+   <body class="sapUiBody" role="application">
+      <h1 id="header">Test Page for <code>ui5lab.wl.pdf</code></h1>
+      <div id="content"></div>
+   </body>
+</html>

@@ -1,0 +1,28 @@
+{
+	"ui5lab.wordcloud": {
+		"icon": "sap-icon://tag-cloud-chart",
+		"name": "Word Cloud",
+		"description": "Library with control for displaying word clouds",
+		"license": "MIT",
+		"source" : "https://github.com/vaibhavar/ui5lab-wordcloud",
+		"content": {
+			"WordCloud":{
+				"id": "WordCloud",
+				"type": "control",
+				"name": "Word Cloud",
+				"version": 1.0,
+				"description": "A beautiful cloud of words",
+				"samples": [{
+					"id": "WordCloud",
+					"name": "Word Cloud",
+					"description": "Simple word cloud with text and icons."
+				},
+				{
+					"id": "WordCloudIcons",
+					"name": "Icons only",
+					"description": "A cloud of icons."	
+				}]
+			}
+		}
+	}
+}

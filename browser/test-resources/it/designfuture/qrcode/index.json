@@ -1,0 +1,27 @@
+{
+	"it.designfuture.qrcode": {
+        "icon": "sap-icon://bar-code",
+        "name": "QRCode",
+		"description": "Easily embed QR Codes inside your UI5 Application",
+		"source": "https://github.com/StErMi/openui5-qrcode",
+		"documentation": "https://github.com/StErMi/openui5-qrcode/blob/master/README.md",
+		"demo": "https://stermi.github.io/openui5-qrcode/demo/webapp/",
+		"version": "1.0.1",
+		"license": "Apache 2.0",
+		"content": {
+			"QRCode": {
+				"id": "QRCode",
+				"name": "QRCode",
+				"type": "control",
+				"version": "1.0.1",
+				"description": "Generate and easily embed QR Code inside your SAPUI5 Application",
+				"samples": [{
+					"id": "QRCode",
+					"name": "QR Code Generator",
+					"description": "An app that can generate QR codes on the fly",
+					"url": "https://stermi.github.io/openui5-qrcode/demo/webapp/"
+				}]
+			}
+		}
+	}
+}

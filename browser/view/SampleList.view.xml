@@ -1,0 +1,95 @@
+<mvc:View
+	controllerName="ui5lab.browser.controller.SampleList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<Page
+		id="page"
+		navButtonPress="onNavBack"
+		showNavButton="true"
+		floatingFooter="true"
+		showFooter="true">
+		<customHeader>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Title text="{sampleListView>/title}"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://sys-help" press=".onHelp" tooltip="{i18n>helpButtonText}"/>
+				<Button icon="sap-icon://{= ${sampleListView>/fullscreen} === true ? 'exit-' : '' }full-screen" press=".toggleFullScreen" tooltip="{= ${sampleListView>/fullScreen} === false ? 'Enter' : 'Exit' } Full Screen Mode"/>
+				<Button icon="sap-icon://decline" press=".onClose" tooltip="Close column"/>
+			</Toolbar>
+		</customHeader>
+		<content>
+			<Table
+				id="table"
+				width="auto"
+				class="sapUiResponsiveMargin"
+				items="{
+					path: '/samples',
+					sorter: {
+						path: 'asset',
+						group: true
+					},
+					 groupHeaderFactory: '.getGroupHeader'
+				}"
+				noDataText="{sampleListView>/tableNoDataText}"
+				busyIndicatorDelay="{sampleListView>/tableBusyDelay}"
+				growing="true"
+				growingScrollToLoad="true"
+				updateFinished="onUpdateFinished">
+
+				<headerToolbar>
+					<Toolbar>
+						<Title id="tableHeader" text="{sampleListView>/sampleListTableTitle}"/>
+						<ToolbarSpacer />
+						<Button text="{i18n>howToUseLibraryButtonText}" press=".onHowTo"/>
+						<SearchField
+							id="searchField"
+							tooltip="{i18n>sampleListSearchTooltip}"
+							liveChange=".onSearch"
+							width="auto">
+						</SearchField>
+					</Toolbar>
+				</headerToolbar>
+
+				<columns>
+					<Column id="nameColumn" width="33%">
+						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+					</Column>
+					<Column id="DescriptionColumn">
+						<Text text="{i18n>tableDescriptionColumnTitle}" id="descriptionColumnTitle"/>
+					</Column>
+				</columns>
+
+				<items>
+					<ColumnListItem
+						type="Navigation"
+						press=".onPress">
+						<cells>
+							<ObjectIdentifier title="{name}"/>
+							<Text text="{description}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<ToggleButton
+						icon="sap-icon://group-2"
+						tooltip="{i18n>groupByLibraryTooltip}"
+						pressed="true"
+						press=".onToggleGroupByAsset"/>
+
+				<Button
+					icon="sap-icon://email"
+					tooltip="{i18n>shareSendEmailSampleListTooltip}"
+					press=".onShareEmailPress"/>
+
+			</Toolbar>
+		</footer>
+	</Page>
+
+</mvc:View>

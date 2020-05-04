@@ -1,0 +1,32 @@
+{
+	"openui5.parallax": {
+		"icon": "sap-icon://dimension",
+		"name": "Parallax",
+		"description": "A library wrapping parallax.js in UI5 controls to create stunning layered effects",
+		"source" : "https://github.com/michadelic/openui5-parallax",
+		"documentation": "https://github.com/michadelic/openui5-parallax/blob/master/README.md",
+		"license": "Apache 2.0",
+		"version": 1.0,
+		"content": {
+			"ParallaxScroller": {
+				"id": "ParallaxScroller",
+				"name": "ParallaxScroller",
+				"type": "control",
+				"version": 1.0,
+				"description": "Control for creating parallax scenes with multiple layers",
+				"samples": [
+					{
+						"id": "ParallaxScene",
+						"name": "Parallax Scene (landscape)",
+						"description": "A landscape parallax scene with multiple layers containing hills and clouds"
+					},
+					{
+						"id": "ParallaxSceneFast",
+						"name": "Parallax Scene (abstract)",
+						"description": "An abstract parallax scene with artsy layers and fast movement"
+					}
+				]
+			}
+		}
+	}
+}

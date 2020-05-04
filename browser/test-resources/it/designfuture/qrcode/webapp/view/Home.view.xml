@@ -1,0 +1,77 @@
+<mvc:View controllerName="QRCode.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:lab="it.designfuture.qrcode"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>appTitle}">
+				<content>
+					<f:SimpleForm
+						editable="true"
+						layout="ResponsiveGridLayout"
+						title=""
+						labelSpanL="4"
+						labelSpanM="12"
+						adjustLabelSpan="false"
+						emptySpanL="0"
+						emptySpanM="0"
+						columnsL="2"
+						columnsM="2">
+						<f:content>
+							<core:Title text="{i18n>qrcodeParameters}" />
+							
+							<Label text="{i18n>qrcodeText}" />
+							<Input value="{temp>/text}" />
+							
+							<Label text="{i18n>qrcodeWidth}" />
+							<Input type="Number"
+								value="{
+									path: 'temp>/width',
+									type: 'sap.ui.model.type.Integer'
+								}" 
+							/>
+							
+							<Label text="{i18n>qrcodeHeight}" />
+							<Input type="Number" 
+								value="{
+									path: 'temp>/height',
+									type: 'sap.ui.model.type.Integer'
+								}"
+							/>
+							
+							<Label text="{i18n>qrcodeColorLight}" />
+							<Input value="{temp>/colorLight}" />
+							
+							<Label text="{i18n>qrcodeColorDark}" />
+							<Input value="{temp>/colorDark}" />
+							
+							<Label text="{i18n>qrcodeCorrectionLevel}" />
+							<Select
+								forceSelection="false"
+								selectedKey="{temp>/correctLevel}">
+								<core:Item key="1" text="L (7%)" />
+								<core:Item key="0" text="M (15%)" />
+								<core:Item key="3" text="Q (25%)" />
+								<core:Item key="2" text="H (30%)" />
+							</Select>
+								
+							<core:Title text="{i18n>qrcodeResult}" />
+							<lab:QRCode
+								id="customQRCode"
+								text="{temp>/text}"
+								width="{temp>/width}"
+								height="{temp>/height}"
+								colorDark="{temp>/colorDark}"
+								colorLight="{temp>/colorLight}"
+								correctLevel="{temp>/correctLevel}"
+							/>
+						</f:content>
+					</f:SimpleForm>																													
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

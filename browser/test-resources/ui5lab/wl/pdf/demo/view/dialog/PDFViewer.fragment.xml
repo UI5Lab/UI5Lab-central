@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout"
+	xmlns:pdf="ui5lab.wl.pdf">
+	<Dialog visible="true" icon="" showHeader="false" type="Standard" state="None" stretchOnPhone="true"
+		horizontalScrolling="false" verticalScrolling="false" resizable="false" draggable="false">
+		<content>
+			<pdf:PdfViewer pdfSource="{/pdfsource}" height="700px"/>
+		</content>
+		<buttons>
+			<Button text="Close" press="onClose"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

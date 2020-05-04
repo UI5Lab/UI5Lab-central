@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";return sap.ui.getCore().initLibrary({name:"openui5.smartmockserver",dependencies:["sap.ui.core"],controls:["openui5.smartmockserver.SmartMockServer"],noLibraryCSS:true,version:"0.2.7"})});

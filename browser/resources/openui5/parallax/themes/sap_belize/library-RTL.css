@@ -1,0 +1,60 @@
+/*!
+ * ${copyright}
+ */
+/*!
+ * ${copyright}
+ */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+.openui5ParallaxScroller {
+  z-index: 89 !important;
+  width: 100%;
+}
+.openui5ParallaxScroller,
+.openui5ParallaxLayer {
+  white-space: nowrap;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.openui5ParallaxLayer {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/*!
+ * ${copyright}
+ */
+
+/* =========================== */
+
+/* Global CSS for 'base' theme */
+
+/* Inline theming parameters */
+#sap-ui-theme-openui5\.parallax{background-image:url('data:text/plain;utf-8,%7B%22default%22%3A%7B%7D%2C%22scopes%22%3A%7B%22sapContrast%22%3A%7B%7D%7D%7D')}

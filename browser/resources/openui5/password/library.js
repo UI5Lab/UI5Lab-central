@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/library"],function(){"use strict";return sap.ui.getCore().initLibrary({name:"openui5.password",dependencies:["sap.ui.core","sap.m"],interfaces:[],controls:["openui5.password.Password"],elements:[],noLibraryCSS:true,version:"0.1.9"})},false);

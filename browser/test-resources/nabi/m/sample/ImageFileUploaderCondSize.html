@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Sample - nabi.m.ImageFileUploader</title>
+
+		<base href="../../../../">
+		<!--[if lte IE 9]><script>
+		(function() {
+			var baseTag = document.getElementsByTagName('base')[0];
+			baseTag.href = baseTag.href;
+		})();
+		</script><![endif]-->
+
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.ui.unified,sap.m,nabi.m"
+			data-sap-ui-theme="sap_belize">
+		</script>
+
+		<script>
+			sap.ui.getCore().attachInit(function () {
+
+				var oImageFileUploader = new nabi.m.ImageFileUploader({
+					scaleFactor : 0.85,
+					maximumScaledFileSize : 1024 * 1024 * 3,	// 3 MB
+					maximumBoundaryWidth : 1680,
+					maximumBoundaryHeight : 1050,
+					uploadType : nabi.m.ImageType.jpg,
+					scaleCondition : nabi.m.ImageScaleCondition.Size,
+					scaleConditionSize : 1024 * 1024 * 5,			// 5 MB
+					mimeType: [nabi.m.MimeType.PDF, nabi.m.MimeType.JPEG, nabi.m.MimeType.PNG],
+					uploadUrl: "/upload",
+					uploadOnChange : true,
+					maxScaledFileSizeExceed : function(oEvent){
+						var filename, filesize, maxSize, diff;
+						filename = oEvent.getParameter("fileName");
+						filesize = oEvent.getParameter("fileSize");
+						maxSize = oEvent.getSource().getMaximumScaledFileSize();
+						diff = filesize - maxSize;
+						sap.m.MessageToast.show(filename + " has " + filesize + " bytes which is " + diff + " bytes more than the max of " + maxSize + " bytes.");
+					},
+					uploadComplete : function (oEvent) {
+						var sMsg, sStatus = oEvent.getParameter("status");
+						if (sStatus === 200) {
+							sMsg = "Return Code: 200 "	;
+							oEvent.getSource().setValue("");
+						} else {
+								sMsg = "Error Code: " + sStatus;
+						}
+						sap.m.MessageToast.show(sMsg);
+					}
+				});
+
+				oImageFileUploader.placeAt("content");
+
+			});
+		</script>
+	</head>
+	<body id="content" class="sapUiBody" style="height:100vh; width:100vw;">
+	</body>
+</html>

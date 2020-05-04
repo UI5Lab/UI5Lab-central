@@ -1,0 +1,29 @@
+<mvc:View controllerName="be.tn.IconsDemo.controller.IconDetail" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Page title="{icon>/icon}" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+			<VBox>
+				<HBox justifyContent="SpaceBetween">
+					<Button icon="{icon>/icon}" text="{icon>/icon}" type="Default" class="sapUiSmallMarginBegin" />
+					<Button icon="{icon>/icon}" text="{icon>/icon}" type="Ghost"/>
+					<Button icon="{icon>/icon}" text="{icon>/icon}" type="Accept"/>
+					<Button icon="{icon>/icon}" text="{icon>/icon}" type="Reject"/>
+					<Button icon="{icon>/icon}" text="{icon>/icon}" type="Emphasized" class="sapUiSmallMarginEnd"/>
+				</HBox>
+				<List>
+					<items>
+						<StandardListItem icon="{icon>/icon}" title="{icon>/icon}" />
+						<StandardListItem icon="{icon>/icon}" title="{icon>/icon}" />
+						<StandardListItem icon="{icon>/icon}" title="{icon>/icon}" />
+					</items>
+				</List>
+				<HBox justifyContent="SpaceBetween" class="sapUiTinyMarginTop">
+					<core:Icon src="{icon>/icon}" size="7rem" class="sapUiSmallMarginBegin" />
+					<core:Icon src="{icon>/icon}" size="7rem" />
+					<core:Icon src="{icon>/icon}" size="7rem" />
+					<core:Icon src="{icon>/icon}" size="7rem" class="sapUiSmallMarginEnd" />
+				</HBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

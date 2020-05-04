@@ -1,0 +1,1 @@
+sap.ui.define(["sap/base/strings/formatMessage"],function(s){"use strict";return{formatMessage:s}});

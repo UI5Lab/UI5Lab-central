@@ -1,0 +1,26 @@
+{
+    "ui5lab.striptoastr": {
+        "icon": "sap-icon://ui-notifications",
+        "name": "StripToastr",
+        "description": "Message Strips that Growl",
+        "source": "https://github.com/jasper07/StripToastr.git",
+        "documentation": "https://github.com/jasper07/StripToastr#readme",
+        "demo": "https://jasper07.secondphase.com.au/StripToastr/",
+        "version": "1.0.0",
+        "license": "MIT",
+        "content": {
+            "StripToastr": {
+                "id": "StripToastr",
+                "name": "StripToastr",
+                "type": "control",
+                "version": "1.0.0",
+                "description": "An implementation of growl toasters for ui5",
+                "samples": [{
+                    "id": "StripToastrPlayground",
+                    "name": "StripToastr Playground",
+                    "description": "An interactive playground for StripToastr"
+                }]
+            }
+        }
+    }
+}

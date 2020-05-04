@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Testpage - ui5lab.wordcloud.WordCloud</title>
+
+	<base href="../../../../">
+	<!--[if lte IE 9]><script>
+	(function() {
+		var baseTag = document.getElementsByTagName('base')[0];
+		baseTag.href = baseTag.href;
+	})();
+	</script><![endif]-->
+
+	<script id="sap-ui-bootstrap"
+		src="https://openui5.hana.ondemand.com/1.48.6/resources/sap-ui-core.js"
+		data-sap-ui-libs="ui5lab.wordcloud"
+		data-sap-ui-theme="sap_belize">
+	</script>
+
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			// set up model
+			var oModel = new sap.ui.model.json.JSONModel({
+				words: [{text: "This", weight: 1}, {text: "is", weight: 2}, {text: "WordCloud", weight: 4},
+					{text: "It", weight: 2}, {text: "is", weight: 1}, {text: "Awesome", weight: 7},
+					{text: "I", weight: 1}, {icon: "sap-icon://thumb-up", weight: 2}, {text: "UI5Lab", weight: 4},
+					{text: "Lets", weight: 2}, {text: "Contribute", weight: 2}, {icon: "sap-icon://sap-ui5", text: "openUI5", weight: 5}]
+			});
+			sap.ui.getCore().setModel(oModel);
+
+			// create control
+			var oWordCloud = new ui5lab.wordcloud.WordCloud({
+				words: {
+					path: '/words',
+					template: new ui5lab.wordcloud.Word({text: "{text}", weight: "{weight}", icon: "{icon}"})
+				},
+				rotate: true,
+				width: "400px",
+				height: "200px"
+			});
+			oWordCloud.placeAt("content");
+		});
+	</script>
+</head>
+<body id="content" class="sapUiBody" style="height:100vh; width:100vw;">
+</body>
+</html>

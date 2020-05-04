@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Sample - nabi.m.PDFViewer</title>
+
+		<base href="../../../../">
+		<!--[if lte IE 9]><script>
+		(function() {
+			var baseTag = document.getElementsByTagName('base')[0];
+			baseTag.href = baseTag.href;
+		})();
+		</script><![endif]-->
+
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,nabi.m"
+			data-sap-ui-theme="sap_belize">
+		</script>
+
+		<!-- XMLView -->
+	    <script id="myXmlView" type="ui5/xmlview">
+	        <mvc:View
+				height="100%"
+				xmlns:mvc="sap.ui.core.mvc"
+	        	xmlns="sap.m"
+	            xmlns:nabi="nabi.m">
+
+				<Page
+					title="In App PDFViewer Sample"
+					class="sapUiContentPadding"
+					showNavButton="false">
+					<headerContent>
+						<Button icon="sap-icon://action" tooltip="Share" />
+					</headerContent>
+					<content>
+						<nabi:PDFViewer source="{/pdfUri}"/>
+					</content>
+					<footer>
+						<Toolbar>
+							<ToolbarSpacer/>
+							<Button text="Accept" type="Accept" />
+							<Button text="Reject" type="Reject" />
+							<Button text="Edit" />
+							<Button text="Delete" />
+						</Toolbar>
+					</footer>
+				</Page>
+
+	        </mvc:View>
+	    </script>
+
+		<script>
+			sap.ui.getCore().attachInit(function () {
+
+				var sPdfUri = "compressed.tracemonkey-pldi-09.pdf";
+
+				var oModel = new sap.ui.model.json.JSONModel({
+					pdfUri: sPdfUri
+				});
+				sap.ui.getCore().setModel(oModel);
+
+				//### Controller ###
+				// to enable the demo using a view with controller uncomment the following + add controllerName="MyController" to view above
+				/*
+				sap.ui.define("MyController",[	//TODO why do we need "MyController" here while it's not needed in my template?
+					"sap/ui/core/mvc/Controller",
+					"sap/ui/model/json/JSONModel"
+				], function (Controller, JSONModel) {
+					"use strict";
+
+					return Controller.extend("MyController", {
+						onInit : function () {
+							var sThirdPartyPath = "/" + jQuery.sap.getModulePath("nabi.m.thirdparty");
+							var sPdfUri = sThirdPartyPath + "/pdfjs/web/compressed.tracemonkey-pldi-09.pdf";
+
+							var oModel = new JSONModel({
+								pdfUri: sPdfUri
+							});
+							this.getView().setModel(oModel);
+						}
+					});
+				});
+				*/
+
+				//### THE APP: place the XMLView somewhere into DOM ###
+	            sap.ui.xmlview({
+	                viewContent : jQuery("#myXmlView").html()
+	            }).placeAt("content");
+
+			});
+		</script>
+	</head>
+	<body id="content" class="sapUiBody" style="height:100vh; width:100vw;">
+	</body>
+</html>

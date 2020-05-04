@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>openui5.smartmockserver</name>
+  <vendor>Mauricio Lauffer</vendor>
+  <version>0.2.7</version>
+  <documentation>An extended version of UI5 MockServer which generates meaningful mock data.</documentation>
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+  <appData></appData>
+</library>

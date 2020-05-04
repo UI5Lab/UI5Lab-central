@@ -1,0 +1,34 @@
+/*!
+ * ${copyright}
+ */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+.openui5ParallaxScroller {
+  z-index: 89 !important;
+  width: 100%;
+}
+.openui5ParallaxScroller,
+.openui5ParallaxLayer {
+  white-space: nowrap;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.openui5ParallaxLayer {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+/* Inline theming parameters */
+#sap-ui-theme-openui5\.parallax{background-image:url('data:text/plain;utf-8,%7B%7D')}

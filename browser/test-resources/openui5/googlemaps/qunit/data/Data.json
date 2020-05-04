@@ -1,0 +1,37 @@
+{
+    "Pyrmont": {
+        "lat": -33.895,
+        "lng": 151.275
+    },
+    "Beaches": [{
+        "name": "Manly Beach",
+        "lat": -33.80010128657071,
+        "lng": 151.28747820854187,
+        "icon": "http://maps.google.com/mapfiles/kml/pal2/icon21.png",
+        "visible": true
+    }, {
+        "name": "Bondi Beach",
+        "lat": -33.890542,
+        "lng": 151.274856,
+        "icon": "http://maps.google.com/mapfiles/kml/pal2/icon21.png",
+        "visible": true
+    }, {
+        "name": "Coogee Beach",
+        "lat": -33.923036,
+        "icon": "http://maps.google.com/mapfiles/kml/pal2/icon21.png",
+        "lng": 151.259052,
+        "visible": false
+    }, {
+        "name": "Maroubra Beach",
+        "lat": -33.950198,
+        "lng": 151.259302,
+        "icon": "http://maps.google.com/mapfiles/kml/pal2/icon21.png",
+        "visible": true
+    }, {
+        "name": "Cronulla Beach",
+        "lat": -34.055555,
+        "lng": 151.1551,
+        "icon": "http://maps.google.com/mapfiles/kml/pal2/icon21.png",
+        "visible": true
+    }]
+}

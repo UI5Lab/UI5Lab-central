@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<base href="../../../../">
+	
+	<title>Sample - openui5.parallax.ParallaxScene</title>
+
+	<style>
+		html {
+			height: 100%;
+		}
+
+		.view {
+			background-image: -webkit-linear-gradient(top, #178299 0, #2ca9b2 100%);
+			background-image: linear-gradient(to top, #178299 0, #2ca9b2 100%);
+			background-image: -moz-linear-gradient(top, #178299 0, #2ca9b2 100%);
+			background-image: -o-linear-gradient(top, #178299 0, #2ca9b2 100%);
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.openui5ParallaxLayer.hills {
+			top: 33%;
+			bottom: 0;
+		}
+
+		.openui5ParallaxLayer.clouds div {
+			height: 400px;
+			top: -20px;
+			background-position: center top;
+			position:relative;
+			left: -100%;
+			width: 300%;
+		}
+
+		.openui5ParallaxLayer.hills div {
+			height: 1000px;
+			bottom: -50px;
+			background-position: center bottom;
+			background-repeat: repeat-x;
+			background-size: auto 101%;
+			position:relative;
+			left: -100%;
+			width: 300%;
+		}
+
+		.transparent {
+			opacity: 0.2;
+		}
+	</style>
+
+	<script id="sap-ui-bootstrap"
+		src="../../../../resources/sap-ui-core.js"
+		data-sap-ui-libs="openui5.parallax"
+		data-sap-ui-resourceroots='{
+			"openui5.parallax.example" : "./test-resources/openui5/parallax/sample"
+		}'
+		data-sap-ui-theme="sap_belize">
+	</script>
+
+	<script id="view" type="sapui5/xmlview">
+		<mvc:View
+			class="view"
+			height="100%"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:p="openui5.parallax">
+			<p:ParallaxScroller id="background" class="background" speedY="3">
+				<p:ParallaxLayer id="parallaxClouds1" src="images/clouds1.png" depth="1" class="clouds transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxClouds2" src="images/clouds2.png" depth="0.5" class="clouds transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxClouds3" src="images/clouds3.png" depth="0.25" class="clouds transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxHill1" src="images/hill1.png" depth="0.2" class="hills transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxHill2" src="images/hill2.png" depth="0.6" class="hills transparent"></p:ParallaxLayer>
+				<p:ParallaxLayer id="parallaxHill3" src="images/hill3.png" depth="2.0" class="hills transparent"></p:ParallaxLayer>
+			</p:ParallaxScroller>
+		</mvc:View>
+	</script>
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			// create xml view
+			var oView = sap.ui.xmlview({viewContent: jQuery('#view').html()});
+			oView.getContent()[0].getLayers().forEach(function (oLayer) {
+				oLayer.setSrc(jQuery.sap.getModulePath("openui5.parallax.example", "/" + oLayer.getSrc()));
+			});
+			oView.placeAt("content");
+		});
+	</script>
+</head>
+<body id="content" class="sapUiBody">
+</body>
+</html>

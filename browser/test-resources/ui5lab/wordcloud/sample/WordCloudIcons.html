@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Testpage - ui5lab.wordcloud.WordCloud</title>
+
+	<base href="../../../../">
+	<!--[if lte IE 9]><script>
+	(function() {
+		var baseTag = document.getElementsByTagName('base')[0];
+		baseTag.href = baseTag.href;
+	})();
+	</script><![endif]-->
+
+	<script id="sap-ui-bootstrap"
+		src="resources/sap-ui-core.js"
+		data-sap-ui-libs="ui5lab.wordcloud"
+		data-sap-ui-theme="sap_belize">
+	</script>
+
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			// set up model
+			var oModel = new sap.ui.model.json.JSONModel({
+				words: [{weight: 1, icon: "sap-icon://favorite"},
+						{weight: 2, icon: "sap-icon://blur"},
+						{weight: 4, icon: "sap-icon://comment"},
+						{weight: 2, icon: "sap-icon://competitor"},
+						{weight: 1, icon: "sap-icon://cursor-arrow"},
+						{weight: 7, icon: "sap-icon://discussion"},
+						{weight: 1, icon: "sap-icon://favorite"},
+						{weight: 2, icon: "sap-icon://thumb-up"},
+						{weight: 4, icon: "sap-icon://explorer"},
+						{weight: 2, icon: "sap-icon://flight"},
+						{weight: 2, icon: "sap-icon://globe"},
+						{weight: 5, icon: "sap-icon://sap-ui5"},
+						{weight: 1, icon: "sap-icon://favorite"},
+						{weight: 2, icon: "sap-icon://blur"},
+						{weight: 4, icon: "sap-icon://comment"},
+						{weight: 2, icon: "sap-icon://competitor"},
+						{weight: 1, icon: "sap-icon://cursor-arrow"},
+						{weight: 7, icon: "sap-icon://discussion"},
+						{weight: 1, icon: "sap-icon://favorite"},
+						{weight: 2, icon: "sap-icon://thumb-up"},
+						{weight: 4, icon: "sap-icon://explorer"},
+						{weight: 2, icon: "sap-icon://flight"},
+						{weight: 2, icon: "sap-icon://globe"},
+						{weight: 5, icon: "sap-icon://sap-ui5"}]
+			});
+			sap.ui.getCore().setModel(oModel);
+
+			// create control
+			var oWordCloud = new ui5lab.wordcloud.WordCloud({
+				words: {
+					path: '/words',
+					template: new ui5lab.wordcloud.Word({text: "{text}", weight: "{weight}", icon: "{icon}"})
+				},
+				rotate: true,
+				randomOrder: true,
+				width: "400px",
+				height: "400px"
+			});
+			oWordCloud.placeAt("content");
+		});
+	</script>
+</head>
+<body id="content" class="sapUiBody" style="height:100vh; width:100vw;">
+</body>
+</html>

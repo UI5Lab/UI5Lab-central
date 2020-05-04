@@ -1,0 +1,28 @@
+{
+	"ui5lab.wl.pdf": {
+		"icon": "sap-icon://pdf-attachment",
+		"name": "PDF library",
+		"description": "A library with a PDF control that will show a PDF based on a base64 data uri",
+		"source" : "https://github.com/lemaiwo/UI5LabLibraryPDFViewer",
+		"documentation": "https://github.com/lemaiwo/UI5LabLibraryPDFViewer/blob/master/README.md",
+		"demo": "https://htmlpreview.github.io/?https://github.com/lemaiwo/UI5LabLibraryPDFViewer/blob/master/test/ui5lab/wl/pdf/demo/index.html",
+		"license": "MIT",
+		"version": 1.0,
+		"content": {
+			"PDF": {
+				"id": "PDF",
+				"name": "PDF",
+				"type": "control",
+				"version": 1.0,
+				"description": "A PDF Control that will show a PDF based on a base64 uri. This allows you to show uploaded PDF's immediately instead of uploading it to the server. No need for a static file url anymore.",
+				"samples": [
+					{
+						"id": "PDFUpload",
+						"name": "Upload PDF",
+						"description": "Upload a PDF and show it immediately as a base 64 data uri"
+					}
+				]
+			}
+		}
+	}
+}

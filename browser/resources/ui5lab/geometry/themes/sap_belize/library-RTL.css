@@ -1,0 +1,121 @@
+/*!
+ * ${copyright}
+ */
+/*!
+ * ${copyright}
+ */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+.ui5labSquare {
+  border: 1px solid #bfbfbf;
+  background-color: #5496cd;
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1rem;
+  display: inline-block;
+}
+.ui5labSquareRound {
+  border-radius: 1rem;
+}
+.ui5labSquareAngled {
+  border-radius: 0;
+}
+.ui5labCircle {
+  border-radius: 999999px;
+  padding-top: 0;
+}
+.ui5labTriangle {
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1rem;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #d3d3d3 transparent;
+}
+.ui5labTriangle:focus {
+  outline-width: 0;
+}
+.ui5labTriangleText {
+  position: relative;
+  width: 100%;
+}
+.ui5labTriangleRotation {
+  font-size: 200%;
+}
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* PRIMARY COLORS */
+/* ACCENT COLORS */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* some more fancy styles in sap_belize theme */
+.ui5labSquare {
+  background: #5496cd;
+  /* Old browsers */
+  background: linear-gradient(to bottom, #5496cd 0%, #427cac 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #ffffff;
+  text-shadow: #000000 -1px 1px 0.5rem;
+  font-size: 2rem;
+}
+.ui5labSquareRound {
+  border-radius: 2rem;
+}
+/* some more fancy styles in sap_belize theme */
+.ui5labTriangle {
+  color: #ffffff;
+  text-shadow: #000000 -1px 1px 0.5rem;
+  font-size: 1.5rem;
+  border-color: transparent transparent #5496cd transparent;
+}
+/*!
+ * ${copyright}
+ */
+
+/* =========================== */
+
+/* Global CSS for 'base' theme */
+
+.sapContrast.ui5labSquare,
+.sapContrast .ui5labSquare {
+  border: 1px solid #889eb1;
+  background-color: #5496cd;
+}
+
+.sapContrast.ui5labTriangle,
+.sapContrast .ui5labTriangle {
+  border-color: transparent transparent #d3d3d3 transparent;
+}
+
+.sapContrast.ui5labSquare,
+.sapContrast .ui5labSquare {
+  background: #5496cd;
+  background: linear-gradient(to bottom, #5496cd 0%, #91c8f6 100%);
+  color: #2f3c48;
+  text-shadow: #000000 -1px 1px 0.5rem;
+}
+
+.sapContrast.ui5labTriangle,
+.sapContrast .ui5labTriangle {
+  color: #2f3c48;
+  text-shadow: #000000 -1px 1px 0.5rem;
+  border-color: transparent transparent #5496cd transparent;
+}
+
+/* Inline theming parameters */
+#sap-ui-theme-ui5lab\.geometry{background-image:url('data:text/plain;utf-8,%7B%22default%22%3A%7B%7D%2C%22scopes%22%3A%7B%22sapContrast%22%3A%7B%7D%7D%7D')}

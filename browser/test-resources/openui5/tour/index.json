@@ -1,0 +1,27 @@
+{
+  "openui5.tour": {
+    "icon": "sap-icon://enter-more",
+    "name": "OpenUI5 Tour",
+    "description": "An OpenUI5 library to give a guided tour through your UI5 webapp.",
+    "source": "https://github.com/mauriciolauffer/openui5-tour.git",
+    "documentation": "https://github.com/mauriciolauffer/openui5-tour#readme",
+    "demo": "https://mauriciolauffer.github.io/openui5-tour/demo/webapp/index.html",
+    "version": "1.0.0",
+    "license": "MIT",
+    "content": {
+      "TourShowFeatures": {
+        "id": "openui5-tour",
+        "name": "OpenUI5 Tour",
+        "type": "control",
+        "version": "1.0.0",
+        "description": "An OpenUI5 library to give a guided tour through your UI5 webapp.",
+        "samples": [{
+          "id": "openui5-tourPlayground",
+          "name": "OpenUI5 Tour Playground",
+          "description": "An interactive playground for openui5-tour",
+          "url": "https://mauriciolauffer.github.io/openui5-tour/demo/webapp/index.html"
+        }]
+      }
+    }
+  }
+}

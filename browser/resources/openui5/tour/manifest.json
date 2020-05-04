@@ -1,0 +1,31 @@
+{
+  "sap.app": {
+    "id": "openui5.tour",
+    "type": "library",
+    "applicationVersion": {
+      "version": "0.0.18"
+    },
+    "title": "An OpenUI5 library to give a guided tour through your UI5 webapp."
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    }
+  }
+}

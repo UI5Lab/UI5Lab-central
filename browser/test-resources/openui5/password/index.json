@@ -1,0 +1,27 @@
+{
+  "openui5.password": {
+    "icon": "sap-icon://locked",
+    "name": "Password",
+    "description": "An OpenUI5 Control which checks your password strength and validates it",
+    "source" : "https://github.com/mauriciolauffer/openui5-password",
+    "documentation": "https://github.com/mauriciolauffer/openui5-password#readme",
+    "demo": "https://mauriciolauffer.github.io/openui5-password/demo/webapp/index.html",
+    "license" : "MIT",
+    "version": 1.0,
+    "content": {
+      "Password": {
+        "id": "Password",
+        "name": "Password Control",
+        "type": "control",
+        "version": 1.0,
+        "description": "An OpenUI5 Control which checks your password strength and validates it",
+        "samples": [{
+          "id": "Password",
+          "name": "Password Control Example",
+          "description": "Basic password validation with configurable parameters",
+          "url": "https://mauriciolauffer.github.io/openui5-password/demo/webapp/index.html"
+        }]
+      }
+    }
+  }
+}

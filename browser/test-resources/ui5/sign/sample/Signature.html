@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Example - ui5.sign.Signature</title>
+    <base href="../../../../">
+    <!--[if lte IE 9]><script type="text/javascript">
+    (function() {
+        var baseTag = document.getElementsByTagName('base')[0];
+        baseTag.href = baseTag.href;
+    })();
+</script><![endif]-->
+    <!-- ********************************************************************** -->
+    <!-- SAPUI5 Bootstrap:                                                     -->
+    <!-- Extend the "libs" property if you like to import additional libraries  -->
+    <!-- ********************************************************************** -->
+
+    <script id="sap-ui-bootstrap" type="text/javascript" data-sap-ui-libs="sap.m,sap.ui.layout,ui5.sign" src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize" data-sap-ui-resourceroots='{"ui5.sign.samples.Signature": "./test-resources/ui5/sign/sample"}'>
+        </script>
+
+    <script type="text/javascript">
+        sap.ui.getCore().attachInit(function () {
+            var oSignatureControl = new ui5.sign.Signature({ width: "700px", height: "400px" });
+
+            var oInpSVGString = new sap.m.TextArea({
+                placeholder: "Paste SVG string to display on the screen",
+                width: "100%",
+                rows: 20
+            });
+
+            var oPenSizeSlider = new sap.m.Slider({
+                value: 2, min: 1, max: 50, showAdvancedTooltip: true,
+                change: function () {
+                    oSignatureControl.setPenSize(this.getValue());
+                }
+            });
+
+            var oEditable = new sap.m.Switch({
+                state: true, customTextOn: "Yes", customTextOff: "No",
+                change: function (oEvent) {
+                    oSignatureControl.setEditable(oEvent.getParameter("state"));
+                }
+            });
+
+            var oForm = new sap.ui.layout.form.SimpleForm({
+                title: "Signature Control Demo",
+                maxContainerCols: 2,
+                // singleContainerFullSize: false,
+                layout: "ResponsiveGridLayout",
+                editable: true,
+                // adjustLabelSpan: false,
+                // labelSpanXL: 2,
+                // labelSpanL: 2,
+                // labelSpanM: 2,
+                // labelSpanS: 4,
+                // emptySpanXL: 0,
+                // emptySpanL: 0,
+                // emptySpanM: 0,
+                // emptySpanS: 0,
+                // columnsXL: 1,
+                // columnsL: 1,
+                // columnsM: 1,
+                // columnsS: 1,
+                content: [
+                    oSignatureControl,
+                    new sap.m.Label(),
+                    new sap.m.SegmentedButton({
+                        items: [
+                            new sap.m.SegmentedButtonItem({
+                                text: "Clear", key: "clear",
+                                tooltip: "Clears content inside svg",
+                                press: function () {
+                                    oSignatureControl.clear();
+                                }
+                            }),
+
+                            new sap.m.SegmentedButtonItem({
+                                text: "Get SVG", key: "getSVG",
+                                tooltip: "Get SVG as string",
+                                press: function () {
+                                    var oDialog = new sap.m.Dialog({
+                                        title: "Generated SVG string",
+                                        contentWidth: "70%",
+                                        type: 'Message',
+                                        content: new sap.m.TextArea({
+                                            editable: false,
+                                            width: "100%",
+                                            rows: 20,
+                                            value: oSignatureControl.getSVGString()
+                                        }),
+                                        beginButton: new sap.m.Button({
+                                            text: "Ok",
+                                            press: function () { oDialog.close(); }
+                                        }),
+                                        afterClose: function () { oDialog.destroy(); }
+                                    });
+
+                                    oDialog.open();
+
+                                }
+                            }),
+
+                            new sap.m.SegmentedButtonItem({
+                                text: "Set SVG", key: "setSVG",
+                                tooltip: "Given SVG String is set and makes the control non-editable",
+                                press: function () {
+                                    var oDialog = new sap.m.Dialog({
+                                        title: "Set SVG string to display on the screen",
+                                        contentWidth: "70%",
+                                        type: 'Message',
+                                        content: oInpSVGString,
+                                        beginButton: new sap.m.Button({
+                                            text: "Ok",
+                                            press: function () {
+                                                if (oInpSVGString.getValue()) {
+                                                    oSignatureControl.setSVGString(
+                                                        oInpSVGString.getValue()
+                                                    );
+
+                                                    oEditable.setState(false);
+                                                    sap.m.MessageToast.show("Control becomes non-editable when SVG string is set");
+                                                }
+                                                oDialog.close();
+                                            }
+                                        }),
+                                        afterClose: function () { oDialog.destroy(); }
+                                    });
+
+                                    oDialog.open();
+
+                                }
+                            }),
+
+                            new sap.m.SegmentedButtonItem({
+                                text: "Reset", key: "reset",
+                                tooltip: "Reset control to default properties",
+                                press: function () {
+
+                                    oSignatureControl.clear();
+                                    oSignatureControl.setEditable(true);
+                                    oSignatureControl.setBackgroundColor("rgb(221, 221, 221)");
+                                    oSignatureControl.setPenSize(2);
+                                    oSignatureControl.setPenColor("black");
+
+                                    // reset slider for pensize
+                                    oPenSizeSlider.setValue(2);
+
+                                    // editable
+                                    oEditable.setState(true);
+                                }
+                            })
+                        ]
+                    }),
+                    new sap.ui.core.Title({ text: "Settings" }),
+                    new sap.m.Label({ text: "Editable", vAlign: "Bottom" }),
+                    oEditable,
+                    new sap.m.Label({ text: "Pen Size" }),
+                    oPenSizeSlider,
+                    new sap.m.Label({ text: "Pen Color" }),
+                    new sap.m.ColorPalette({
+                        colorSelect: function (oEvent) {
+                            oSignatureControl.setPenColor(oEvent.getParameter("value"));
+                        }
+                    }),
+                    new sap.m.Label({ text: "Background color" }),
+                    new sap.m.ColorPalette({
+                        colorSelect: function (oEvent) {
+                            oSignatureControl.setBackgroundColor(oEvent.getParameter("value"));
+                        }
+                    })
+                ]
+            });
+
+            oForm.placeAt("content");
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" role="application">
+    <div id="content"></div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Example - ui5lab.wl.img</title>
+      <base href="../../../../../">
+      <!--[if lte IE 9]><script type="text/javascript">
+         (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+         })();
+      </script><![endif]-->
+      <!-- ********************************************************************** -->
+      <!-- SAPUI5 Bootstrap:                                                     -->
+      <!-- Extend the "libs" property if you like to import additional libraries  -->
+      <!-- ********************************************************************** -->
+     
+      <script id="sap-ui-bootstrap" 
+         type="text/javascript"
+         data-sap-ui-libs="ui5lab.wl.img,sap.m,sap.ui.unified,sap.ui.layout"
+         src="resources/sap-ui-core.js"
+         data-sap-ui-theme="sap_belize">
+      </script>
+      
+      <script type="text/javascript"> 
+		sap.ui.getCore().attachInit(function () {
+		var me = this;
+		var uploader = new sap.ui.unified.FileUploader({change:function(oEvent){
+			var reader = new FileReader();
+			reader.onload = function(oEvent){
+				me.imageViewer = new ui5lab.wl.img.ImageViewer({
+					src: oEvent.target.result
+				});
+				me.imageViewer.open();
+			};
+			reader.readAsDataURL(oEvent.getParameter("files")[0]);
+			
+		}});
+		var oButton = new sap.m.Button({text:"Open Image Viewer",press:function(oEvent){
+			if(me.imageViewer){
+				me.imageViewer.open();
+			}
+		}});
+         var oHorizontalBox = new sap.ui.layout.HorizontalLayout({content:[uploader,oButton]});
+         oHorizontalBox.placeAt("content");
+		});
+      </script>
+   </head>
+   <body class="sapUiBody" role="application">
+      <h1 id="header">Test Page for <code>ui5lab.wl.img</code></h1>
+      <div id="content"></div>
+   </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "ui5lab.wl.space": {
+    "icon": "sap-icon://activate",
+    "name": "Space library",
+    "description": "A library with Space controls for UI5",
+    "source" : "https://github.com/lemaiwo/UI5Lab-library-space",
+    "documentation": "https://github.com/lemaiwo/UI5Lab-library-space/blob/master/README.md",
+    "license": "MIT",
+    "version": 1.0,
+    "content": {
+      "SpaceIntro": {
+        "id": "SpaceIntro",
+        "name": "Space Intro",
+        "type": "control",
+        "version": 1.0,
+        "description": "Space Intro UI5 Control",
+        "samples": [
+          {
+            "id": "SpaceIntro",
+            "name": "Space Intro",
+            "description": "Space Intro UI5 Control"
+          }
+        ]
+      }
+    }
+  }
+}
