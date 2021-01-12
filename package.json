@@ -27,6 +27,7 @@
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
     "openui5-googlemaps": "https://github.com/jasper07/openui5-googlemaps",
+    "openui5-licensecode_input": "^1.0.1",
     "openui5-model-json-crud": "0.0.10",
     "openui5-multiinputdialog": "https://github.com/StErMi/openui5-multiinputdialog",
     "openui5-parallax": "^1.0.0",
@@ -36,7 +37,7 @@
     "openui5-swissknife": "https://github.com/StErMi/openui5-swissknife",
     "openui5-toastr": "https://github.com/StErMi/openui5-toastr",
     "openui5-tour": "0.0.18",
-    "openui5-validator": "^0.1.12",
+    "openui5-validator": "^0.1.17",
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": "~0.3.0",
     "ui5-sign": "https://github.com/kvsrikanthj/ui5-library-Signature",
@@ -49,7 +50,8 @@
     "ui5lab-wordcloud": "~1.0.1"
   },
   "devDependencies": {
-    "@ui5/cli": "^1.4.2",
+    "@ui5/cli": "^2.7.1",
+    "bower": "^1.8.8",
     "command-line-args": "^5.1.1",
     "eslint": "^5.16.0",
     "fs-extra": "^7.0.1",
