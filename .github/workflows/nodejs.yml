@@ -26,7 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies 🧰
-      run: npm ci
+      run: npm install --ignore-scripts
 
     - name: Build complete website folder 🛠
       run: npm run deploy
