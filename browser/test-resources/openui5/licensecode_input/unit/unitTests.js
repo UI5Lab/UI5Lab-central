@@ -8,8 +8,7 @@ sap.ui.getCore().attachInit(function() {
     'test/unit/allTests'
   ], function() {
     if (window.blanket) {
-      window.blanket.options('sap-ui-cover-only', 'openui5/validator');
-      window.blanket.options('sap-ui-cover-never', 'openui5/validator/thirdparty');
+      window.blanket.options('sap-ui-cover-only', 'openui5/licensecode_input');
     }
 
     QUnit.start();

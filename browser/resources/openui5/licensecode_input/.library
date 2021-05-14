@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <library xmlns="http://www.sap.com/sap.ui.library.xsd">
-  <name>openui5.validator</name>
-  <vendor>Mauricio Lauffer</vendor>
-  <version>0.1.17</version>
-  <documentation>An OpenUI5 library to validate fields</documentation>
+  <name>openui5.licensecode_input</name>
+  <vendor>Helmut Tammen</vendor>
+  <version>1.0.1</version>
+  <documentation>An OpenUI5 library with a license code input control</documentation>
   <dependencies>
     <dependency>
       <libraryName>sap.ui.core</libraryName>

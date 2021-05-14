@@ -1,5 +1,5 @@
 sap.ui.require([
-  'test/unit/Validator'
+  'test/unit/Licensecode_input'
 ], function() {
   'use strict';
 });

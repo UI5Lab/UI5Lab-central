@@ -1,11 +1,11 @@
 {
   "sap.app": {
-    "id": "openui5.validator",
+    "id": "openui5.licensecode_input",
     "type": "library",
     "applicationVersion": {
-      "version": "0.1.17"
+      "version": "1.0.1"
     },
-    "title": "An OpenUI5 library to validate fields."
+    "title": "An OpenUI5 library with a license code input control"
   },
   "sap.ui": {
     "technology": "UI5",
@@ -17,7 +17,7 @@
   },
   "sap.ui5": {
     "dependencies": {
-      "minUI5Version": "1.30.0",
+      "minUI5Version": "1.52.0",
       "libs": {
         "sap.ui.core": {},
         "sap.m": {

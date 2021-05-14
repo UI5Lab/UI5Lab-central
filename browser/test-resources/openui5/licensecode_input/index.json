@@ -1,0 +1,27 @@
+{
+  "openui5.licensecode_input": {
+    "icon": "sap-icon://text",
+    "name": "licensecode_input",
+    "description": "An OpenUI5 library with a license code input control",
+    "source" : "https://github.com/htammen/openui5-licensecode_input",
+    "documentation": "https://github.com/htammen/openui5-licensecode_input#readme",
+    "demo": "https://htammen.github.io/openui5-licensecode_input/demo/webapp/index.html",
+    "license" : "MIT",
+    "version": 1.0,
+    "content": {
+      "licensecode_input": {
+        "id": "licensecode_input",
+        "name": "Licensecode Input Control",
+        "type": "control",
+        "version": 1.0,
+        "description": "An OpenUI5 library with a license code input control",
+        "samples": [{
+          "id": "licensecode_input",
+          "name": "Licensecode Input Control Example",
+          "description": "Basic form with a license code input control",
+          "url": "https://htammen.github.io/openui5-licensecode_input/demo/webapp/index.html"
+        }]
+      }
+    }
+  }
+}

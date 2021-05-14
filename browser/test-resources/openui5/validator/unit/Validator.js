@@ -5,7 +5,19 @@ sap.ui.require([
   'sap/ui/core/message/Message',
   'sap/ui/core/mvc/XMLView',
   'openui5/validator/Validator'
-], function(UI5Object, ValueState, MessageType, Message, XMLView, Validator) {
+],
+/**
+ * Module Dependencies
+ *
+ * @param {typeof sap.ui.base.Object} UI5Object UI5 Object
+ * @param {typeof sap.ui.core.ValueState} ValueState UI5 Value State
+ * @param {typeof sap.ui.core.MessageType} MessageType UI5 Messate Type
+ * @param {typeof sap.ui.core.message.Message} Message UI5 Message object
+ * @param {typeof sap.ui.core.mvc.XMLView} XMLView UI5 XML View
+ * @param {object} Validator An extended UI5 Object
+ * @returns {object} Validator object, an extended UI5 Object
+ */
+function(UI5Object, ValueState, MessageType, Message, XMLView, Validator) {
   'use strict';
 
   let viewForTest = {};
@@ -41,16 +53,16 @@ sap.ui.require([
     };
   }
 
-  const { test } = QUnit;
+  const {test} = QUnit;
 
   QUnit.module('Validator', {
     beforeEach: function() {
       return XMLView.create({
         definition: viewDefinition
       })
-        .then((viewCreated) => {
-          viewForTest = viewCreated;
-        });
+          .then((viewCreated) => {
+            viewForTest = viewCreated;
+          });
     },
     afterEach: function() {
       viewForTest.destroy();
@@ -138,7 +150,7 @@ sap.ui.require([
         };
         const validator = new Validator(viewForTest, getSchema());
         const controls = validator._getControls();
-        assert.deepEqual(validator._getPayloadToValidate(controls), payload, 'payload returned');
+        assert.deepEqual(validator._getPayloadToValidate(controls), payload, 'payload returned ok');
       });
       test('Should return a payload with values set for properties', (assert) => {
         const payload = {
@@ -198,12 +210,12 @@ sap.ui.require([
         validator.validate();
         const errorMessageObjects = validator._processValidationErrors(validator._validate.errors);
         assert.strictEqual(errorMessageObjects instanceof Array, true, 'MessageObjects returned');
-        errorMessageObjects.forEach(function (errorMessageObject) {
+        errorMessageObjects.forEach(function(errorMessageObject) {
           assert.strictEqual(errorMessageObject instanceof Message, true, 'MessageObject is ok');
           assert.strictEqual(errorMessageObject.type, MessageType.Error, 'message type is ok');
           assert.ok(errorMessageObject.message, 'message exist');
           assert.ok(errorMessageObject.target, 'target is ok');
-          //assert.ok(errorMessageObject.description, 'description exist');
+          // assert.ok(errorMessageObject.description, 'description exist');
         });
       });
     });
@@ -219,7 +231,7 @@ sap.ui.require([
       test('Should add 1 new valid UI5 Control property', (assert) => {
         const validator = new Validator(viewForTest, getSchema());
         validator.addValidProperties(['ABAP']);
-        assert.strictEqual(validator.getValidProperties().length, 5, '1 new property added');
+        assert.strictEqual(validator.getValidProperties().length, 5, '1 new property added'); // eslint-disable-line
       });
       test('Should add more than 1 new valid UI5 Control property', (assert) => {
         const validator = new Validator(viewForTest, getSchema());
@@ -229,7 +241,7 @@ sap.ui.require([
       test('Should add 1 new valid UI5 Control property for a given instance', (assert) => {
         const validator = new Validator(viewForTest, getSchema());
         validator.addValidProperties(['ABAP']);
-        assert.strictEqual(validator.getValidProperties().length, 5, '1 new property added');
+        assert.strictEqual(validator.getValidProperties().length, 5, '1 new property added'); // eslint-disable-line
         const validator2 = new Validator(viewForTest, getSchema());
         assert.strictEqual(validator2.getValidProperties().length, 4, 'no new properties');
       });
