@@ -4,7 +4,7 @@ UI5Lab is a community-driven repository for UI5 custom control libraries. It's p
 
 #### Explore UI5Lab
 We provide examples, best practices, and infrastructure to share and retrieve custom control libraries from and for the community.
-Have a look at our [browser](https://ui5lab.io/browser) to see all currently available controls or check our [project overview](general/overview.md) for more details. 
+Have a look at our [browser](https://ui5lab.github.io/UI5Lab-central/browser) to see all currently available controls or check our [project overview](general/overview.md) for more details. 
 
 #### Use a UI5Lab library in your app
 

@@ -37,7 +37,7 @@ The app implemented in UI5 can also be used for testing control samples and prev
 
 Source: [https://github.com/UI5Lab/UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple)
 
-Demo: [geometry samples](https://ui5lab.io/browser)
+Demo: [geometry samples](https://ui5lab.github.io/UI5Lab-central/browser)
 
 Used in: [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central)
 
@@ -50,7 +50,7 @@ The libraries and controls provided by the individual owners can be retrieved an
 
 Source: [https://github.com/UI5Lab/UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-library-simple)
 
-Demo: [Homepage](https://ui5lab.io/) [Browser](https://ui5lab.io/browser)
+Demo: [Homepage](https://ui5lab.github.io/UI5Lab-central/) [Browser](https://ui5lab.github.io/UI5Lab-central/browser)
 
 Used in: -
 
@@ -68,10 +68,10 @@ So **gh-pages should never be edited manually**.
     2. `"ui5-nabi-m": "^0.1.0"`
 
 #### Homepage
-To edit the [ui5lab.io](https://ui5lab.io) website, modify the `index.html` file in `UI5Lab-central/homepage`. These will become the root of `UI5Lab-central/gh-pages` once the Travis job is finished.
+To edit the [ui5lab.github.io/UI5Lab-central/](https://ui5lab.github.io/UI5Lab-central/) website, modify the `index.html` file in `UI5Lab-central/homepage`. These will become the root of `UI5Lab-central/gh-pages` once the Travis job is finished.
 
 #### Documentation
-Our [documentation](https://ui5lab.io/docs) is located in `UI5Lab-central/docs`. It is parsed by Docsify and made available under `UI5Lab-central/gh-pages/docs` once the Travis job is finished.
+Our [documentation](https://ui5lab.github.io/UI5Lab-central/docs) is located in `UI5Lab-central/docs`. It is parsed by Docsify and made available under `UI5Lab-central/gh-pages/docs` once the Travis job is finished.
 
 ### UI5Lab-browser
 
@@ -79,7 +79,7 @@ A browser to display custom libraries and control examples on the UI5Lab homepag
 
 Source: [https://github.com/UI5Lab/UI5Lab-browser](https://github.com/UI5Lab/UI5Lab-browser)
 
-Demo: [Browser](https://ui5lab.io/browser)
+Demo: [Browser](https://ui5lab.github.io/UI5Lab-central/browser)
 
 Used in: [UI5Lab-central](https://github.com/UI5Lab/UI5Lab-central), [UI5Lab-library-simple](https://github.com/UI5Lab/UI5Lab-central)
 
