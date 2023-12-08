@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [18.x, 20.x]
 
     steps:
     - name: Checkout 🛎️
@@ -36,3 +36,4 @@ jobs:
       with:
         branch: gh-pages # The branch the action should deploy to.
         folder: deploy # The folder the action should deploy.
+        token: ${{ secrets.GITHUB_TOKEN }} # Adding the token here
