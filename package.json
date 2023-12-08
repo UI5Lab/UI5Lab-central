@@ -50,7 +50,7 @@
     "ui5lab-wordcloud": "~1.0.1"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.14.9",
+    "@ui5/cli": "^3.0.7",
     "bower": "^1.8.14",
     "command-line-args": "^5.2.1",
     "eslint": "^5.16.0",
