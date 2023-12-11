@@ -18,15 +18,14 @@
     "start": "ui5 serve --open index.html"
   },
   "dependencies": {
-    "@openui5/sap.f": "^1.71.46",
-    "@openui5/sap.m": "^1.71.46",
-    "@openui5/sap.ui.core": "^1.71.46",
-    "@openui5/sap.ui.layout": "^1.71.46",
-    "@openui5/themelib_sap_belize": "^1.71.46",
+    "@openui5/sap.f": "^1.71.60",
+    "@openui5/sap.m": "^1.71.60",
+    "@openui5/sap.ui.core": "^1.71.60",
+    "@openui5/sap.ui.layout": "^1.71.60",
+    "@openui5/themelib_sap_belize": "^1.71.60",
     "openui5-camera": "~0.0.11",
     "openui5-chartjs": "https://github.com/StErMi/openui5-chartjs",
     "openui5-flatpickr": "https://github.com/StErMi/openui5-flatpickr",
-    "openui5-googlemaps": "https://github.com/jasper07/openui5-googlemaps",
     "openui5-licensecode_input": "^1.0.1",
     "openui5-model-json-crud": "0.0.10",
     "openui5-multiinputdialog": "https://github.com/StErMi/openui5-multiinputdialog",
@@ -41,7 +40,7 @@
     "striptoastr": "https://github.com/jasper07/StripToastr",
     "ui5-nabi-m": "~0.3.0",
     "ui5-sign": "https://github.com/kvsrikanthj/ui5-library-Signature",
-    "ui5lab-browser": "^1.1.4",
+    "ui5lab-browser": "^1.1.5",
     "ui5lab-library-simple": "^1.0.0",
     "ui5lab-tn-icons": "https://github.com/TNFlexso/ui5lab-icons",
     "ui5lab-wl-img": "https://github.com/lemaiwo/UI5LabLibraryImageViewer",
@@ -50,7 +49,7 @@
     "ui5lab-wordcloud": "~1.0.1"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.14.9",
+    "@ui5/cli": "^3.7.3",
     "bower": "^1.8.14",
     "command-line-args": "^5.2.1",
     "eslint": "^5.16.0",

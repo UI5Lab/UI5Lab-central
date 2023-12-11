@@ -8,7 +8,7 @@ New here? Take a look at our [quick start](general/quick_start.md) guide.
 
 #### Browse libraries and samples
 
-Have a look at the [UI5Lab browser](https://ui5lab.io/browser), where all current UI5Lab libraries and controls can be viewed.
+Have a look at the [UI5Lab browser](https://ui5lab.github.io/UI5Lab-central/browser), where all current UI5Lab libraries and controls can be viewed.
 
 #### Use a UI5Lab library in your app
 
@@ -24,9 +24,9 @@ Check the [README](https://github.com/UI5Lab/UI5Lab-central/blob/master/README.m
 
 ## Directions
 
-* [Homepage](https://ui5lab.io) - the single point of entry for UI5Lab
-* [Documentation](https://ui5lab.io/docs) - project overview and tutorials
-* [Browser](https://ui5lab.io/browser) - all UI5Lab libraries and examples
+* [Homepage](https://ui5lab.github.io/UI5Lab-central/) - the single point of entry for UI5Lab
+* [Documentation](https://ui5lab.github.io/UI5Lab-central/docs) - project overview and tutorials
+* [Browser](https://ui5lab.github.io/UI5Lab-central/browser) - all UI5Lab libraries and examples
 * [Demo](https://ui5lab.github.io/UI5Lab-app-simple/index.html) - an example app consuming simple UI5Lab controls
 
 ## Troubleshooting
@@ -37,7 +37,7 @@ Be sure to include enough details and context to reproduce the issue and follow 
 ## Contact
 
 We organize this project in [Slack Channel #UI5Lab](https://openui5.slack.com/messages/UI5lab).
-If you are interested in what we do and discuss, join with this [invitation link](http://slackui5invite.herokuapp.com/) or visit the homepage [https://ui5lab.io](https://ui5lab.io).
+If you are interested in what we do and discuss, join with this [invitation link](http://slackui5invite.herokuapp.com/) or visit the homepage [https://ui5lab.github.io/UI5Lab-central/](https://ui5lab.github.io/UI5Lab-central/).
 
 *The UI5Lab Community*
 

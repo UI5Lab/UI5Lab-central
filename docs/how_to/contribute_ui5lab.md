@@ -29,7 +29,7 @@ In this repository we provide infrastructure for discovering and showcasing a co
 
   * A build infrastructure retrieves the content based on library metadata and lists it here in a central sample browser
   * The tools to load and display many different custom artifacts from individual code packages do not exist yet for this project. This is where we will take the next steps together.
-  * A public homepage showcasing and featuring all projects that are made available for UI5Lab is work in progress, we have registered the domains ui5lab.io and ui5lab.com
+  * A public homepage showcasing and featuring all projects that are made available for UI5Lab is work in progress
   * Feel free to contribute to all of the example projects under this organization to make them more robust and flexible.
   * Templates to kick-start library and app development may be added as new repositories under this organization
 
